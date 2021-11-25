@@ -1,11 +1,15 @@
 import React from 'react'
 //Page Components
 import AboutSection from '../components/AboutSection'
+import ServiceSection from '../components/ServicesSection'
 
 const AboutUs = () => {
     return (
-        <AboutSection/>
+    <>
+        <AboutSection />
+        <ServiceSection/>
+    </>
     )
-}
+};
 
 export default  AboutUs;
