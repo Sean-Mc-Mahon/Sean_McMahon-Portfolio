@@ -1,6 +1,6 @@
 import React from "react";
 //Styled
-import styled from "styled-components";
+import styled from "styled-components/macro";
 //React Router Links
 import { Link } from "react-router-dom";
 //Images
@@ -15,28 +15,28 @@ const Work = () => {
       <Project>
         <h2>Virtual Ireland</h2>
         <div className="line"></div>
-        <Link>
+        <Link to="/virtual">
           <img src={virtual} alt="Virtual Ireland" />
         </Link>
       </Project>
       <Project>
         <h2>Sean Mc Designs</h2>
         <div className="line"></div>
-        <Link>
+        <Link to="/work/seanmc">
           <img src={seanmc} alt="Sean Mc Designs" />
         </Link>
       </Project>
       <Project>
         <h2>McTastic Recipes</h2>
         <div className="line"></div>
-        <Link>
+        <Link to="/work/mctastic">
           <img src={mctastic} alt="McTastic Recipes" />
         </Link>
       </Project>
       <Project>
         <h2>Inner Purr</h2>
         <div className="line"></div>
-        <Link>
+        <Link to="/work/purr">
           <img src={purr} alt="Inner Purr" />
         </Link>
       </Project>

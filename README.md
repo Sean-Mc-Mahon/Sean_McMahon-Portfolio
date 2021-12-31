@@ -76,3 +76,5 @@ vscode-styled-components: Syntax highlighting for styled-components
 ### React Router
 
 React Router is a package which renders components based on the url. The project is wrapper in the React Router DOM in 'index.js'. Switch and Route are imported from react-router-dom. Pages are wrapped in Route components with a path these components are wrapped in a Switch component. The exact property us used to ensure the router does not end at '/'. Link & to is used in place of a tags with hrefs.
+
+### Use History

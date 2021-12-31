@@ -1,13 +1,13 @@
 import React from "react";
 import profile from "../img/profile.jpg";
 //Styled
-import styled from "styled-components";
-import { About, Description, Image, Hide } from "../styles";
+import styled from "styled-components/macro";
+import { About, HomeDescription, Image, Hide } from "../styles";
 
 const aboutSection = () => {
   return (
     <About>
-      <Description>
+      <HomeDescription>
         <div className="title">
           <Hide>
             <h2>let me make</h2>
@@ -20,7 +20,7 @@ const aboutSection = () => {
         </div>
         <p>Contact me for any projects you have in mind.</p>
         <button>Contact</button>
-      </Description>
+      </HomeDescription>
       <Image>
         <img src={profile} alt="profile pic" />
       </Image>

@@ -2,13 +2,13 @@ import React from "react";
 //import Images
 import me3 from "../img/me3.jpg";
 //Styled
-import styled from "styled-components";
-import { About, Description, Image, Hide } from "../styles";
+import styled from "styled-components/macro";
+import { About, HomeDescription, Image, Hide } from "../styles";
 
 function ServicesSection() {
   return (
     <Services>
-      <Description>
+      <HomeDescription>
         <h2>
           Clean and <span>beautiful</span> UX design
         </h2>
@@ -64,7 +64,7 @@ function ServicesSection() {
             </p>
           </Card>
         </Cards>
-      </Description>
+      </HomeDescription>
       <Image>
         <img src={me3} alt="3 of me" />
       </Image>
