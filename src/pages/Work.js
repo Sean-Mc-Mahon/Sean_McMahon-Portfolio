@@ -4,7 +4,7 @@ import styled from "styled-components/macro";
 //React Router Links
 import { Link } from "react-router-dom";
 //Images
-import virtual from "../img/virtual_ireland.gif";
+import virtual from "../img/virtual/virtual_ireland.gif";
 import seanmc from "../img/seanmc.gif";
 import mctastic from "../img/mctastic.gif";
 import purr from "../img/purr.gif";

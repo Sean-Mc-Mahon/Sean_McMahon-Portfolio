@@ -10,6 +10,8 @@ import Nav from "./components/nav";
 import WorkDetail from "./pages/WorkDetail";
 //Router
 import { Switch, Route } from "react-router-dom";
+//Bootstrap CSS
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (

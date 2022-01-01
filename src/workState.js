@@ -1,5 +1,5 @@
 //Images
-import virtual from "./img/virtual_ireland.gif";
+import virtual from "./img/virtual/virtual_ireland.gif";
 import seanmc from "./img/seanmc.gif";
 import mctastic from "./img/mctastic.gif";
 import mctastic2 from "./img/mctastic.JPG";

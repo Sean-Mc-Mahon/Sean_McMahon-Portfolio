@@ -2,8 +2,13 @@ import React from "react";
 import styled from "styled-components/macro";
 //React Router Links
 import { Link } from "react-router-dom";
+//Carousel
+import { Carousel } from "react-bootstrap";
 //Images
-import virtual from "../img/virtual_ireland.gif";
+import virtual from "../img/virtual/virtual_ireland.gif";
+import virtual_home from "../img/virtual/virtual_home.JPG";
+import virtual_north from "../img/virtual/virtual_north.JPG";
+import virtual_ballintoy from "../img/virtual/virtual_ballintoy.JPG";
 //styles
 import { HeadLine, Description, DescriptionStyle, Links } from "../styles";
 
@@ -103,9 +108,38 @@ const Virtual = () => {
           />
         </svg>
       </VirtualHead>
-      <HeadLine>
-        <img src={virtual} alt="virtual" />
-      </HeadLine>
+      <div className="container">
+        <div className="row">
+          <div className="col">
+            <Carousel variant="dark">
+              <Carousel.Item interval={1500}>
+                <img
+                  className="d-block w-100"
+                  src={virtual_home}
+                  alt="Home Page"
+                />
+              </Carousel.Item>
+              <Carousel.Item interval={1500}>
+                <img
+                  className="d-block w-100"
+                  src={virtual_north}
+                  alt="Tour Page"
+                />
+              </Carousel.Item>
+              <Carousel.Item interval={1500}>
+                <img
+                  className="d-block w-100"
+                  src={virtual_ballintoy}
+                  alt="Location Page"
+                />
+              </Carousel.Item>
+            </Carousel>
+          </div>
+          <div className="col"></div>
+        </div>
+      </div>
+
+      <HeadLine></HeadLine>
       <Description>
         <DescriptionStyle>
           <h3>HTML & CSS</h3>
