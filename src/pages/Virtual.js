@@ -11,10 +11,18 @@ import virtual_north from "../img/virtual/virtual_north.JPG";
 import virtual_ballintoy from "../img/virtual/virtual_ballintoy.JPG";
 //styles
 import { HeadLine, Description, DescriptionStyle, Links } from "../styles";
+//Animations
+import { motion } from "framer-motion";
+import { pageAnimation } from "../animation";
 
 const Virtual = () => {
   return (
-    <div>
+    <motion.div
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+      exit="exit"
+    >
       <VirtualHead>
         <svg
           id="vi-heading"
@@ -160,7 +168,7 @@ const Virtual = () => {
           </Links>
         </DescriptionStyle>
       </Description>
-    </div>
+    </motion.div>
   );
 };
 

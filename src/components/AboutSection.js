@@ -3,26 +3,31 @@ import profile from "../img/profile.jpg";
 //Styled
 import styled from "styled-components/macro";
 import { About, HomeDescription, Image, Hide } from "../styles";
+//Framer Motion
+import { motion } from "framer-motion";
+import { titleAnim, fade, photoAnim } from "../animation";
 
 const aboutSection = () => {
   return (
     <About>
       <HomeDescription>
-        <div className="title">
+        <motion.div>
           <Hide>
-            <h2>let me make</h2>
+            <motion.h2 variants={titleAnim}>let me make</motion.h2>
           </Hide>
           <Hide>
-            <h2>
+            <motion.h2 variants={titleAnim}>
               your <span>dream</span> website
-            </h2>
+            </motion.h2>
           </Hide>
-        </div>
-        <p>Contact me for any projects you have in mind.</p>
-        <button>Contact</button>
+        </motion.div>
+        <motion.p variants={fade}>
+          Contact me for any projects you have in mind.
+        </motion.p>
+        <motion.button variants={fade}>Contact</motion.button>
       </HomeDescription>
       <Image>
-        <img src={profile} alt="profile pic" />
+        <motion.img variants={photoAnim} src={profile} alt="profile pic" />
       </Image>
     </About>
   );

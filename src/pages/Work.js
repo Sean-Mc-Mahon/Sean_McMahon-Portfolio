@@ -8,10 +8,19 @@ import virtual from "../img/virtual/virtual_ireland.gif";
 import seanmc from "../img/seanmc.gif";
 import mctastic from "../img/mctastic.gif";
 import purr from "../img/purr.gif";
+//Animations
+import { motion } from "framer-motion";
+import { pageAnimation } from "../animation";
 
 const Work = () => {
   return (
-    <MyWork>
+    <MyWork
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+      exit="exit"
+      style={{ background: "#fff" }}
+    >
       <Project>
         <h2>Virtual Ireland</h2>
         <div className="line"></div>
@@ -44,7 +53,7 @@ const Work = () => {
   );
 };
 
-const MyWork = styled.div`
+const MyWork = styled(motion.div)`
   min-height: 100vh;
   overflow: hidden;
   padding: 5rem 10rem;

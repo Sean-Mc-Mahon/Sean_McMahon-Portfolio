@@ -81,4 +81,86 @@ React Router is a package which renders components based on the url. The project
 
 React Bootstrap is installed using via the treminal with the command "npm install react-bootstrap bootstrap@5.1.3".
 
+## Framer Motion
 
+[Framer Motion](https://www.framer.com/motion/) is a motion library for React used to add animation to the project. To add motion to an elemeny "motion" is added before the tag.
+
+```
+<motion.h2
+    animate={{ opacity: 1, transition: { duration: 2 } }}
+    initial={{ opacity: 0 }}
+    >Header Text
+</motion.h2>
+```
+
+Properties can be grouped as a variable. Variants can be chained together by adding staggerChildren to the parent variable and a when property may determine the order.
+
+```
+const aboutSection = () => {
+  const titleAnim = {
+    hidden: { opacity: 0 },
+    show: { opacity: 1, transition: { duration: 2 } },
+  };
+  const container = {
+    hidden: { x: 100 },
+    show: {
+      x: 0,
+      transition: {
+        duration: 1,
+        ease: "easeOut",
+        staggerChildren: 0.25,
+        when: "afterChildren",
+      },
+    },
+  };
+```
+
+```
+<HomeDescription>
+        <motion.div
+          variants={container}
+          initial="hidden"
+          animate="show"
+          className="title"
+        >
+          <Hide>
+            <motion.h2 variants={titleAnim}>let me make</motion.h2>
+          </Hide>
+          <Hide>
+            <motion.h2 variants={titleAnim}>
+              your <span>dream</span> website
+            </motion.h2>
+          </Hide>
+        </motion.div>
+      </HomeDescription>
+```
+
+In order for framer motion to know when our components start mounting and when it changes in order to let it start animating. Wherever routing is occurring (in this case App.js) the "AnimatePresence" package needs to be imported from framer motion. This allows components to animate out when they are removed from the React tree.
+useLocation from the react-router-dom is required. exitBeforeEnter is used to stagger the exit and pageAnim animations.
+
+```
+//Router
+import { Switch, Route, useLocation } from "react-router-dom";
+//Animation
+import { AnimatePresence } from "framer-motion";
+
+function App() {
+  const location = useLocation();
+  return (
+    <div className="App">
+      <GlobalStyle />
+      <Nav />
+      <AnimatePresence exitBeforeEnter>
+        <Switch location={location} key={location.pathname}>
+          <Route path="/" exact>
+            <AboutUs />
+          </Route>
+          <Route path="/work" exact>
+            <Work />
+          </Route>
+        </Switch>
+      </AnimatePresence>
+    </div>
+  );
+}
+```
