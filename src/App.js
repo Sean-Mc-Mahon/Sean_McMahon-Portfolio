@@ -14,6 +14,7 @@ import { Switch, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 //Bootstrap CSS
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Container, Row, Col } from "react-bootstrap";
 
 function App() {
   const location = useLocation();

@@ -1,36 +1,58 @@
 import React from "react";
-import profile from "../img/profile.jpg";
+import profile from "../img/seanmc_poly.jpg";
 //Styled
 import styled from "styled-components/macro";
-import { About, HomeDescription, Image, Hide } from "../styles";
+import { About, HomeDescription, Image, HeroImage, Hide } from "../styles";
 //Framer Motion
 import { motion } from "framer-motion";
 import { titleAnim, fade, photoAnim } from "../animation";
+//Bootstrap
+import { Container, Row, Col } from "react-bootstrap";
 
 const aboutSection = () => {
   return (
     <About>
-      <HomeDescription>
-        <motion.div>
-          <Hide>
-            <motion.h2 variants={titleAnim}>let me make</motion.h2>
-          </Hide>
-          <Hide>
-            <motion.h2 variants={titleAnim}>
-              your <span>dream</span> website
-            </motion.h2>
-          </Hide>
-        </motion.div>
-        <motion.p variants={fade}>
-          Contact me for any projects you have in mind.
-        </motion.p>
-        <motion.button variants={fade}>Contact</motion.button>
-      </HomeDescription>
-      <Image>
-        <motion.img variants={photoAnim} src={profile} alt="profile pic" />
-      </Image>
+      <Container>
+        <Row>
+          <Col sm={12} md={7}>
+            <HomeDescription>
+              <motion.div>
+                <Hide>
+                  <motion.h2 variants={titleAnim}>let me make</motion.h2>
+                </Hide>
+                <Hide>
+                  <motion.h2 variants={titleAnim}>
+                    your <span>dream</span> website
+                  </motion.h2>
+                </Hide>
+              </motion.div>
+              <motion.p variants={fade}>
+                Contact me for any projects you have in mind.
+              </motion.p>
+              <motion.button variants={fade}>Contact</motion.button>
+            </HomeDescription>
+          </Col>
+          <Col sm={12} md={5}>
+            <HeroImage>
+              <HideCircular>
+                <motion.img
+                  variants={photoAnim}
+                  initial="hidden"
+                  animate="show"
+                  src={profile}
+                  alt="profile pic"
+                />
+              </HideCircular>
+            </HeroImage>
+          </Col>
+        </Row>
+      </Container>
     </About>
   );
 };
+const HideCircular = styled.div`
+  overflow: hidden;
+  border-radius: 50%;
+`;
 
 export default aboutSection;

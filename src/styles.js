@@ -9,19 +9,30 @@ export const About = styled.div`
   color: white;
 `;
 export const HomeDescription = styled.div`
-  flex: 1;
-  padding-right: 5rem;
+  padding: 0 2.5rem;
   h2 {
     font-weight: lighter;
   }
 `;
 export const Image = styled.div`
-  flex: 1;
   overflow: hidden;
+  padding: 0 2.5rem;
   img {
-    width: 100%;
-    height: 80vh;
+    max-width: 100%;
+    height: auto;
     object-fit: cover;
+  }
+`;
+export const HeroImage = styled.div`
+  overflow: hidden;
+  padding: 0 2.5rem;
+  min-width: 300px;
+  max-width: 550px;
+  img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
   }
 `;
 

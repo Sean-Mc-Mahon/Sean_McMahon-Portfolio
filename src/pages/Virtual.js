@@ -14,6 +14,8 @@ import { HeadLine, Description, DescriptionStyle, Links } from "../styles";
 //Animations
 import { motion } from "framer-motion";
 import { pageAnimation } from "../animation";
+//Bootstrap
+import { Container, Row, Col } from "react-bootstrap";
 
 const Virtual = () => {
   return (
@@ -116,9 +118,9 @@ const Virtual = () => {
           />
         </svg>
       </VirtualHead>
-      <div className="container">
-        <div className="row">
-          <div className="col">
+      <Container>
+        <Row>
+          <Col>
             <Carousel variant="dark">
               <Carousel.Item interval={1500}>
                 <img
@@ -142,10 +144,10 @@ const Virtual = () => {
                 />
               </Carousel.Item>
             </Carousel>
-          </div>
-          <div className="col"></div>
-        </div>
-      </div>
+          </Col>
+          <Col></Col>
+        </Row>
+      </Container>
 
       <HeadLine></HeadLine>
       <Description>

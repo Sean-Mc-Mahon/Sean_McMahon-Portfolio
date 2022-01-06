@@ -65,9 +65,6 @@ function ServicesSection() {
           </Card>
         </Cards>
       </HomeDescription>
-      <Image>
-        <img src={me3} alt="3 of me" />
-      </Image>
     </Services>
   );
 }

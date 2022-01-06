@@ -1,16 +1,26 @@
 import React from "react";
 //Styled
 import styled from "styled-components/macro";
+import { Image } from "../styles";
 //React Router Links
 import { Link } from "react-router-dom";
 //Images
-import virtual from "../img/virtual/virtual_ireland.gif";
-import seanmc from "../img/seanmc.gif";
-import mctastic from "../img/mctastic.gif";
-import purr from "../img/purr.gif";
+import virtual from "../img/virtual/virtual_ireland.JPG";
+import seanmc from "../img/seanmc.JPG";
+import mctastic from "../img/mctastic.JPG";
+import purr from "../img/purr.JPG";
 //Animations
 import { motion } from "framer-motion";
-import { pageAnimation } from "../animation";
+import {
+  fade,
+  photoAnim,
+  lineAnim,
+  slider,
+  pageAnimation,
+  sliderContainer,
+} from "../animation";
+//Bootstrap
+import { Container, Row, Col } from "react-bootstrap";
 
 const Work = () => {
   return (
@@ -21,34 +31,50 @@ const Work = () => {
       exit="exit"
       style={{ background: "#fff" }}
     >
-      <Project>
-        <h2>Virtual Ireland</h2>
-        <div className="line"></div>
-        <Link to="/virtual">
-          <img src={virtual} alt="Virtual Ireland" />
-        </Link>
-      </Project>
-      <Project>
-        <h2>Sean Mc Designs</h2>
-        <div className="line"></div>
-        <Link to="/work/seanmc">
-          <img src={seanmc} alt="Sean Mc Designs" />
-        </Link>
-      </Project>
-      <Project>
-        <h2>McTastic Recipes</h2>
-        <div className="line"></div>
-        <Link to="/work/mctastic">
-          <img src={mctastic} alt="McTastic Recipes" />
-        </Link>
-      </Project>
-      <Project>
-        <h2>Inner Purr</h2>
-        <div className="line"></div>
-        <Link to="/work/purr">
-          <img src={purr} alt="Inner Purr" />
-        </Link>
-      </Project>
+      <sliderContainer>
+        <Frame1 variants={slider}></Frame1>
+        <Frame2 variants={slider}></Frame2>
+        <Frame3 variants={slider}></Frame3>
+        <Frame4 variants={slider}></Frame4>
+      </sliderContainer>
+      <Container>
+        <Project>
+          <motion.h2 variants={fade}>Virtual Ireland</motion.h2>
+          <motion.div variants={lineAnim} className="line"></motion.div>
+          <Link to="/virtual">
+            <Hide>
+              <motion.img
+                variants={photoAnim}
+                src={virtual}
+                alt="Virtual Ireland"
+              />
+            </Hide>
+          </Link>
+        </Project>
+        <Project>
+          <h2>Sean Mc Designs</h2>
+          <div className="line"></div>
+          <Link to="/work/seanmc">
+            <img src={seanmc} alt="Sean Mc Designs" />
+          </Link>
+        </Project>
+        <Project>
+          <h2>McTastic Recipes</h2>
+          <div className="line"></div>
+          <Link to="/work/mctastic">
+            <Hide>
+              <img src={mctastic} alt="McTastic Recipes" />
+            </Hide>
+          </Link>
+        </Project>
+        <Project>
+          <h2>Inner Purr</h2>
+          <div className="line"></div>
+          <Link to="/work/purr">
+            <img src={purr} alt="Inner Purr" />
+          </Link>
+        </Project>
+      </Container>
     </MyWork>
   );
 };
@@ -65,14 +91,37 @@ const Project = styled.div`
   padding-bottom: 10rem;
   .line {
     height: 0.5rem;
-    background: #ccc;
+    background: #23d997;
     margin-bottom: 3rem;
   }
   img {
-    width: 70%;
-    height: 70vh;
+    width: 100%;
+    height: auto;
     object-fit: cover;
   }
+`;
+const Hide = styled.div`
+  overflow: hidden;
+`;
+
+//Frame animation
+const Frame1 = styled(motion.div)`
+  position: fixed;
+  top: 10%;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #fffebf;
+  z-index: 2;
+`;
+const Frame2 = styled(Frame1)`
+  background: #ff8efb;
+`;
+const Frame3 = styled(Frame1)`
+  background: #8ed2ff;
+`;
+const Frame4 = styled(Frame1)`
+  background: #8effa0;
 `;
 
 export default Work;
