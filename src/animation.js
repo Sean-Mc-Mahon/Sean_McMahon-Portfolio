@@ -80,6 +80,34 @@ export const sliderContainer = {
     },
   },
 };
+export const scrollReveal = {
+  hidden: {
+    opacity: 0,
+    scale: 1.2,
+    transition: { duration: 0.5, ease: "easeOut" },
+  },
+  show: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      duration: 0.5,
+    },
+  },
+};
+export const scrollRevealRight = {
+  hidden: {
+    opacity: 0,
+    x: 500,
+    transition: { duration: 0.5, ease: "easeOut" },
+  },
+  show: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.5,
+    },
+  },
+};
 export const movieContainer = {
   hidden: {
     opacity: 1,

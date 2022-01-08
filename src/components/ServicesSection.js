@@ -4,10 +4,20 @@ import me3 from "../img/me3.jpg";
 //Styled
 import styled from "styled-components/macro";
 import { About, HomeDescription, Image, Hide } from "../styles";
+//animation
+import { fade, scrollRevealRight } from "../animation";
+//Scroll
+import { useScroll } from "./useScroll";
 
 function ServicesSection() {
+  const [element, controls] = useScroll();
   return (
-    <Services>
+    <Services
+      variants={scrollRevealRight}
+      animate={controls}
+      initial="hidden"
+      ref={element}
+    >
       <HomeDescription>
         <h2>
           Clean and <span>beautiful</span> UX design

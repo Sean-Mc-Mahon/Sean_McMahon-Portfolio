@@ -2,8 +2,6 @@ import React from "react";
 import styled from "styled-components/macro";
 //React Router Links
 import { Link } from "react-router-dom";
-//Carousel
-import { Carousel } from "react-bootstrap";
 //Images
 import virtual from "../img/virtual/virtual_ireland.gif";
 import virtual_home from "../img/virtual/virtual_home.JPG";
@@ -15,7 +13,7 @@ import { HeadLine, Description, DescriptionStyle, Links } from "../styles";
 import { motion } from "framer-motion";
 import { pageAnimation } from "../animation";
 //Bootstrap
-import { Container, Row, Col } from "react-bootstrap";
+import { Carousel, Container, Row, Col } from "react-bootstrap";
 
 const Virtual = () => {
   return (

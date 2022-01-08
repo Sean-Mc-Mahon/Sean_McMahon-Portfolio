@@ -19,10 +19,14 @@ import {
   pageAnimation,
   sliderContainer,
 } from "../animation";
+import { useScroll } from "../components/useScroll";
 //Bootstrap
 import { Container, Row, Col } from "react-bootstrap";
 
 const Work = () => {
+  const [element, controls] = useScroll();
+  const [element2, controls2] = useScroll();
+  const [element3, controls3] = useScroll();
   return (
     <MyWork
       variants={pageAnimation}
@@ -39,7 +43,9 @@ const Work = () => {
       </sliderContainer>
       <Container>
         <Project>
-          <motion.h2 variants={fade}>Virtual Ireland</motion.h2>
+          <motion.h2 initial="hidden" variants={fade} animate="show">
+            Virtual Ireland
+          </motion.h2>
           <motion.div variants={lineAnim} className="line"></motion.div>
           <Link to="/virtual">
             <Hide>
@@ -51,25 +57,40 @@ const Work = () => {
             </Hide>
           </Link>
         </Project>
-        <Project>
+        <Project
+          ref={element}
+          variants={fade}
+          animate={controls}
+          initial="hidden"
+        >
           <h2>Sean Mc Designs</h2>
-          <div className="line"></div>
+          <motion.div variants={lineAnim} className="line"></motion.div>
           <Link to="/work/seanmc">
             <img src={seanmc} alt="Sean Mc Designs" />
           </Link>
         </Project>
-        <Project>
+        <Project
+          ref={element2}
+          variants={fade}
+          animate={controls2}
+          initial="hidden"
+        >
           <h2>McTastic Recipes</h2>
-          <div className="line"></div>
+          <motion.div variants={lineAnim} className="line"></motion.div>
           <Link to="/work/mctastic">
             <Hide>
               <img src={mctastic} alt="McTastic Recipes" />
             </Hide>
           </Link>
         </Project>
-        <Project>
+        <Project
+          ref={element3}
+          variants={fade}
+          animate={controls3}
+          initial="hidden"
+        >
           <h2>Inner Purr</h2>
-          <div className="line"></div>
+          <motion.div variants={lineAnim} className="line"></motion.div>
           <Link to="/work/purr">
             <img src={purr} alt="Inner Purr" />
           </Link>
@@ -87,7 +108,7 @@ const MyWork = styled(motion.div)`
     padding: 1rem 0rem;
   }
 `;
-const Project = styled.div`
+const Project = styled(motion.div)`
   padding-bottom: 10rem;
   .line {
     height: 0.5rem;
