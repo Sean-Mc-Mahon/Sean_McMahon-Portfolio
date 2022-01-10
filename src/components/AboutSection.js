@@ -14,7 +14,20 @@ const aboutSection = () => {
     <About>
       <Container>
         <Row>
-          <Col sm={12} md={7}>
+          <Col md={12} lg={5} className="apples">
+            <HeroImage>
+              <HideCircular>
+                <motion.img
+                  variants={photoAnim}
+                  initial="hidden"
+                  animate="show"
+                  src={profile}
+                  alt="profile pic"
+                />
+              </HideCircular>
+            </HeroImage>
+          </Col>
+          <Col md={12} lg={7}>
             <HomeDescription>
               <motion.div>
                 <Hide>
@@ -31,19 +44,6 @@ const aboutSection = () => {
               </motion.p>
               <motion.button variants={fade}>Contact</motion.button>
             </HomeDescription>
-          </Col>
-          <Col sm={12} md={5}>
-            <HeroImage>
-              <HideCircular>
-                <motion.img
-                  variants={photoAnim}
-                  initial="hidden"
-                  animate="show"
-                  src={profile}
-                  alt="profile pic"
-                />
-              </HideCircular>
-            </HeroImage>
           </Col>
         </Row>
       </Container>

@@ -20,6 +20,7 @@ import {
   sliderContainer,
 } from "../animation";
 import { useScroll } from "../components/useScroll";
+import ScrollTop from "../components/ScrollTop";
 //Bootstrap
 import { Container, Row, Col } from "react-bootstrap";
 
@@ -96,6 +97,8 @@ const Work = () => {
           </Link>
         </Project>
       </Container>
+
+      <ScrollTop />
     </MyWork>
   );
 };

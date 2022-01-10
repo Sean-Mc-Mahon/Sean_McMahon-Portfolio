@@ -12,6 +12,7 @@ import { HeadLine, Description, DescriptionStyle, Links } from "../styles";
 //Animations
 import { motion } from "framer-motion";
 import { pageAnimation } from "../animation";
+import ScrollTop from "../components/ScrollTop";
 //Bootstrap
 import { Carousel, Container, Row, Col } from "react-bootstrap";
 
@@ -168,6 +169,8 @@ const Virtual = () => {
           </Links>
         </DescriptionStyle>
       </Description>
+
+      <ScrollTop />
     </motion.div>
   );
 };

@@ -6,13 +6,32 @@ export const About = styled(motion.div)`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5rem 10rem;
+  padding: 1rem;
   color: white;
+  @media (min-width: 1400px) {
+    padding: 5rem 10rem;
+  }
+  .Container {
+    .Row {
+      .Col {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
 `;
 export const HomeDescription = styled.div`
-  padding: 0 2.5rem;
   h2 {
     font-weight: lighter;
+  }
+  text-align: center;
+
+  @media (min-width: 992px) {
+    padding: 0 2.5rem;
+    text-align: start;
+  }
+  @media (min-width: 1400px) {
+    padding: 0 2.5rem;
   }
 `;
 export const Image = styled.div`
@@ -29,6 +48,7 @@ export const HeroImage = styled.div`
   padding: 0 2.5rem;
   min-width: 300px;
   max-width: 550px;
+  margin: auto;
   img {
     max-width: 100%;
     height: auto;
