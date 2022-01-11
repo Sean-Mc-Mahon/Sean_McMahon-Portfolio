@@ -106,13 +106,15 @@ const Work = () => {
 const MyWork = styled(motion.div)`
   min-height: 100vh;
   overflow: hidden;
-  padding: 5rem 10rem;
   h2 {
     padding: 1rem 0rem;
   }
+  @media (min-width: 1200px) {
+    padding: 5rem 10rem;
+  }
 `;
 const Project = styled(motion.div)`
-  padding-bottom: 10rem;
+  padding-bottom: 5rem;
   .line {
     height: 0.5rem;
     background: #23d997;

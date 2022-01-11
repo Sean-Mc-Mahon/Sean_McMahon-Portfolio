@@ -8,15 +8,13 @@ export const About = styled(motion.div)`
   justify-content: space-between;
   padding: 1rem;
   color: white;
-  @media (min-width: 1400px) {
+  @media (min-width: 1200px) {
     padding: 5rem 10rem;
   }
-  .Container {
-    .Row {
-      .Col {
-        display: flex;
-        justify-content: center;
-      }
+  .container {
+    .row {
+      display: flex;
+      align-items: center;
     }
   }
 `;
@@ -25,12 +23,13 @@ export const HomeDescription = styled.div`
     font-weight: lighter;
   }
   text-align: center;
+  padding-top: 2rem;
 
   @media (min-width: 992px) {
     padding: 0 2.5rem;
     text-align: start;
   }
-  @media (min-width: 1400px) {
+  @media (min-width: 1200px) {
     padding: 0 2.5rem;
   }
 `;

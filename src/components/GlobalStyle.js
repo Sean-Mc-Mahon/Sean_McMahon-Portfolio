@@ -6,10 +6,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box
 }
-html{
-    @media (max-width: 1400px){
-        font-size: 80%
-    }
+
 }
 body{
     background: #1b1b1b;
@@ -33,10 +30,7 @@ button{
 }
 h2{
     font-weight: lighter;
-    font-size: 3rem;
-    @media (min-width: 992px) {
-        font-size: 4rem;
-  }
+    font-size: calc(1.5rem + 2vw)
     }
 h3{
     color: white;
