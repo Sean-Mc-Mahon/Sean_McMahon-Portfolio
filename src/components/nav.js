@@ -74,26 +74,13 @@ const Nav = () => {
 
 const StyledNav = styled.nav`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
   padding-bottom: 0.5rem;
   @media (min-width: 992px) {
     padding: 0;
   }
-  #logo {
-    margin: 1rem;
-    @media (min-width: 992px) {
-      margin: 1rem 0;
-    }
-    @media (min-width: 1400px) {
-      svg {
-        width: 298px;
-        height: 59px;
-      }
-    }
-  }
   min-height: 10vh;
-  display: flex;
-  flex-direction: column;
   margin: auto;
   justify-content: space-between;
   align-items: center;
@@ -126,13 +113,22 @@ const StyledNav = styled.nav`
     font-size: 1.5rem;
     font-family: "Lobster", cursive;
     font-weight: lighter;
+    margin: 0.5rem 0;
+    @media (min-width: 992px) {
+      margin: 0;
+    }
+    @media (min-width: 1200px) {
+      svg {
+        width: 298px;
+        height: 59px;
+      }
+    }
   }
   li {
     position: relative;
     padding: 0 1rem;
   }
   @media (min-width: 1200px) {
-    flex-direction: row;
     li {
       padding-left: 10rem;
     }

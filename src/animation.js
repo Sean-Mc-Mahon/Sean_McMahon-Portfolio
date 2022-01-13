@@ -34,6 +34,20 @@ export const fade = {
   },
 };
 
+export const fadePage = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      type: "tween",
+      ease: "easeOut",
+      duration: 5,
+      delay: 1,
+      when: "beforeChildren",
+    },
+  },
+};
+
 export const photoAnim = {
   hidden: { scale: 1.5, opacity: 0 },
   show: {
@@ -115,7 +129,7 @@ export const projectContainer = {
   show: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.15,
+      staggerChildren: 0.1,
       ease: "easeOut",
       duration: 1,
       when: "beforeChildren",
