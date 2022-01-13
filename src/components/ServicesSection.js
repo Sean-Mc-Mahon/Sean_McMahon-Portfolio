@@ -1,6 +1,4 @@
 import React from "react";
-//import Images
-import me3 from "../img/me3.jpg";
 //Styled
 import styled from "styled-components/macro";
 import { About, HomeDescription, Image, Hide } from "../styles";

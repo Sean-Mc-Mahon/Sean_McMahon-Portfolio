@@ -14,7 +14,7 @@ const aboutSection = () => {
     <About>
       <Container>
         <Row>
-          <Col md={12} lg={5} className="apples">
+          <Col md={12} lg={6} xl={5}>
             <HeroImage>
               <HideCircular>
                 <motion.img
@@ -27,7 +27,7 @@ const aboutSection = () => {
               </HideCircular>
             </HeroImage>
           </Col>
-          <Col md={12} lg={7}>
+          <Col md={12} lg={6} xl={7}>
             <HomeDescription>
               <motion.div>
                 <Hide>

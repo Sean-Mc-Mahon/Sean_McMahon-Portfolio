@@ -9,6 +9,7 @@ import virtual from "../img/virtual/virtual_ireland.JPG";
 import seanmc from "../img/seanmc.JPG";
 import mctastic from "../img/mctastic.JPG";
 import purr from "../img/purr.JPG";
+import ThreeMe from "../components/ThreeMe";
 //Animations
 import { motion } from "framer-motion";
 import {
@@ -18,6 +19,7 @@ import {
   slider,
   pageAnimation,
   sliderContainer,
+  projectContainer,
 } from "../animation";
 import { useScroll } from "../components/useScroll";
 import ScrollTop from "../components/ScrollTop";
@@ -30,23 +32,22 @@ const Work = () => {
   const [element3, controls3] = useScroll();
   return (
     <MyWork
+      style={{ background: "#fff" }}
       variants={pageAnimation}
+      exit="exit"
       initial="hidden"
       animate="show"
-      exit="exit"
-      style={{ background: "#fff" }}
     >
-      <sliderContainer>
+      <ScrollTop />
+      <motion.div variants={sliderContainer}>
         <Frame1 variants={slider}></Frame1>
         <Frame2 variants={slider}></Frame2>
         <Frame3 variants={slider}></Frame3>
         <Frame4 variants={slider}></Frame4>
-      </sliderContainer>
-      <Container>
-        <Project>
-          <motion.h2 initial="hidden" variants={fade} animate="show">
-            Virtual Ireland
-          </motion.h2>
+      </motion.div>
+      <Container className="p-0">
+        <Project variants={projectContainer}>
+          <motion.h2 variants={fade}>Virtual Ireland</motion.h2>
           <motion.div variants={lineAnim} className="line"></motion.div>
           <Link to="/virtual">
             <Hide>
@@ -59,8 +60,9 @@ const Work = () => {
           </Link>
         </Project>
         <Project
+          transition={{ duration: 0.5 }}
+          variants={projectContainer}
           ref={element}
-          variants={fade}
           animate={controls}
           initial="hidden"
         >
@@ -71,8 +73,9 @@ const Work = () => {
           </Link>
         </Project>
         <Project
+          transition={{ duration: 0.5 }}
+          variants={projectContainer}
           ref={element2}
-          variants={fade}
           animate={controls2}
           initial="hidden"
         >
@@ -85,8 +88,9 @@ const Work = () => {
           </Link>
         </Project>
         <Project
+          transition={{ duration: 0.5 }}
+          variants={projectContainer}
           ref={element3}
-          variants={fade}
           animate={controls3}
           initial="hidden"
         >
@@ -97,27 +101,38 @@ const Work = () => {
           </Link>
         </Project>
       </Container>
-
-      <ScrollTop />
+      <NewFill>
+        <ThreeMe />
+      </NewFill>
     </MyWork>
   );
 };
-
+const NewFill = styled.div`
+  .fill svg path {
+    fill: #1b1b1b;
+  }
+`;
 const MyWork = styled(motion.div)`
   min-height: 100vh;
   overflow: hidden;
+  .container {
+    padding: 0rem;
+  }
   h2 {
-    padding: 1rem 0rem;
+    padding: 0rem 0rem;
   }
   @media (min-width: 1200px) {
-    padding: 5rem 10rem;
+    padding: 0rem 0rem;
+    .container {
+      padding: 5rem;
+    }
   }
 `;
 const Project = styled(motion.div)`
   padding-bottom: 5rem;
   .line {
     height: 0.5rem;
-    background: #23d997;
+    background: #ffc107;
     margin-bottom: 3rem;
   }
   img {
@@ -138,7 +153,7 @@ const Frame1 = styled(motion.div)`
   width: 100%;
   height: 100vh;
   background: #fffebf;
-  z-index: 2;
+  z-index: 20;
 `;
 const Frame2 = styled(Frame1)`
   background: #ff8efb;

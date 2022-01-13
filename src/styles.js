@@ -15,6 +15,11 @@ export const About = styled(motion.div)`
     .row {
       display: flex;
       align-items: center;
+      .col-lg-5,
+      .col-md-12 {
+        display: flex;
+        justify-content: center;
+      }
     }
   }
 `;
@@ -54,6 +59,9 @@ export const HeroImage = styled.div`
     object-fit: cover;
     border-radius: 50%;
   }
+  @media (min-width: 992px) {
+    min-width: 490px;
+  }
 `;
 
 export const Hide = styled.div`
@@ -70,24 +78,23 @@ export const HeadLine = styled.div`
 `;
 export const Description = styled.div`
   display: flex;
-  margin: 5rem 10rem;
   align-items: center;
   justify-content: space-around;
 `;
 export const DescriptionStyle = styled.div`
-  padding: 5rem;
   h3 {
     font-size: 2rem;
     color: white;
   }
   .line {
     width: 100%;
-    background: #23d997;
+    background: #ffc107;
     height: 0.5rem;
     margin: 1rem 0rem;
   }
   p {
     padding: 2rem 0rem;
+    color: black;
   }
 `;
 export const ImageDisplay = styled.div`
@@ -102,13 +109,22 @@ export const Links = styled.div`
   font-weight: bolder;
   display: flex;
   justify-content: center;
+  align-items: center;
   hr {
-    width: 5px;
-    background: white;
+    width: 3px;
+    height: 15px;
+    background: #1b1b1b;
+    @media (min-width: 992px) {
+      width: 5px;
+      height: 25px;
+    }
   }
   a {
     text-decoration: none;
-    color: white;
+    color: #1b1b1b;
     padding: 0 1rem;
+    @media (min-width: 992px) {
+      font-size: 1.5rem;
+    }
   }
 `;

@@ -7,11 +7,12 @@ import virtual from "../img/virtual/virtual_ireland.gif";
 import virtual_home from "../img/virtual/virtual_home.JPG";
 import virtual_north from "../img/virtual/virtual_north.JPG";
 import virtual_ballintoy from "../img/virtual/virtual_ballintoy.JPG";
+import ThreeMe from "../components/ThreeMe";
 //styles
 import { HeadLine, Description, DescriptionStyle, Links } from "../styles";
 //Animations
 import { motion } from "framer-motion";
-import { pageAnimation } from "../animation";
+import { pageAnimation, sliderContainer, slider } from "../animation";
 import ScrollTop from "../components/ScrollTop";
 //Bootstrap
 import { Carousel, Container, Row, Col } from "react-bootstrap";
@@ -23,6 +24,7 @@ const Virtual = () => {
       initial="hidden"
       animate="show"
       exit="exit"
+      style={{ background: "#fff" }}
     >
       <VirtualHead>
         <svg
@@ -117,6 +119,11 @@ const Virtual = () => {
           />
         </svg>
       </VirtualHead>
+      <sliderContainer>
+        <Frame1 variants={slider}></Frame1>
+        <Frame2 variants={slider}></Frame2>
+        <Frame3 variants={slider}></Frame3>
+      </sliderContainer>
       <Container>
         <Row>
           <Col>
@@ -144,44 +151,70 @@ const Virtual = () => {
               </Carousel.Item>
             </Carousel>
           </Col>
-          <Col></Col>
+        </Row>
+        <Row>
+          <Col>
+            <HeadLine></HeadLine>
+            <Description>
+              <DescriptionStyle>
+                <h3>HTML & CSS</h3>
+                <VirtualLine />
+                <p>
+                  VI is a virtual tour of Ireland aimed at people planning on
+                  visiting Ireland, people who cannot visit or people who want
+                  to look back on trips to some of Ireland’s most beautiful
+                  sites.
+                </p>
+                <Links>
+                  <a href="https://sean-mc-mahon.github.io/ms1virtualireland/index.html">
+                    Live Site
+                  </a>
+                  <hr />
+                  <a href="https://sean-mc-mahon.github.io/ms1virtualireland/index.html">
+                    Repo
+                  </a>
+                </Links>
+              </DescriptionStyle>
+            </Description>
+          </Col>
         </Row>
       </Container>
 
-      <HeadLine></HeadLine>
-      <Description>
-        <DescriptionStyle>
-          <h3>HTML & CSS</h3>
-          <div className="line"></div>
-          <p>
-            VI is a virtual tour of Ireland aimed at people planning on visiting
-            Ireland, people who cannot visit or people who want to look back on
-            trips to some of Ireland’s most beautiful sites.
-          </p>
-          <Links>
-            <a href="https://sean-mc-mahon.github.io/ms1virtualireland/index.html">
-              Live Site
-            </a>
-            <hr />
-            <a href="https://sean-mc-mahon.github.io/ms1virtualireland/index.html">
-              Repo
-            </a>
-          </Links>
-        </DescriptionStyle>
-      </Description>
+      <NewFill>
+        <ThreeMe />
+      </NewFill>
 
       <ScrollTop />
     </motion.div>
   );
 };
 
+const NewFill = styled.div`
+  .fill svg path {
+    fill: #047b17;
+  }
+`;
+
+const VirtualLine = styled.div`
+  width: 100%;
+  background: #047b17;
+  height: 0.5rem;
+  margin: 1rem 0rem;
+`;
+
 const Details = styled.div`
   color: white;
 `;
 const VirtualHead = styled.div`
-  padding: 5rem;
-  #vi-logo {
-    font-family: "Pacifico", cursive;
+  padding: 1rem;
+  max-width: 600px;
+  margin: auto;
+  @media (min-width: 992px) {
+    padding: 2rem 5rem;
+  }
+  @media (min-width: 992px) {
+    max-width: 700px;
+    padding: 3rem 5rem;
   }
 
   #vi-heading path:nth-child(1) {
@@ -275,4 +308,20 @@ const VirtualHead = styled.div`
   }
 `;
 
+//Frame animation
+const Frame1 = styled(motion.div)`
+  position: fixed;
+  top: 10%;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #447924;
+  z-index: 20;
+`;
+const Frame2 = styled(Frame1)`
+  background: #f8f9fa;
+`;
+const Frame3 = styled(Frame1)`
+  background: #37474f;
+`;
 export default Virtual;

@@ -1,11 +1,9 @@
 export const pageAnimation = {
   hidden: {
     opacity: 0,
-    y: 300,
   },
   show: {
     opacity: 1,
-    y: 0,
     transition: {
       duration: 0.5,
       when: "beforeChildren",
@@ -15,7 +13,7 @@ export const pageAnimation = {
   exit: {
     opacity: 0,
     transition: {
-      duration: 0.5,
+      duration: 0.3,
     },
   },
 };
@@ -97,20 +95,22 @@ export const scrollReveal = {
 export const scrollRevealRight = {
   hidden: {
     opacity: 0,
-    x: 500,
-    transition: { duration: 0.5, ease: "easeOut" },
+    x: 100,
   },
   show: {
     opacity: 1,
     x: 0,
     transition: {
-      duration: 0.5,
+      staggerChildren: 0.15,
+      ease: "easeOut",
+      duration: 1,
+      when: "beforeChildren",
     },
   },
 };
-export const movieContainer = {
+export const projectContainer = {
   hidden: {
-    opacity: 1,
+    opacity: 0,
   },
   show: {
     opacity: 1,
