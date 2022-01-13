@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/sean_mcmahon-portfolio/static/css/main.1a8a0596.css",
+    "main.js": "/sean_mcmahon-portfolio/static/js/main.3092134c.js",
+    "static/js/787.53bbb259.chunk.js": "/sean_mcmahon-portfolio/static/js/787.53bbb259.chunk.js",
+    "static/media/purr.gif": "/sean_mcmahon-portfolio/static/media/purr.7464ef962867953896b8.gif",
+    "static/media/seanmc.gif": "/sean_mcmahon-portfolio/static/media/seanmc.26d8c90e38cfd232b2f0.gif",
+    "static/media/mctastic.gif": "/sean_mcmahon-portfolio/static/media/mctastic.7698fc953380e3a8ad9a.gif",
+    "static/media/virtual_ireland.gif": "/sean_mcmahon-portfolio/static/media/virtual_ireland.83128156e66055972c10.gif",
+    "static/media/virtual_north.JPG": "/sean_mcmahon-portfolio/static/media/virtual_north.7366af3b91338b2cc9a8.JPG",
+    "static/media/virtual_ballintoy.JPG": "/sean_mcmahon-portfolio/static/media/virtual_ballintoy.00aa24bb56ba5dec9a35.JPG",
+    "static/media/virtual_home.JPG": "/sean_mcmahon-portfolio/static/media/virtual_home.5bb7f9ef722d372dbb96.JPG",
+    "static/media/seanmc_poly.jpg": "/sean_mcmahon-portfolio/static/media/seanmc_poly.17fa39abb206d24c5d00.jpg",
+    "static/media/virtual_ireland.JPG": "/sean_mcmahon-portfolio/static/media/virtual_ireland.ee5bf4712c7ce98d40ad.JPG",
+    "static/media/mctastic.JPG": "/sean_mcmahon-portfolio/static/media/mctastic.b3eb4e825f399b78b320.JPG",
+    "static/media/purr.JPG": "/sean_mcmahon-portfolio/static/media/purr.dfe886ca0dc7b4c6dbb5.JPG",
+    "static/media/seanmc.JPG": "/sean_mcmahon-portfolio/static/media/seanmc.4b9e6cf92b7afa5b07b9.JPG",
+    "index.html": "/sean_mcmahon-portfolio/index.html",
+    "main.1a8a0596.css.map": "/sean_mcmahon-portfolio/static/css/main.1a8a0596.css.map",
+    "main.3092134c.js.map": "/sean_mcmahon-portfolio/static/js/main.3092134c.js.map",
+    "787.53bbb259.chunk.js.map": "/sean_mcmahon-portfolio/static/js/787.53bbb259.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1a8a0596.css",
+    "static/js/main.3092134c.js"
+  ]
+}
