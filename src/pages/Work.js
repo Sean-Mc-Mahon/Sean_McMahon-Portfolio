@@ -49,7 +49,7 @@ const Work = () => {
         <Project variants={projectContainer}>
           <motion.h2 variants={fade}>Virtual Ireland</motion.h2>
           <motion.div variants={lineAnim} className="line"></motion.div>
-          <Link to="/virtual">
+          <Link to="Sean_McMahon-Portfolio/virtual">
             <Hide>
               <motion.img
                 variants={photoAnim}

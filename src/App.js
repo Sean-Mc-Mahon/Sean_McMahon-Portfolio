@@ -27,16 +27,16 @@ function App() {
           <Route path="/" exact>
             <AboutUs />
           </Route>
-          <Route path="/work" exact>
+          <Route path="Sean_McMahon-Portfolio/work" exact>
             <Work />
           </Route>
           <Route path="/work/:id">
             <WorkDetail />
           </Route>
-          <Route path="/virtual" exact>
+          <Route path="Sean_McMahon-Portfolio/virtual" exact>
             <Virtual />
           </Route>
-          <Route path="/contact">
+          <Route path="Sean_McMahon-Portfolio/contact">
             <Contact />
           </Route>
         </Switch>
