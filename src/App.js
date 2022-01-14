@@ -7,6 +7,7 @@ import Contact from "./pages/Contact";
 import Work from "./pages/Work";
 import Virtual from "./pages/Virtual";
 import Nav from "./components/nav";
+import Footer from "./components/footer";
 import WorkDetail from "./pages/WorkDetail";
 //Router
 import { Switch, Route, useLocation } from "react-router-dom";
@@ -18,6 +19,12 @@ import { Container, Row, Col } from "react-bootstrap";
 
 function App() {
   const location = useLocation();
+  //adjust scroll behaviour
+  window.onload = function () {
+    setTimeout(function () {
+      window.scrollTo(0, 0);
+    }, 1);
+  };
   return (
     <div className="App">
       <GlobalStyle />
@@ -27,20 +34,21 @@ function App() {
           <Route path="/" exact>
             <AboutUs />
           </Route>
-          <Route path="Sean_McMahon-Portfolio/work" exact>
+          <Route path="/work" exact>
             <Work />
           </Route>
           <Route path="/work/:id">
             <WorkDetail />
           </Route>
-          <Route path="Sean_McMahon-Portfolio/virtual" exact>
+          <Route path="/virtual" exact>
             <Virtual />
           </Route>
-          <Route path="Sean_McMahon-Portfolio/contact">
+          <Route path="/contact">
             <Contact />
           </Route>
         </Switch>
       </AnimatePresence>
+      <Footer />
     </div>
   );
 }

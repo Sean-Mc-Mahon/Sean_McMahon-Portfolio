@@ -49,7 +49,7 @@ const Work = () => {
         <Project variants={projectContainer}>
           <motion.h2 variants={fade}>Virtual Ireland</motion.h2>
           <motion.div variants={lineAnim} className="line"></motion.div>
-          <Link to="Sean_McMahon-Portfolio/virtual">
+          <Link to="/virtual">
             <Hide>
               <motion.img
                 variants={photoAnim}
@@ -110,6 +110,15 @@ const Work = () => {
 const NewFill = styled.div`
   .fill svg path {
     fill: #1b1b1b;
+  }
+  .fill {
+    :hover {
+      svg path {
+        fill: #ffc107;
+        -webkit-filter: drop-shadow(0px 0px 5px #ffc107);
+        filter: drop-shadow(0px 0px 5px #ffc107);
+      }
+    }
   }
 `;
 const MyWork = styled(motion.div)`

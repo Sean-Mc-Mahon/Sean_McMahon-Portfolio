@@ -167,11 +167,19 @@ const Virtual = () => {
                     sites.
                   </p>
                   <Links>
-                    <a href="https://sean-mc-mahon.github.io/ms1virtualireland/index.html">
+                    <a
+                      rel="noopner"
+                      target="blank"
+                      href="https://sean-mc-mahon.github.io/ms1virtualireland/index.html"
+                    >
                       Live Site
                     </a>
                     <hr />
-                    <a href="https://sean-mc-mahon.github.io/ms1virtualireland/index.html">
+                    <a
+                      rel="noopner"
+                      target="blank"
+                      href="https://sean-mc-mahon.github.io/ms1virtualireland/index.html"
+                    >
                       Repo
                     </a>
                   </Links>

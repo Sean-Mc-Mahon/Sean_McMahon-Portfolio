@@ -116,6 +116,11 @@ const StyledNav = styled.nav`
   a {
     color: white;
     text-decoration: none;
+    :hover {
+      color: #ffc107;
+      -webkit-filter: drop-shadow(0px 0px 5px #ffc107);
+      filter: drop-shadow(0px 0px 5px #ffc107);
+    }
   }
   ul {
     width: 100%;

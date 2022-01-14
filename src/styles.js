@@ -122,7 +122,10 @@ export const Links = styled.div`
   a {
     text-decoration: none;
     color: #1b1b1b;
-    padding: 0 1rem;
+    padding: 1rem;
+    :hover {
+      font-size: 1.5rem;
+    }
     @media (min-width: 992px) {
       font-size: 1.5rem;
     }

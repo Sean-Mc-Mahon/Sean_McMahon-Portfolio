@@ -172,16 +172,4 @@ const ThreeMe = () => {
   );
 };
 
-const fart = document.querySelectorAll("StyledThreeMe path");
-console.log(fart);
-
-const StyledThreeMe = styled.div`
-  svg {
-    path {
-      stroke-dasharray: 30px;
-      stroke-dashoffset: 50px;
-    }
-  }
-`;
-
 export default ThreeMe;

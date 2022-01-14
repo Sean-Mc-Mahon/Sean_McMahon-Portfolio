@@ -8,6 +8,8 @@ import ThreeMe from "../components/ThreeMe";
 import { motion } from "framer-motion";
 import { pageAnimation } from "../animation";
 import ScrollTop from "../components/ScrollTop";
+//styled components
+import styled from "styled-components";
 
 const AboutUs = () => {
   return (
@@ -21,9 +23,23 @@ const AboutUs = () => {
       <AboutSection />
       <ServiceSection />
       <FaqSection />
-      <ThreeMe />
+      <NewFill>
+        <ThreeMe />
+      </NewFill>
     </motion.div>
   );
 };
+
+const NewFill = styled.div`
+  .fill {
+    :hover {
+      svg path {
+        fill: #ffc107;
+        -webkit-filter: drop-shadow(0px 0px 5px #ffc107);
+        filter: drop-shadow(0px 0px 5px #ffc107);
+      }
+    }
+  }
+`;
 
 export default AboutUs;

@@ -13,7 +13,7 @@ export const pageAnimation = {
   exit: {
     opacity: 0,
     transition: {
-      duration: 0.3,
+      duration: 0.01,
     },
   },
 };
