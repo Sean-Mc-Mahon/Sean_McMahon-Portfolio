@@ -41,7 +41,7 @@ export const fadePage = {
     transition: {
       type: "tween",
       ease: "easeOut",
-      duration: 5,
+      duration: 3,
       delay: 1,
       when: "beforeChildren",
     },

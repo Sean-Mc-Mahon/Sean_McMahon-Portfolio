@@ -2,8 +2,11 @@ import React from "react";
 import styled from "styled-components/macro";
 import { Link } from "react-router-dom";
 import { Container } from "react-bootstrap";
+import { motion } from "framer-motion";
+import { useLocation } from "react-router-dom/cjs/react-router-dom.min";
 
 const Nav = () => {
+  const { pathname } = useLocation();
   return (
     <StyledNav>
       <Container>
@@ -59,12 +62,28 @@ const Nav = () => {
         <ul>
           <li>
             <Link to="/">About</Link>
+            <Line
+              transition={{ duration: 0.75 }}
+              initial={{ width: "0%" }}
+              animate={{ width: pathname === "/" ? "50%" : "0%" }}
+            />
           </li>
           <li>
             <Link to="/work">Work</Link>
+            <Line
+              transition={{ duration: 0.75 }}
+              initial={{ width: "0%" }}
+              animate={{ width: pathname === "/work" ? "50%" : "0%" }}
+            />
           </li>
           <li>
             <Link to="/contact">Contact</Link>
+
+            <Line
+              transition={{ duration: 0.75 }}
+              initial={{ width: "0%" }}
+              animate={{ width: pathname === "/contact" ? "50%" : "0%" }}
+            />
           </li>
         </ul>
       </Container>
@@ -77,9 +96,6 @@ const StyledNav = styled.nav`
   flex-direction: row;
   justify-content: center;
   padding-bottom: 0.5rem;
-  @media (min-width: 992px) {
-    padding: 0;
-  }
   min-height: 10vh;
   margin: auto;
   justify-content: space-between;
@@ -87,7 +103,7 @@ const StyledNav = styled.nav`
   background: #282828;
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 21;
   .container {
     display: flex;
     flex-direction: column;
@@ -128,10 +144,27 @@ const StyledNav = styled.nav`
     position: relative;
     padding: 0 1rem;
   }
+  @media (min-width: 992px) {
+    padding: 0;
+  }
   @media (min-width: 1200px) {
     li {
       padding-left: 10rem;
     }
+  }
+`;
+
+const Line = styled(motion.div)`
+  height: 0.3rem;
+  background: #ffc107;
+  -webkit-filter: drop-shadow(0px 0px 5px #ffc107);
+  filter: drop-shadow(0px 0px 5px #ffc107);
+  width: 0;
+  position: absolute;
+  bottom: -20%;
+  left: 25%;
+  @media (min-width: 1200px) {
+    left: 60%;
   }
 `;
 
