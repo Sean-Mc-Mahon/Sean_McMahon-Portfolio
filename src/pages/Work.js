@@ -5,7 +5,7 @@ import { Image } from "../styles";
 //React Router Links
 import { Link } from "react-router-dom";
 //Images
-import virtual from "../img/virtual/virtual_ireland.JPG";
+import virtual from "../img/virtual/virtual_home.JPG";
 import seanmc from "../img/seanmc.JPG";
 import mctastic from "../img/mctastic.JPG";
 import purr from "../img/purr.JPG";
@@ -45,62 +45,60 @@ const Work = () => {
         <Frame3 variants={slider}></Frame3>
         <Frame4 variants={slider}></Frame4>
       </motion.div>
-      <Container className="p-0">
-        <Project variants={projectContainer}>
-          <motion.h2 variants={fade}>Virtual Ireland</motion.h2>
-          <motion.div variants={lineAnim} className="line"></motion.div>
-          <Link to="/virtual">
-            <Hide>
-              <motion.img
-                variants={photoAnim}
-                src={virtual}
-                alt="Virtual Ireland"
-              />
-            </Hide>
-          </Link>
-        </Project>
-        <Project
-          transition={{ duration: 0.5 }}
-          variants={projectContainer}
-          ref={element}
-          animate={controls}
-          initial="hidden"
-        >
-          <h2>Sean Mc Designs</h2>
-          <motion.div variants={lineAnim} className="line"></motion.div>
-          <Link to="/work/seanmc">
-            <img src={seanmc} alt="Sean Mc Designs" />
-          </Link>
-        </Project>
-        <Project
-          transition={{ duration: 0.5 }}
-          variants={projectContainer}
-          ref={element2}
-          animate={controls2}
-          initial="hidden"
-        >
-          <h2>McTastic Recipes</h2>
-          <motion.div variants={lineAnim} className="line"></motion.div>
-          <Link to="/work/mctastic">
-            <Hide>
-              <img src={mctastic} alt="McTastic Recipes" />
-            </Hide>
-          </Link>
-        </Project>
-        <Project
-          transition={{ duration: 0.5 }}
-          variants={projectContainer}
-          ref={element3}
-          animate={controls3}
-          initial="hidden"
-        >
-          <h2>Inner Purr</h2>
-          <motion.div variants={lineAnim} className="line"></motion.div>
-          <Link to="/work/purr">
-            <img src={purr} alt="Inner Purr" />
-          </Link>
-        </Project>
-      </Container>
+      <Project variants={projectContainer}>
+        <motion.h2 variants={fade}>Virtual Ireland</motion.h2>
+        <motion.div variants={lineAnim} className="line"></motion.div>
+        <Link to="/virtual">
+          <Hide>
+            <motion.img
+              variants={photoAnim}
+              src={virtual}
+              alt="Virtual Ireland"
+            />
+          </Hide>
+        </Link>
+      </Project>
+      <Project
+        transition={{ duration: 0.5 }}
+        ref={element}
+        variants={projectContainer}
+        animate={controls}
+        initial="hidden"
+      >
+        <h2>Sean Mc Designs</h2>
+        <motion.div variants={lineAnim} className="line"></motion.div>
+        <Link to="/work/seanmc">
+          <img src={seanmc} alt="Sean Mc Designs" />
+        </Link>
+      </Project>
+      <Project
+        transition={{ duration: 0.5 }}
+        ref={element2}
+        variants={projectContainer}
+        animate={controls2}
+        initial="hidden"
+      >
+        <h2>McTastic Recipes</h2>
+        <motion.div variants={lineAnim} className="line"></motion.div>
+        <Link to="/work/mctastic">
+          <Hide>
+            <img src={mctastic} alt="McTastic Recipes" />
+          </Hide>
+        </Link>
+      </Project>
+      <Project
+        transition={{ duration: 0.5 }}
+        ref={element3}
+        variants={projectContainer}
+        animate={controls3}
+        initial="hidden"
+      >
+        <h2>Inner Purr</h2>
+        <motion.div variants={lineAnim} className="line"></motion.div>
+        <Link to="/work/purr">
+          <img src={purr} alt="Inner Purr" />
+        </Link>
+      </Project>
       <NewFill>
         <ThreeMe />
       </NewFill>
@@ -124,14 +122,8 @@ const NewFill = styled.div`
 const MyWork = styled(motion.div)`
   min-height: 100vh;
   overflow: hidden;
-  .container {
-    padding: 0rem;
-  }
-  h2 {
-    padding: 0rem 0rem;
-  }
+  padding-top: 1rem;
   @media (min-width: 1200px) {
-    padding: 0rem 0rem;
     .container {
       padding: 5rem;
     }

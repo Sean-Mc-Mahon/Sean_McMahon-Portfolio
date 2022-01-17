@@ -1,14 +1,17 @@
 import React, { Component } from "react";
 import styled from "styled-components/macro";
+import me3 from "../img/me3.png";
 
 const ThreeMe = () => {
   return (
-    <div className="fill">
+    <ThreeContainer className="fill">
+      <div className="fadetop"></div>
       <svg
         viewBox="0 0 1400 350"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         id="ThreeMe"
+        className="meesvg"
       >
         <g clip-path="url(#clip0_1_31)">
           <path
@@ -168,8 +171,32 @@ const ThreeMe = () => {
           </clipPath>
         </defs>
       </svg>
-    </div>
+      <img className="mee" src={me3} alt="Three Me" />
+      <img className="meehidden" src={me3} alt="Three Me" />
+    </ThreeContainer>
   );
 };
+
+const ThreeContainer = styled.div`
+  position: relative;
+
+  .meesvg {
+    position: absolute;
+    top: 0;
+    z-index: 5;
+  }
+  .mee {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.2s;
+  }
+  .meehidden {
+    width: 100%;
+    display: block;
+    visibility: hidden;
+  }
+`;
 
 export default ThreeMe;

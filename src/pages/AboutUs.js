@@ -33,6 +33,9 @@ const AboutUs = () => {
 const NewFill = styled.div`
   .fill {
     :hover {
+      .mee {
+        opacity: 0.08;
+      }
       svg path {
         fill: #ffc107;
         -webkit-filter: drop-shadow(0px 0px 5px #ffc107);
