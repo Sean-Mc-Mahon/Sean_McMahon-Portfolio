@@ -168,3 +168,6 @@ function App() {
   );
 }
 ```
+
+#Tiny PNG
+[Tiny PNG](https://tinypng.com/) is used to compress images.
