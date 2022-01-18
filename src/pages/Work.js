@@ -5,10 +5,10 @@ import { Image } from "../styles";
 //React Router Links
 import { Link } from "react-router-dom";
 //Images
-import virtual from "../img/virtual/virtual_home.JPG";
-import seanmc from "../img/seanmc.JPG";
-import mctastic from "../img/mctastic.JPG";
-import purr from "../img/purr.JPG";
+import virtual from "../img/virtual/virtual_ireland.JPG";
+import seanmc from "../img/seanmc/seanmc.JPG";
+import mctastic from "../img/mctastic/mctastic.JPG";
+import purr from "../img/purr/purr.JPG";
 import ThreeMe from "../components/ThreeMe";
 //Animations
 import { motion } from "framer-motion";

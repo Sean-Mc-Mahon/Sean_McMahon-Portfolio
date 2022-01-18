@@ -169,5 +169,10 @@ function App() {
 }
 ```
 
-#Tiny PNG
+# Tiny PNG
+
 [Tiny PNG](https://tinypng.com/) is used to compress images.
+
+# OBS
+
+[OBS](https://obsproject.com/) is used to make screen recordings.

@@ -1,9 +1,9 @@
 //Images
 import virtual from "./img/virtual/virtual_ireland.gif";
-import seanmc from "./img/seanmc.gif";
-import mctastic from "./img/mctastic.gif";
-import mctastic2 from "./img/mctastic.JPG";
-import purr from "./img/purr.gif";
+import seanmc from "./img/seanmc/seanmc.gif";
+import mctastic from "./img/mctastic/mctastic.gif";
+import mctastic2 from "./img/mctastic/mctastic.JPG";
+import purr from "./img/purr/purr.gif";
 
 export const WorkState = () => {
   return [

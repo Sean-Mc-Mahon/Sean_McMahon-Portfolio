@@ -4,6 +4,7 @@ import AboutSection from "../components/AboutSection";
 import ServiceSection from "../components/ServicesSection";
 import FaqSection from "../components/FaqSection";
 import ThreeMe from "../components/ThreeMe";
+import AboutWork from "../components/AboutWork";
 //Animations
 import { motion } from "framer-motion";
 import { pageAnimation } from "../animation";
@@ -21,7 +22,7 @@ const AboutUs = () => {
     >
       <ScrollTop />
       <AboutSection />
-      <ServiceSection />
+      <AboutWork />
       <FaqSection />
       <NewFill>
         <ThreeMe />
