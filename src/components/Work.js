@@ -1,37 +1,54 @@
 import React from "react";
+//Styled
 import styled from "styled-components/macro";
+import { Image, Links, Project } from "../styles";
 //React Router Links
 import { Link } from "react-router-dom";
 //Images
-import virtual from "../img/virtual/virtual_ireland.gif";
-import virtual_home from "../img/virtual/virtual_home.JPG";
-import virtual_north from "../img/virtual/virtual_north.JPG";
-import virtual_ballintoy from "../img/virtual/virtual_ballintoy.JPG";
-import ThreeMe from "../components/ThreeMe";
-//styles
-import { HeadLine, Description, DescriptionStyle, Links } from "../styles";
+import virtual from "../img/virtual/virtual_ireland.JPG";
+import virtual_res from "../img/virtual/virtual_res.png";
+import seanmc from "../img/seanmc/seanmc.JPG";
+import mctastic from "../img/mctastic/mctastic.JPG";
+import purr from "../img/purr/purr.JPG";
+import ThreeMe from "./ThreeMe";
+import McTasticLogo from "../img/mctastic/mclogo.png";
 //Animations
 import { motion } from "framer-motion";
-import { pageAnimation, sliderContainer, slider, fadePage } from "../animation";
-import ScrollTop from "../components/ScrollTop";
+import {
+  fade,
+  photoAnim,
+  lineAnim,
+  slider,
+  pageAnimation,
+  sliderContainer,
+  projectContainer,
+} from "../animation";
+import { useScroll } from "./useScroll";
+import ScrollTop from "./ScrollTop";
 //Bootstrap
-import { Carousel, Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 
-const Virtual = () => {
+const Work = () => {
+  const [element, controls] = useScroll();
+  const [element2, controls2] = useScroll();
+  const [element3, controls3] = useScroll();
   return (
-    <motion.div
+    <MyWork
       variants={pageAnimation}
+      exit="exit"
       initial="hidden"
       animate="show"
-      exit="exit"
-      style={{ background: "#fff" }}
+      className="my_work"
+      style={{ background: "white" }}
     >
-      <sliderContainer>
+      <ScrollTop />
+      <motion.div variants={sliderContainer}>
         <Frame1 variants={slider}></Frame1>
         <Frame2 variants={slider}></Frame2>
         <Frame3 variants={slider}></Frame3>
-      </sliderContainer>
-      <motion.div variants={fadePage}>
+        <Frame4 variants={slider}></Frame4>
+      </motion.div>
+      <Project variants={projectContainer} className="project">
         <VirtualHead>
           <svg
             id="vi-heading"
@@ -125,95 +142,175 @@ const Virtual = () => {
             />
           </svg>
         </VirtualHead>
-        <Container>
-          <Row>
-            <Col>
-              <Carousel variant="dark">
-                <Carousel.Item interval={1500}>
-                  <img
-                    className="d-block w-100"
-                    src={virtual_home}
-                    alt="Home Page"
-                  />
-                </Carousel.Item>
-                <Carousel.Item interval={1500}>
-                  <img
-                    className="d-block w-100"
-                    src={virtual_north}
-                    alt="Tour Page"
-                  />
-                </Carousel.Item>
-                <Carousel.Item interval={1500}>
-                  <img
-                    className="d-block w-100"
-                    src={virtual_ballintoy}
-                    alt="Location Page"
-                  />
-                </Carousel.Item>
-              </Carousel>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <HeadLine></HeadLine>
-              <Description>
-                <DescriptionStyle>
-                  <h3>HTML & CSS</h3>
-                  <VirtualLine />
-                  <p>
-                    VI is a virtual tour of Ireland aimed at people planning on
-                    visiting Ireland, people who cannot visit or people who want
-                    to look back on trips to some of Ireland’s most beautiful
-                    sites.
-                  </p>
-                  <Links>
-                    <a
-                      rel="noopner"
-                      target="blank"
-                      href="https://sean-mc-mahon.github.io/ms1virtualireland/index.html"
-                    >
-                      Live Site
-                    </a>
-                    <hr />
-                    <a
-                      rel="noopner"
-                      target="blank"
-                      href="https://github.com/Sean-Mc-Mahon/ms1virtualireland"
-                    >
-                      Repo
-                    </a>
-                  </Links>
-                </DescriptionStyle>
-              </Description>
-            </Col>
-          </Row>
-        </Container>
-        <NewFill>
-          <ThreeMe />
-        </NewFill>
-      </motion.div>
-
-      <ScrollTop />
-    </motion.div>
+        <motion.div variants={lineAnim} className="line"></motion.div>
+        <Hide>
+          <Container>
+            <Row>
+              <Col md={6}>
+                <motion.img
+                  variants={photoAnim}
+                  src={virtual_res}
+                  alt="Virtual Ireland"
+                />
+              </Col>
+              <Col md={6}>
+                <ProjectRight variants={fade}>
+                  <div className="top">
+                    <p>
+                      VI is a virtual tour of Ireland aimed at people planning
+                      on visiting Ireland, people who cannot visit or people who
+                      want to look back on trips to some of Ireland’s most
+                      beautiful sites.
+                    </p>
+                  </div>
+                  <div className="bottom">
+                    <Icons>
+                      <ul>
+                        <li>
+                          <i class="devicon-html5-plain"></i>
+                        </li>
+                        <li>
+                          <i class="devicon-css3-plain"></i>
+                        </li>
+                        <li>
+                          <i class="devicon-javascript-plain"></i>
+                        </li>
+                        <li>
+                          <i class="devicon-git-plain"></i>
+                        </li>
+                        <li>
+                          <i class="devicon-github-original"></i>
+                        </li>
+                        <li>
+                          <i class="devicon-bootstrap-plain"></i>
+                        </li>
+                        <li>
+                          <i class="devicon-vscode-plain"></i>
+                        </li>
+                      </ul>
+                    </Icons>
+                    <Links variants={fade}>
+                      <a
+                        rel="noopner"
+                        target="blank"
+                        href="https://sean-mc-mahon.github.io/ms1virtualireland/index.html"
+                      >
+                        Live Site
+                      </a>
+                      <a
+                        rel="noopner"
+                        target="blank"
+                        href="https://github.com/Sean-Mc-Mahon/ms1virtualireland"
+                      >
+                        Repo
+                      </a>
+                    </Links>
+                  </div>
+                </ProjectRight>
+              </Col>
+            </Row>
+          </Container>
+        </Hide>
+      </Project>
+      <Project
+        transition={{ duration: 0.5 }}
+        ref={element}
+        variants={projectContainer}
+        animate={controls}
+        initial="hidden"
+      >
+        <h2>Sean Mc Designs</h2>
+        <motion.div variants={lineAnim} className="line"></motion.div>
+        <Link to="/work/seanmc">
+          <img src={seanmc} alt="Sean Mc Designs" />
+        </Link>
+      </Project>
+      <Project
+        transition={{ duration: 0.5 }}
+        ref={element2}
+        variants={projectContainer}
+        animate={controls2}
+        initial="hidden"
+        className="mctastic"
+      >
+        <h2>McTastic Recipes</h2>
+        <img className="mctastic-logo" src={McTasticLogo} alt="" />
+        <motion.div variants={lineAnim} className="line"></motion.div>
+        <Link to="/work/mctastic">
+          <Hide>
+            <img src={mctastic} alt="McTastic Recipes" />
+          </Hide>
+        </Link>
+      </Project>
+      <Project
+        transition={{ duration: 0.5 }}
+        ref={element3}
+        variants={projectContainer}
+        animate={controls3}
+        initial="hidden"
+      >
+        <h2>Inner Purr</h2>
+        <motion.div variants={lineAnim} className="line"></motion.div>
+        <Link to="/work/purr">
+          <img src={purr} alt="Inner Purr" />
+        </Link>
+      </Project>
+      <NewFill>
+        <ThreeMe />
+      </NewFill>
+    </MyWork>
   );
 };
-
 const NewFill = styled.div`
   .fill svg path {
-    fill: #047b17;
+    fill: #282828;
+  }
+  .fill {
+    :hover {
+      svg path {
+        fill: var(--yellow);
+        -webkit-filter: drop-shadow(0px 0px 5px var(--yellow));
+        filter: drop-shadow(0px 0px 5px var(--yellow));
+      }
+    }
+  }
+`;
+const MyWork = styled(motion.div)`
+  min-height: 100vh;
+  overflow: hidden;
+  padding-top: 1rem;
+  @media (min-width: 992px) {
+    padding: 3rem;
+  }
+  @media (min-width: 1200px) {
+    padding: 5rem;
   }
 `;
 
-const VirtualLine = styled.div`
-  width: 100%;
-  background: #047b17;
-  height: 0.5rem;
-  margin: 1rem 0rem;
+const Hide = styled.div`
+  overflow: hidden;
 `;
 
-const Details = styled.div`
-  color: white;
+//Frame animation
+const Frame1 = styled(motion.div)`
+  position: fixed;
+  top: 10%;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #fffebf;
+  z-index: 20;
 `;
+const Frame2 = styled(Frame1)`
+  background: #ff8efb;
+`;
+const Frame3 = styled(Frame1)`
+  background: #8ed2ff;
+`;
+const Frame4 = styled(Frame1)`
+  background: #8effa0;
+`;
+
 const VirtualHead = styled.div`
   padding: 1rem;
   max-width: 600px;
@@ -317,20 +414,34 @@ const VirtualHead = styled.div`
   }
 `;
 
-//Frame animation
-const Frame1 = styled(motion.div)`
-  position: fixed;
-  top: 10%;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background: #447924;
-  z-index: 20;
+const Icons = styled(motion.div)`
+  ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    position: relative;
+    padding-right: 0.75rem;
+    font-size: 1.5rem;
+    color: #282828;
+  }
 `;
-const Frame2 = styled(Frame1)`
-  background: #f8f9fa;
+
+const ProjectRight = styled(motion.div)`
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  flex-direction: column;
+  .top {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+  }
 `;
-const Frame3 = styled(Frame1)`
-  background: #37474f;
-`;
-export default Virtual;
+
+export default Work;

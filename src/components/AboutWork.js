@@ -25,9 +25,6 @@ function AboutWork() {
       className="work"
     >
       <WorkCards>
-        <h2>
-          Clean and <span>beautiful</span> UX design
-        </h2>
         <Cards>
           <Link to="/virtual">
             <Card>

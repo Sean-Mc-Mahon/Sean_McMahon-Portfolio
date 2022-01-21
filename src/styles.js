@@ -69,6 +69,30 @@ export const Hide = styled.div`
 `;
 
 //Project Pages
+export const Project = styled(motion.div)`
+  padding-bottom: 5rem;
+  p {
+    color: #282828;
+  }
+  .line {
+    height: 0.5rem;
+    background: var(--yellow);
+    margin-bottom: 3rem;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  h2 {
+    padding-left: 1rem;
+  }
+  @media (min-width: 992px) {
+    h2 {
+      padding: 0;
+    }
+  }
+`;
 export const HeadLine = styled.div`
   display: flex;
   justify-content: center;
@@ -88,13 +112,12 @@ export const DescriptionStyle = styled.div`
   }
   .line {
     width: 100%;
-    background: #ffc107;
+    background: var(--yellow);
     height: 0.5rem;
     margin: 1rem 0rem;
   }
   p {
     padding: 2rem 0rem;
-    color: black;
   }
 `;
 export const ImageDisplay = styled.div`
@@ -105,29 +128,31 @@ export const ImageDisplay = styled.div`
     object-fit: cover;
   }
 `;
-export const Links = styled.div`
-  font-weight: bolder;
+export const Links = styled(motion.div)`
   display: flex;
   justify-content: center;
   align-items: center;
-  hr {
-    width: 3px;
-    height: 15px;
-    background: #1b1b1b;
-    @media (min-width: 992px) {
-      width: 5px;
-      height: 25px;
+  margin: 0.5rem 0;
+  a {
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border: 3px solid #282828;
+    background: transparent;
+    color: #282828;
+    transition: all 0.5s ease;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    margin-right: 1rem;
+    &:hover {
+      background-color: #282828;
+      color: var(--yellow);
+      -webkit-filter: drop-shadow(0px 0px 5px #282828);
+      filter: drop-shadow(0px 0px 5px #282828);
     }
   }
-  a {
-    text-decoration: none;
-    color: #1b1b1b;
-    padding: 1rem;
-    :hover {
-      font-size: 1.5rem;
-    }
-    @media (min-width: 992px) {
-      font-size: 1.5rem;
-    }
+  @media (min-width: 768px) {
+    justify-content: start;
   }
 `;

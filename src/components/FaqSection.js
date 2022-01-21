@@ -73,6 +73,7 @@ const FaqSection = () => {
 
 const Faq = styled(About)`
   display: block;
+  margin-top: 5rem;
   span {
     display: block;
   }

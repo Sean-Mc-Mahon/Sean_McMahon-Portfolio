@@ -4,7 +4,7 @@ import GlobalStyle from "./components/GlobalStyle";
 //Import Pages
 import AboutUs from "./pages/AboutUs";
 import Contact from "./pages/Contact";
-import Work from "./pages/Work";
+import Work from "./components/Work";
 import Virtual from "./pages/Virtual";
 import Nav from "./components/nav";
 import Footer from "./components/footer";

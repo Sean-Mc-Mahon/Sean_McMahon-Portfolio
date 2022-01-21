@@ -6,7 +6,14 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box
 }
+
+html {
+    --yellow: #ffc107;
+    --grey: #282828
+    --black: #1b1b1b
+
 }
+
 body{
     background: #1b1b1b;
     font-family: 'Inter', sans-serif;
@@ -17,16 +24,16 @@ button{
     font-size: 1.1rem;
     cursor: pointer;
     padding: 1rem 2rem;
-    border: 3px solid #ffc107;
+    border: 3px solid var(--yellow);
     background: transparent;
     color: white;
     transition: all 0.5s ease;
     font-family: 'Inter', sans-serif;
     &:hover{
-        background-color: #ffc107;
+        background-color: var(--yellow);
         color: #1b1b1b;
-        -webkit-filter: drop-shadow(0px 0px 5px #ffc107);
-    filter: drop-shadow(0px 0px 5px #ffc107);
+        -webkit-filter: drop-shadow(0px 0px 5px var(--yellow));
+    filter: drop-shadow(0px 0px 5px var(--yellow));
     }
 }
 h2{
@@ -45,16 +52,19 @@ a{
     }
 span{
     font-weight: bold;
-    color:#ffc107;
+    color:var(--yellow);
     :hover{
-        -webkit-filter: drop-shadow(0px 0px 5px #ffc107);
-        filter: drop-shadow(0px 0px 5px #ffc107)}
+        -webkit-filter: drop-shadow(0px 0px 5px var(--yellow));
+        filter: drop-shadow(0px 0px 5px var(--yellow))}
     }
 p{
-    padding: 2rem 0rem;
+    padding: 0.5rem 0rem;
     color: #ccc;
     font-size: 1.4rem;
-    line-height: 150%;
+    line-height: 125%;
     }
+.p-0{
+    padding: 0;
+}
 `;
 export default GlobalStyle;

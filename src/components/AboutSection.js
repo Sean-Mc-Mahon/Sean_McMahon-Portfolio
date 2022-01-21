@@ -42,8 +42,17 @@ const aboutSection = () => {
               <motion.p variants={fade}>
                 Contact me for any projects you have in mind.
               </motion.p>
-              <motion.button variants={fade}>Contact</motion.button>
+              <a href="#foot">
+                <motion.button variants={fade}>Contact</motion.button>
+              </a>
             </HomeDescription>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <h2>
+              Clean and <span>beautiful</span> UX design
+            </h2>
           </Col>
         </Row>
       </Container>

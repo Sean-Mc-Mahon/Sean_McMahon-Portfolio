@@ -8,7 +8,7 @@ import { useLocation } from "react-router-dom/cjs/react-router-dom.min";
 const Footer = () => {
   const { pathname } = useLocation();
   return (
-    <StyledFooter>
+    <StyledFooter id="foot">
       <Container>
         <Row>
           <Col md={6} className="contact-details">
@@ -50,7 +50,6 @@ const Footer = () => {
 const StyledFooter = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: center;
   min-height: 10vh;
   margin: auto;
   justify-content: space-between;
@@ -104,9 +103,9 @@ const StyledFooter = styled.div`
   .phone,
   .email {
     :hover {
-      color: #ffc107;
-      -webkit-filter: drop-shadow(0px 0px 5px #ffc107);
-      filter: drop-shadow(0px 0px 5px #ffc107);
+      color: var(--yellow);
+      -webkit-filter: drop-shadow(0px 0px 5px var(--yellow));
+      filter: drop-shadow(0px 0px 5px var(--yellow));
     }
   }
   @media (min-width: 992px) {
