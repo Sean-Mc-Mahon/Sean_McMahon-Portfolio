@@ -88,6 +88,9 @@ export const Project = styled(motion.div)`
     padding-left: 1rem;
   }
   @media (min-width: 992px) {
+    .container {
+      padding: 0 5rem 5rem;
+    }
     h2 {
       padding: 0;
     }
@@ -125,109 +128,110 @@ export const ProjectRight = styled(motion.div)`
 `;
 
 //Virtual Ireland
-export const VirtualHead = styled.div`
-  padding: 1rem;
-  max-width: 600px;
-  margin: auto;
-  @media (min-width: 992px) {
-    padding: 2rem 5rem;
-  }
-  @media (min-width: 992px) {
-    max-width: 700px;
-    padding: 3rem 5rem;
-  }
+export const Virtual = styled(Project)`
+  .virtual-head {
+    padding: 1rem;
+    max-width: 600px;
+    margin: auto;
+    @media (min-width: 992px) {
+      padding: 2rem 5rem;
+    }
+    @media (min-width: 992px) {
+      max-width: 700px;
+      padding: 3rem 5rem;
+    }
 
-  #vi-heading path:nth-child(1) {
-    stroke-dasharray: 450px;
-    stroke-dashoffset: 450px;
-    animation: line-anim 6s ease forwards 2s;
-  }
+    #vi-heading path:nth-child(1) {
+      stroke-dasharray: 450px;
+      stroke-dashoffset: 450px;
+      animation: line-anim 6s ease forwards 2s;
+    }
 
-  #vi-heading path:nth-child(2) {
-    stroke-dasharray: 450px;
-    stroke-dashoffset: 450px;
-    animation: line-anim 6s ease forwards 2.3s;
-  }
+    #vi-heading path:nth-child(2) {
+      stroke-dasharray: 450px;
+      stroke-dashoffset: 450px;
+      animation: line-anim 6s ease forwards 2.3s;
+    }
 
-  #vi-heading path:nth-child(3) {
-    stroke-dasharray: 500px;
-    stroke-dashoffset: 500px;
-    animation: line-anim 6s ease forwards 2.3s;
-  }
+    #vi-heading path:nth-child(3) {
+      stroke-dasharray: 500px;
+      stroke-dashoffset: 500px;
+      animation: line-anim 6s ease forwards 2.3s;
+    }
 
-  #vi-heading path:nth-child(4) {
-    stroke-dasharray: 500px;
-    stroke-dashoffset: 500px;
-    animation: line-anim 6s ease forwards 2.6s;
-  }
+    #vi-heading path:nth-child(4) {
+      stroke-dasharray: 500px;
+      stroke-dashoffset: 500px;
+      animation: line-anim 6s ease forwards 2.6s;
+    }
 
-  #vi-heading path:nth-child(5) {
-    stroke-dasharray: 500px;
-    stroke-dashoffset: 500px;
-    animation: line-anim 6s ease forwards 2.9s;
-  }
+    #vi-heading path:nth-child(5) {
+      stroke-dasharray: 500px;
+      stroke-dashoffset: 500px;
+      animation: line-anim 6s ease forwards 2.9s;
+    }
 
-  #vi-heading path:nth-child(6) {
-    stroke-dasharray: 750px;
-    stroke-dashoffset: 750px;
-    animation: line-anim 6s ease forwards 3.2s;
-  }
+    #vi-heading path:nth-child(6) {
+      stroke-dasharray: 750px;
+      stroke-dashoffset: 750px;
+      animation: line-anim 6s ease forwards 3.2s;
+    }
 
-  #vi-heading path:nth-child(7) {
-    stroke-dasharray: 650px;
-    stroke-dashoffset: 650px;
-    animation: line-anim 6s ease forwards 3.5s;
-  }
+    #vi-heading path:nth-child(7) {
+      stroke-dasharray: 650px;
+      stroke-dashoffset: 650px;
+      animation: line-anim 6s ease forwards 3.5s;
+    }
 
-  #vi-heading path:nth-child(8) {
-    stroke-dasharray: 500px;
-    stroke-dashoffset: 500px;
-    animation: line-anim 6s ease forwards 2s;
-  }
+    #vi-heading path:nth-child(8) {
+      stroke-dasharray: 500px;
+      stroke-dashoffset: 500px;
+      animation: line-anim 6s ease forwards 2s;
+    }
 
-  #vi-heading path:nth-child(9) {
-    stroke-dasharray: 500px;
-    stroke-dashoffset: 500px;
-    animation: line-anim 6s ease forwards 2s;
-  }
+    #vi-heading path:nth-child(9) {
+      stroke-dasharray: 500px;
+      stroke-dashoffset: 500px;
+      animation: line-anim 6s ease forwards 2s;
+    }
 
-  #vi-heading path:nth-child(10) {
-    stroke-dasharray: 500px;
-    stroke-dashoffset: 500px;
-    animation: line-anim 6s ease forwards 2.3s;
-  }
+    #vi-heading path:nth-child(10) {
+      stroke-dasharray: 500px;
+      stroke-dashoffset: 500px;
+      animation: line-anim 6s ease forwards 2.3s;
+    }
 
-  #vi-heading path:nth-child(11) {
-    stroke-dasharray: 550px;
-    stroke-dashoffset: 550px;
-    animation: line-anim 6s ease forwards 2.6s;
-  }
+    #vi-heading path:nth-child(11) {
+      stroke-dasharray: 550px;
+      stroke-dashoffset: 550px;
+      animation: line-anim 6s ease forwards 2.6s;
+    }
 
-  #vi-heading path:nth-child(12) {
-    stroke-dasharray: 500px;
-    stroke-dashoffset: 500px;
-    animation: line-anim 6s ease forwards 3.2s;
-  }
+    #vi-heading path:nth-child(12) {
+      stroke-dasharray: 500px;
+      stroke-dashoffset: 500px;
+      animation: line-anim 6s ease forwards 3.2s;
+    }
 
-  #vi-heading path:nth-child(13) {
-    stroke-dasharray: 500px;
-    stroke-dashoffset: 500px;
-    animation: line-anim 6s ease forwards 3s;
-  }
+    #vi-heading path:nth-child(13) {
+      stroke-dasharray: 500px;
+      stroke-dashoffset: 500px;
+      animation: line-anim 6s ease forwards 3s;
+    }
 
-  #vi-heading path:nth-child(14) {
-    stroke-dasharray: 615px;
-    stroke-dashoffset: 615px;
-    animation: line-anim 6s ease forwards 3.8s;
-  }
+    #vi-heading path:nth-child(14) {
+      stroke-dasharray: 615px;
+      stroke-dashoffset: 615px;
+      animation: line-anim 6s ease forwards 3.8s;
+    }
 
-  @keyframes line-anim {
-    to {
-      stroke-dashoffset: 0;
+    @keyframes line-anim {
+      to {
+        stroke-dashoffset: 0;
+      }
     }
   }
 `;
-
 //McTastic Recipes
 export const McTastic = styled(Project)`
   .mctastic-logo {
@@ -284,6 +288,7 @@ export const Links = styled(motion.div)`
       color: var(--yellow);
       -webkit-filter: drop-shadow(0px 0px 5px #282828);
       filter: drop-shadow(0px 0px 5px #282828);
+      text-shadow: 0px 0px 3px var(--yellow);
     }
   }
   @media (min-width: 768px) {

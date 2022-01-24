@@ -7,7 +7,7 @@ export const pageAnimation = {
     transition: {
       duration: 0.5,
       when: "beforeChildren",
-      staggerChildren: 0.25,
+      staggerChildren: 0.05,
     },
   },
   exit: {
@@ -27,6 +27,14 @@ export const titleAnim = {
 };
 
 export const fade = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: { type: "tween", ease: "easeOut", duration: 1, delay: 0.5 },
+  },
+};
+
+export const svgAnim = {
   hidden: { opacity: 0 },
   show: {
     opacity: 1,
@@ -129,7 +137,7 @@ export const projectContainer = {
   show: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.1,
+      staggerChildren: 0.05,
       ease: "easeOut",
       duration: 1,
       when: "beforeChildren",

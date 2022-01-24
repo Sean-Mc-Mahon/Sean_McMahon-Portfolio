@@ -8,7 +8,6 @@ import Work from "./components/Work";
 import Virtual from "./pages/Virtual";
 import Nav from "./components/nav";
 import Footer from "./components/footer";
-import WorkDetail from "./pages/WorkDetail";
 //Router
 import { Switch, Route, useLocation } from "react-router-dom";
 //Animation
@@ -36,9 +35,6 @@ function App() {
           </Route>
           <Route path="/work" exact>
             <Work />
-          </Route>
-          <Route path="/work/:id">
-            <WorkDetail />
           </Route>
           <Route path="/virtual" exact>
             <Virtual />
