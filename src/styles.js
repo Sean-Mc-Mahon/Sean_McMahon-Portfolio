@@ -93,6 +93,148 @@ export const Project = styled(motion.div)`
     }
   }
 `;
+
+export const Icons = styled(motion.div)`
+  ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    position: relative;
+    padding-right: 0.75rem;
+    font-size: 1.5rem;
+    color: #282828;
+  }
+`;
+
+export const ProjectRight = styled(motion.div)`
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  flex-direction: column;
+  .top {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+  }
+`;
+
+//Virtual Ireland
+export const VirtualHead = styled.div`
+  padding: 1rem;
+  max-width: 600px;
+  margin: auto;
+  @media (min-width: 992px) {
+    padding: 2rem 5rem;
+  }
+  @media (min-width: 992px) {
+    max-width: 700px;
+    padding: 3rem 5rem;
+  }
+
+  #vi-heading path:nth-child(1) {
+    stroke-dasharray: 450px;
+    stroke-dashoffset: 450px;
+    animation: line-anim 6s ease forwards 2s;
+  }
+
+  #vi-heading path:nth-child(2) {
+    stroke-dasharray: 450px;
+    stroke-dashoffset: 450px;
+    animation: line-anim 6s ease forwards 2.3s;
+  }
+
+  #vi-heading path:nth-child(3) {
+    stroke-dasharray: 500px;
+    stroke-dashoffset: 500px;
+    animation: line-anim 6s ease forwards 2.3s;
+  }
+
+  #vi-heading path:nth-child(4) {
+    stroke-dasharray: 500px;
+    stroke-dashoffset: 500px;
+    animation: line-anim 6s ease forwards 2.6s;
+  }
+
+  #vi-heading path:nth-child(5) {
+    stroke-dasharray: 500px;
+    stroke-dashoffset: 500px;
+    animation: line-anim 6s ease forwards 2.9s;
+  }
+
+  #vi-heading path:nth-child(6) {
+    stroke-dasharray: 750px;
+    stroke-dashoffset: 750px;
+    animation: line-anim 6s ease forwards 3.2s;
+  }
+
+  #vi-heading path:nth-child(7) {
+    stroke-dasharray: 650px;
+    stroke-dashoffset: 650px;
+    animation: line-anim 6s ease forwards 3.5s;
+  }
+
+  #vi-heading path:nth-child(8) {
+    stroke-dasharray: 500px;
+    stroke-dashoffset: 500px;
+    animation: line-anim 6s ease forwards 2s;
+  }
+
+  #vi-heading path:nth-child(9) {
+    stroke-dasharray: 500px;
+    stroke-dashoffset: 500px;
+    animation: line-anim 6s ease forwards 2s;
+  }
+
+  #vi-heading path:nth-child(10) {
+    stroke-dasharray: 500px;
+    stroke-dashoffset: 500px;
+    animation: line-anim 6s ease forwards 2.3s;
+  }
+
+  #vi-heading path:nth-child(11) {
+    stroke-dasharray: 550px;
+    stroke-dashoffset: 550px;
+    animation: line-anim 6s ease forwards 2.6s;
+  }
+
+  #vi-heading path:nth-child(12) {
+    stroke-dasharray: 500px;
+    stroke-dashoffset: 500px;
+    animation: line-anim 6s ease forwards 3.2s;
+  }
+
+  #vi-heading path:nth-child(13) {
+    stroke-dasharray: 500px;
+    stroke-dashoffset: 500px;
+    animation: line-anim 6s ease forwards 3s;
+  }
+
+  #vi-heading path:nth-child(14) {
+    stroke-dasharray: 615px;
+    stroke-dashoffset: 615px;
+    animation: line-anim 6s ease forwards 3.8s;
+  }
+
+  @keyframes line-anim {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+`;
+
+//McTastic Recipes
+export const McTastic = styled(Project)`
+  .mctastic-logo {
+    height: 40px;
+    width: 40px;
+  }
+`;
 export const HeadLine = styled.div`
   display: flex;
   justify-content: center;
@@ -118,14 +260,6 @@ export const DescriptionStyle = styled.div`
   }
   p {
     padding: 2rem 0rem;
-  }
-`;
-export const ImageDisplay = styled.div`
-  min-height: 50vh;
-  img {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
   }
 `;
 export const Links = styled(motion.div)`
