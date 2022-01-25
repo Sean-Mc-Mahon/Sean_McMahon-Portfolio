@@ -26,6 +26,14 @@ export const titleAnim = {
   },
 };
 
+export const headerAnim = {
+  hidden: { y: 200 },
+  show: {
+    y: 0,
+    transition: { duration: 0.75, ease: "easeOut" },
+  },
+};
+
 export const fade = {
   hidden: { opacity: 0 },
   show: {
@@ -39,20 +47,6 @@ export const svgAnim = {
   show: {
     opacity: 1,
     transition: { type: "tween", ease: "easeOut", duration: 1, delay: 0.5 },
-  },
-};
-
-export const fadePage = {
-  hidden: { opacity: 0 },
-  show: {
-    opacity: 1,
-    transition: {
-      type: "tween",
-      ease: "easeOut",
-      duration: 3,
-      delay: 1,
-      when: "beforeChildren",
-    },
   },
 };
 
@@ -74,32 +68,10 @@ export const lineAnim = {
   hidden: { width: "0%" },
   show: {
     width: "100%",
-    transition: { duration: 1 },
+    transition: { duration: 0.2 },
   },
 };
 
-export const slider = {
-  hidden: { x: "-130%", skew: "45deg" },
-  show: {
-    x: "100%",
-    skew: "0deg",
-    transition: { type: "tween", ease: "easeOut", duration: 1 },
-  },
-};
-export const sliderContainer = {
-  hidden: {
-    opacity: 1,
-  },
-  show: {
-    opacity: 1,
-
-    transition: {
-      staggerChildren: 0.15,
-      ease: "easeOut",
-      duration: 1,
-    },
-  },
-};
 export const scrollReveal = {
   hidden: {
     opacity: 0,
@@ -130,6 +102,7 @@ export const scrollRevealRight = {
     },
   },
 };
+
 export const projectContainer = {
   hidden: {
     opacity: 0,
@@ -139,7 +112,7 @@ export const projectContainer = {
     transition: {
       staggerChildren: 0.05,
       ease: "easeOut",
-      duration: 1,
+      duration: 0.1,
       when: "beforeChildren",
     },
   },

@@ -1,7 +1,14 @@
 import React from "react";
 //Styled
 import styled from "styled-components/macro";
-import { Links, Project, ProjectRight, Icons, Hide } from "../styles";
+import {
+  Links,
+  Project,
+  ProjectHead,
+  ProjectRight,
+  Icons,
+  Hide,
+} from "../styles";
 //Animation
 import { motion } from "framer-motion";
 import { fade, photoAnim, lineAnim, projectContainer } from "../animation";
@@ -10,7 +17,7 @@ import { useScroll } from "./useScroll";
 //Bootstrap
 import { Container, Row, Col } from "react-bootstrap";
 //Images
-import seanmc_res from "../img/seanmc/seanmc_res.png";
+import seanmc_res from "../img/seanmc/seanmc_res.webp";
 
 const SeanMc = () => {
   const [element, controls] = useScroll();
@@ -23,7 +30,7 @@ const SeanMc = () => {
       animate={controls}
       initial="hidden"
     >
-      <motion.div variants={fade} className="seanmc-head">
+      <ProjectHead variants={fade} className="seanmc-head">
         <svg
           width="100%"
           height="100%"
@@ -105,8 +112,11 @@ const SeanMc = () => {
             </g>
           </g>
         </svg>
-        <h2>SeanMc-Digital Design</h2>
-      </motion.div>
+        <div className="logo-text">
+          <h2 className="logo-head1">SeanMc</h2>
+          <h2 className="logo-head2">-Digital Design</h2>
+        </div>
+      </ProjectHead>
       <motion.div variants={lineAnim} className="line"></motion.div>
       <Hide>
         <Container>
@@ -148,20 +158,23 @@ const SeanMc = () => {
                       <li>
                         <i class="devicon-vscode-plain"></i>
                       </li>
+                      <li>
+                        <i class="devicon-sass-original"></i>
+                      </li>
                     </ul>
                   </Icons>
                   <Links variants={fade}>
                     <a
                       rel="noopner"
                       target="blank"
-                      href="https://sean-mc-mahon.github.io/ms1virtualireland/index.html"
+                      href="https://sean-mc-mahon.github.io/ms2-seanmcmahon-digital-design/"
                     >
                       Live Site
                     </a>
                     <a
                       rel="noopner"
                       target="blank"
-                      href="https://github.com/Sean-Mc-Mahon/ms1virtualireland"
+                      href="https://github.com/Sean-Mc-Mahon/ms2-seanmcmahon-digital-design"
                     >
                       Repo
                     </a>
@@ -179,15 +192,37 @@ const SeanMc = () => {
 const SeanMcProject = styled(Project)`
   .seanmc-head {
     display: flex;
-    padding: 1rem;
-    max-width: 600px;
-    margin: auto;
-    @media (min-width: 992px) {
-      padding: 2rem 5rem;
+    align-items: center;
+    justify-content: center;
+    font-family: "Lily Script One", cursive;
+    h2 {
+      margin: 0;
     }
-    @media (min-width: 992px) {
-      max-width: 700px;
-      padding: 3rem 5rem;
+    .logo-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @media (min-width: 576px) {
+        flex-direction: row;
+      }
+    }
+    .logo-head1 {
+      font-size: calc(1.3rem + 1vw);
+      @media (min-width: 576px) {
+        font-size: calc(1.7rem + 1vw);
+      }
+      @media (min-width: 1400px) {
+        font-size: 41.2px;
+      }
+    }
+    .logo-head2 {
+      font-size: calc(0.5rem + 1vw);
+      @media (min-width: 576px) {
+        font-size: calc(1.7rem + 1vw);
+      }
+      @media (min-width: 1400px) {
+        font-size: 41.2px;
+      }
     }
     svg {
       max-width: 100px;

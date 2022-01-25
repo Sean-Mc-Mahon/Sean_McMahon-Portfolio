@@ -1,33 +1,33 @@
 import React from "react";
 //Styled
 import styled from "styled-components/macro";
-import { Links, Project, ProjectRight, McTastic, Icons } from "../styles";
+import { Links, Project, ProjectRight, Icons } from "../styles";
 //React Router Links
 import { Link } from "react-router-dom";
 //Images
 import virtual from "../img/virtual/virtual_ireland.JPG";
 import virtual_res from "../img/virtual/virtual_res.png";
 import seanmc from "../img/seanmc/seanmc.JPG";
-import mctastic from "../img/mctastic/mctastic.JPG";
-import purr from "../img/purr/purr.JPG";
 import ThreeMe from "./ThreeMe";
-import McTasticLogo from "../img/mctastic/mclogo.png";
 //Animations
 import { motion } from "framer-motion";
 import {
   fade,
   photoAnim,
   lineAnim,
+  headerAnim,
   pageAnimation,
   projectContainer,
 } from "../animation";
-import { useScroll } from "./useScroll";
+import { useScroll, useScrollForward } from "./useScroll";
 import ScrollTop from "./ScrollTop";
 //Bootstrap
 import { Container, Row, Col } from "react-bootstrap";
 //Projects
 import Virtual from "../components/virtual";
 import SeanMc from "../components/seanmc";
+import McTastic from "../components/mctastic";
+import Purr from "../components/purr";
 // Swiper React components
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -37,9 +37,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 const Work = () => {
-  const [element2, controls2] = useScroll();
-  const [element3, controls3] = useScroll();
-  const [element4, controls4] = useScroll();
+  const [element, controls] = useScrollForward();
   return (
     <MyWork
       variants={pageAnimation}
@@ -50,6 +48,16 @@ const Work = () => {
       style={{ background: "white" }}
     >
       <ScrollTop />
+      <Hide
+        variants={headerAnim}
+        ref={element}
+        animate={controls}
+        initial="hidden"
+      >
+        <motion.h2>
+          Clean & <span>beautiful</span> UI/UX
+        </motion.h2>
+      </Hide>
       <Swiper
         // install Swiper modules
         modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -66,53 +74,13 @@ const Work = () => {
         <SwiperSlide>
           <SeanMc />
         </SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
+        <SwiperSlide>
+          <McTastic />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Purr />
+        </SwiperSlide>
       </Swiper>
-      <Virtual />
-      <Project
-        transition={{ duration: 0.5 }}
-        ref={element2}
-        variants={projectContainer}
-        animate={controls2}
-        initial="hidden"
-      >
-        <h2>Sean Mc Designs</h2>
-        <motion.div variants={lineAnim} className="line"></motion.div>
-        <Link to="/work/seanmc">
-          <img src={seanmc} alt="Sean Mc Designs" />
-        </Link>
-      </Project>
-      <McTastic
-        transition={{ duration: 0.5 }}
-        ref={element3}
-        variants={projectContainer}
-        animate={controls3}
-        initial="hidden"
-        className="mctastic"
-      >
-        <h2>McTastic Recipes</h2>
-        <img className="mctastic-logo" src={McTasticLogo} alt="" />
-        <motion.div variants={lineAnim} className="line"></motion.div>
-        <Link to="/work/mctastic">
-          <Hide>
-            <img src={mctastic} alt="McTastic Recipes" />
-          </Hide>
-        </Link>
-      </McTastic>
-      <Project
-        transition={{ duration: 0.5 }}
-        ref={element4}
-        variants={projectContainer}
-        animate={controls4}
-        initial="hidden"
-      >
-        <h2>Inner Purr</h2>
-        <motion.div variants={lineAnim} className="line"></motion.div>
-        <Link to="/work/purr">
-          <img src={purr} alt="Inner Purr" />
-        </Link>
-      </Project>
     </MyWork>
   );
 };
@@ -128,6 +96,7 @@ const MyWork = styled(motion.div)`
   }
   .swiper {
     transition: all 1s;
+    padding-bottom: 1rem;
   }
 
   .swiper-button-next,
@@ -168,7 +137,7 @@ const MyWork = styled(motion.div)`
   }
 `;
 
-const Hide = styled.div`
+const Hide = styled(motion.div)`
   overflow: hidden;
 `;
 

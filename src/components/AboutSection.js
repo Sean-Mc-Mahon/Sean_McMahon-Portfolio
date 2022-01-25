@@ -1,5 +1,5 @@
 import React from "react";
-import profile from "../img/seanmc_poly.jpg";
+import profile from "../img/seanmc_poly.webp";
 //Styled
 import styled from "styled-components/macro";
 import { About, HomeDescription, Image, HeroImage, Hide } from "../styles";
@@ -46,13 +46,6 @@ const aboutSection = () => {
                 <motion.button variants={fade}>Contact</motion.button>
               </a>
             </HomeDescription>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <h2>
-              Clean and <span>beautiful</span> UX design
-            </h2>
           </Col>
         </Row>
       </Container>

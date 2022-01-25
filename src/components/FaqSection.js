@@ -19,7 +19,7 @@ const FaqSection = () => {
       initial="hidden"
     >
       <h2>
-        Any Questions? <span>FAQ</span>
+        Any Questions? <span>About Me</span>
       </h2>
       <AnimateSharedLayout>
         <Toggle title="How do I start?">

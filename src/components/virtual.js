@@ -1,20 +1,27 @@
 import React from "react";
 //Styled
 import styled from "styled-components/macro";
-import { Links, Project, ProjectRight, Icons, Hide } from "../styles";
+import {
+  Links,
+  Project,
+  ProjectHead,
+  ProjectRight,
+  Icons,
+  Hide,
+} from "../styles";
 //Animation
 import { motion } from "framer-motion";
 import { fade, photoAnim, lineAnim, projectContainer } from "../animation";
 
-import { useScroll } from "./useScroll";
+import { useScroll, useScrollForward } from "./useScroll";
 import ScrollTop from "./ScrollTop";
 //Bootstrap
 import { Container, Row, Col } from "react-bootstrap";
 //Images
-import virtual_res from "../img/virtual/virtual_res.png";
+import virtual_res from "../img/virtual/virtual_res.webp";
 
 const Virtual = () => {
-  const [element, controls] = useScroll();
+  const [element, controls] = useScrollForward();
   return (
     <VirtualProject
       className="virtual-ireland"
@@ -24,7 +31,7 @@ const Virtual = () => {
       animate={controls}
       initial="hidden"
     >
-      <motion.div variants={fade} className="virtual-head">
+      <ProjectHead variants={fade} className="virtual-head">
         <svg
           id="vi-heading"
           viewBox="0 0 424 37"
@@ -116,7 +123,7 @@ const Virtual = () => {
             mask="url(#path-1-outside-1)"
           />
         </svg>
-      </motion.div>
+      </ProjectHead>
       <motion.div variants={lineAnim} className="line"></motion.div>
       <Hide>
         <Container>
@@ -191,17 +198,7 @@ const Virtual = () => {
 };
 
 const VirtualProject = styled(Project)`
-  .virtual-head {
-    padding: 1rem;
-    max-width: 600px;
-    margin: auto;
-    @media (min-width: 992px) {
-      padding: 2rem 5rem;
-    }
-    @media (min-width: 992px) {
-      max-width: 700px;
-      padding: 3rem 5rem;
-    }
+  
 
     #vi-heading path:nth-child(1) {
       stroke-dasharray: 450px;

@@ -11,3 +11,12 @@ export const useScroll = () => {
   }
   return [element, controls];
 };
+
+export const useScrollForward = () => {
+  const controls = useAnimation();
+  const [element, view] = useInView({ threshold: 0.5 });
+  if (view) {
+    controls.start("show");
+  }
+  return [element, controls];
+};

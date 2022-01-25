@@ -20,12 +20,17 @@ const AboutUs = () => {
       exit="exit"
     >
       <ScrollTop />
-      <AboutSection />
+      <AboutSection>
+        <a id="top"></a>
+      </AboutSection>
       <WorkContainer>
+        <a id="work"></a>
         <Work />
       </WorkContainer>
 
-      <FaqSection />
+      <FaqSection>
+        <a id="about"></a>
+      </FaqSection>
       <NewFill>
         <ThreeMe />
       </NewFill>
@@ -51,6 +56,10 @@ const NewFill = styled.div`
 const WorkContainer = styled.div`
   background: #fff;
   position: relative;
+  a {
+    position: absolute;
+    top: -96.89px;
+  }
   :before {
     content: "";
     position: absolute;

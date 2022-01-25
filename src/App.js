@@ -5,7 +5,6 @@ import GlobalStyle from "./components/GlobalStyle";
 import AboutUs from "./pages/AboutUs";
 import Contact from "./pages/Contact";
 import Work from "./components/Work";
-import Virtual from "./pages/Virtual";
 import Nav from "./components/nav";
 import Footer from "./components/footer";
 //Router
@@ -35,9 +34,6 @@ function App() {
           </Route>
           <Route path="/work" exact>
             <Work />
-          </Route>
-          <Route path="/virtual" exact>
-            <Virtual />
           </Route>
           <Route path="/contact">
             <Contact />

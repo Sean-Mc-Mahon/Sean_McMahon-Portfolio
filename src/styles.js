@@ -70,14 +70,14 @@ export const Hide = styled.div`
 
 //Project Pages
 export const Project = styled(motion.div)`
-  padding-bottom: 5rem;
+  padding-bottom: 1rem;
   p {
     color: #282828;
   }
   .line {
     height: 0.5rem;
     background: var(--yellow);
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
   }
   img {
     width: 100%;
@@ -87,6 +87,11 @@ export const Project = styled(motion.div)`
   h2 {
     padding-left: 1rem;
   }
+  @media (min-width: 768px) {
+    .container {
+      padding: 0 2rem 2rem;
+    }
+  }
   @media (min-width: 992px) {
     .container {
       padding: 0 5rem 5rem;
@@ -94,6 +99,18 @@ export const Project = styled(motion.div)`
     h2 {
       padding: 0;
     }
+  }
+`;
+
+export const ProjectHead = styled(motion.div)`
+  padding: 0.5rem;
+  max-width: 600px;
+  margin: auto;
+  @media (min-width: 992px) {
+    padding: 2rem 3rem;
+  }
+  @media (min-width: 1200px) {
+    max-width: 700px;
   }
 `;
 
@@ -232,13 +249,7 @@ export const Virtual = styled(Project)`
     }
   }
 `;
-//McTastic Recipes
-export const McTastic = styled(Project)`
-  .mctastic-logo {
-    height: 40px;
-    width: 40px;
-  }
-`;
+
 export const HeadLine = styled.div`
   display: flex;
   justify-content: center;
