@@ -28,6 +28,7 @@ import Virtual from "../components/virtual";
 import SeanMc from "../components/seanmc";
 import McTastic from "../components/mctastic";
 import Purr from "../components/purr";
+import Light from "./light";
 // Swiper React components
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -79,6 +80,23 @@ const Work = () => {
         </SwiperSlide>
         <SwiperSlide>
           <Purr />
+        </SwiperSlide>
+      </Swiper>
+      <Swiper
+        // install Swiper modules
+        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        spaceBetween={20}
+        slidesPerView={1}
+        navigation
+        pagination={{ clickable: true }}
+        onSwiper={(swiper) => console.log(swiper)}
+        onSlideChange={() => console.log("slide change")}
+      >
+        <SwiperSlide>
+          <Light />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Light />
         </SwiperSlide>
       </Swiper>
     </MyWork>

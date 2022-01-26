@@ -173,6 +173,10 @@ function App() {
 
 [Tiny PNG](https://tinypng.com/) is used to compress images.
 
+# Convertio
+
+[Convertio](https://convertio.co/download/3fd4fa0cb9cf032773c5709f30b2d00eea9897/) is used to convert images to webp format.
+
 # OBS
 
 [OBS](https://obsproject.com/) is used to make screen recordings.
