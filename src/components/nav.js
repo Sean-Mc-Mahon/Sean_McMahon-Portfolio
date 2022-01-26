@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components/macro";
-import { motion } from "framer-motion";
 
 const Nav = () => {
   return (
