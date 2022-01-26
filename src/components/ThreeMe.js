@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import styled from "styled-components/macro";
 import me3 from "../img/me3.webp";
 

@@ -13,8 +13,7 @@ import {
 import { motion } from "framer-motion";
 import { fade, photoAnim, lineAnim, projectContainer } from "../animation";
 
-import { useScroll, useScrollForward } from "./useScroll";
-import ScrollTop from "./ScrollTop";
+import { useScrollForward } from "./useScroll";
 //Bootstrap
 import { Container, Row, Col } from "react-bootstrap";
 //Images

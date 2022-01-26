@@ -18,7 +18,7 @@ const FaqSection = () => {
       animate={controls}
       initial="hidden"
     >
-      <a id="about"></a>
+      <span className="anchor" id="about"></span>
       <h2>
         Any Questions? <span>About Me</span>
       </h2>
@@ -74,7 +74,7 @@ const FaqSection = () => {
 
 const Faq = styled(About)`
   position: relative;
-  a {
+  .anchor {
     position: absolute;
     top: 0;
   }

@@ -1,12 +1,8 @@
 import React from "react";
 import styled from "styled-components/macro";
-import { Link } from "react-router-dom";
-import { Container } from "react-bootstrap";
 import { motion } from "framer-motion";
-import { useLocation } from "react-router-dom/cjs/react-router-dom.min";
 
 const Nav = () => {
-  const { pathname } = useLocation();
   return (
     <StyledNav>
       <a href="#top">
@@ -137,20 +133,6 @@ const StyledNav = styled.nav`
     li {
       padding-left: 10rem;
     }
-  }
-`;
-
-const Line = styled(motion.div)`
-  height: 0.3rem;
-  background: var(--yellow);
-  -webkit-filter: drop-shadow(0px 0px 5px var(--yellow));
-  filter: drop-shadow(0px 0px 5px var(--yellow));
-  width: 0;
-  position: absolute;
-  bottom: -20%;
-  left: 25%;
-  @media (min-width: 1200px) {
-    left: 60%;
   }
 `;
 

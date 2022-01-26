@@ -1,28 +1,11 @@
 import React from "react";
 //Styled
 import styled from "styled-components/macro";
-import { Links, Project, ProjectRight, Icons } from "../styles";
-//React Router Links
-import { Link } from "react-router-dom";
-//Images
-import virtual from "../img/virtual/virtual_ireland.JPG";
-import virtual_res from "../img/virtual/virtual_res.png";
-import seanmc from "../img/seanmc/seanmc.JPG";
-import ThreeMe from "./ThreeMe";
 //Animations
 import { motion } from "framer-motion";
-import {
-  fade,
-  photoAnim,
-  lineAnim,
-  headerAnim,
-  pageAnimation,
-  projectContainer,
-} from "../animation";
-import { useScroll, useScrollForward } from "./useScroll";
+import { headerAnim, pageAnimation } from "../animation";
+import { useScrollForward } from "./useScroll";
 import ScrollTop from "./ScrollTop";
-//Bootstrap
-import { Container, Row, Col } from "react-bootstrap";
 //Projects
 import Virtual from "../components/virtual";
 import SeanMc from "../components/seanmc";

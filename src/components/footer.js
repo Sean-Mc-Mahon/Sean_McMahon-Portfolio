@@ -1,15 +1,12 @@
 import React from "react";
 import styled from "styled-components/macro";
-import { Link } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import { motion } from "framer-motion";
-import { useLocation } from "react-router-dom/cjs/react-router-dom.min";
-import { useScroll, useScrollForward } from "./useScroll";
-import { titleAnim, scrollRevealRight } from "../animation";
+import { useScrollForward } from "./useScroll";
+import { scrollRevealRight } from "../animation";
 
 const Footer = () => {
   const [element, controls] = useScrollForward();
-  const { pathname } = useLocation();
   return (
     <StyledFooter id="foot">
       <Container>

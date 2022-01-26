@@ -2,7 +2,7 @@ import React from "react";
 import profile from "../img/seanmc_poly.webp";
 //Styled
 import styled from "styled-components/macro";
-import { About, HomeDescription, Image, HeroImage, Hide } from "../styles";
+import { About, HomeDescription, HeroImage, Hide } from "../styles";
 //Framer Motion
 import { motion } from "framer-motion";
 import { titleAnim, fade, photoAnim } from "../animation";
