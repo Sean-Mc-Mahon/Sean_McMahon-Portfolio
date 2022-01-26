@@ -50,7 +50,7 @@ const Paddy = () => {
                 <div className="top">
                   <p>
                     A resource to ask St Patrick all the things you wanted to
-                    now but were too afraid to ask...
+                    now but were too afraid to ask!
                   </p>
                 </div>
                 <div className="bottom">
