@@ -1,27 +1,24 @@
 {
   "files": {
-    "main.css": "/Sean_McMahon-Portfolio/static/css/main.1a8a0596.css",
-    "main.js": "/Sean_McMahon-Portfolio/static/js/main.0a9113de.js",
+    "main.css": "/Sean_McMahon-Portfolio/static/css/main.b13ed634.css",
+    "main.js": "/Sean_McMahon-Portfolio/static/js/main.ab1d6682.js",
     "static/js/787.53bbb259.chunk.js": "/Sean_McMahon-Portfolio/static/js/787.53bbb259.chunk.js",
-    "static/media/purr.gif": "/Sean_McMahon-Portfolio/static/media/purr.7464ef962867953896b8.gif",
-    "static/media/seanmc.gif": "/Sean_McMahon-Portfolio/static/media/seanmc.26d8c90e38cfd232b2f0.gif",
-    "static/media/mctastic.gif": "/Sean_McMahon-Portfolio/static/media/mctastic.7698fc953380e3a8ad9a.gif",
-    "static/media/virtual_ireland.gif": "/Sean_McMahon-Portfolio/static/media/virtual_ireland.83128156e66055972c10.gif",
-    "static/media/me3.png": "/Sean_McMahon-Portfolio/static/media/me3.9d8c8567b02571e53b9d.png",
-    "static/media/virtual_north.JPG": "/Sean_McMahon-Portfolio/static/media/virtual_north.7366af3b91338b2cc9a8.JPG",
-    "static/media/virtual_ballintoy.JPG": "/Sean_McMahon-Portfolio/static/media/virtual_ballintoy.00aa24bb56ba5dec9a35.JPG",
-    "static/media/virtual_home.JPG": "/Sean_McMahon-Portfolio/static/media/virtual_home.a76f12d1460ed74abfe9.JPG",
-    "static/media/purr.JPG": "/Sean_McMahon-Portfolio/static/media/purr.c4e5de7fd64b818c4dd5.JPG",
-    "static/media/mctastic.JPG": "/Sean_McMahon-Portfolio/static/media/mctastic.67e24105614c6c47305d.JPG",
-    "static/media/seanmc_poly.jpg": "/Sean_McMahon-Portfolio/static/media/seanmc_poly.8022e276742395993f8e.jpg",
-    "static/media/seanmc.JPG": "/Sean_McMahon-Portfolio/static/media/seanmc.e9399f87b1ebf637d57b.JPG",
+    "static/media/me3.webp": "/Sean_McMahon-Portfolio/static/media/me3.df3cfaec94d419fc611c.webp",
+    "static/media/light_res.webp": "/Sean_McMahon-Portfolio/static/media/light_res.de6a21809b779fff929f.webp",
+    "static/media/virtual_res.webp": "/Sean_McMahon-Portfolio/static/media/virtual_res.1f12ead9b0e94772e05d.webp",
+    "static/media/seanmc_res.webp": "/Sean_McMahon-Portfolio/static/media/seanmc_res.8bb179a71c84b957b5d1.webp",
+    "static/media/mctastic_res.webp": "/Sean_McMahon-Portfolio/static/media/mctastic_res.fb6699258c6528138bed.webp",
+    "static/media/paddy_res.webp": "/Sean_McMahon-Portfolio/static/media/paddy_res.57ce3cc6f02d0d6aea83.webp",
+    "static/media/purr_res.webp": "/Sean_McMahon-Portfolio/static/media/purr_res.369d99a4adf26e0e7b8c.webp",
+    "static/media/seanmc_poly.webp": "/Sean_McMahon-Portfolio/static/media/seanmc_poly.6a6f42c37ec0e1fa3bb1.webp",
+    "static/media/paddy_logo.webp": "/Sean_McMahon-Portfolio/static/media/paddy_logo.862309b1d20ddd4bc00b.webp",
     "index.html": "/Sean_McMahon-Portfolio/index.html",
-    "main.1a8a0596.css.map": "/Sean_McMahon-Portfolio/static/css/main.1a8a0596.css.map",
-    "main.0a9113de.js.map": "/Sean_McMahon-Portfolio/static/js/main.0a9113de.js.map",
+    "main.b13ed634.css.map": "/Sean_McMahon-Portfolio/static/css/main.b13ed634.css.map",
+    "main.ab1d6682.js.map": "/Sean_McMahon-Portfolio/static/js/main.ab1d6682.js.map",
     "787.53bbb259.chunk.js.map": "/Sean_McMahon-Portfolio/static/js/787.53bbb259.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1a8a0596.css",
-    "static/js/main.0a9113de.js"
+    "static/css/main.b13ed634.css",
+    "static/js/main.ab1d6682.js"
   ]
 }
