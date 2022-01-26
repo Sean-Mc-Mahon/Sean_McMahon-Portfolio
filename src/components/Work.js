@@ -29,6 +29,7 @@ import SeanMc from "../components/seanmc";
 import McTastic from "../components/mctastic";
 import Purr from "../components/purr";
 import Light from "./light";
+import Paddy from "./paddy";
 // Swiper React components
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -96,7 +97,7 @@ const Work = () => {
           <Light />
         </SwiperSlide>
         <SwiperSlide>
-          <Light />
+          <Paddy />
         </SwiperSlide>
       </Swiper>
     </MyWork>
