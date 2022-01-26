@@ -3,7 +3,6 @@ import GlobalStyle from "./components/GlobalStyle";
 
 //Import Pages
 import AboutUs from "./pages/AboutUs";
-import Contact from "./pages/Contact";
 import Work from "./components/Work";
 import Nav from "./components/nav";
 import Footer from "./components/footer";
@@ -34,9 +33,6 @@ function App() {
           </Route>
           <Route path="/work" exact>
             <Work />
-          </Route>
-          <Route path="/contact">
-            <Contact />
           </Route>
         </Switch>
       </AnimatePresence>

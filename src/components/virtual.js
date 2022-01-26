@@ -198,96 +198,93 @@ const Virtual = () => {
 };
 
 const VirtualProject = styled(Project)`
-  
+  #vi-heading path:nth-child(1) {
+    stroke-dasharray: 450px;
+    stroke-dashoffset: 450px;
+    animation: line-anim 6s ease forwards 2s;
+  }
 
-    #vi-heading path:nth-child(1) {
-      stroke-dasharray: 450px;
-      stroke-dashoffset: 450px;
-      animation: line-anim 6s ease forwards 2s;
-    }
+  #vi-heading path:nth-child(2) {
+    stroke-dasharray: 450px;
+    stroke-dashoffset: 450px;
+    animation: line-anim 6s ease forwards 2.3s;
+  }
 
-    #vi-heading path:nth-child(2) {
-      stroke-dasharray: 450px;
-      stroke-dashoffset: 450px;
-      animation: line-anim 6s ease forwards 2.3s;
-    }
+  #vi-heading path:nth-child(3) {
+    stroke-dasharray: 500px;
+    stroke-dashoffset: 500px;
+    animation: line-anim 6s ease forwards 2.3s;
+  }
 
-    #vi-heading path:nth-child(3) {
-      stroke-dasharray: 500px;
-      stroke-dashoffset: 500px;
-      animation: line-anim 6s ease forwards 2.3s;
-    }
+  #vi-heading path:nth-child(4) {
+    stroke-dasharray: 500px;
+    stroke-dashoffset: 500px;
+    animation: line-anim 6s ease forwards 2.6s;
+  }
 
-    #vi-heading path:nth-child(4) {
-      stroke-dasharray: 500px;
-      stroke-dashoffset: 500px;
-      animation: line-anim 6s ease forwards 2.6s;
-    }
+  #vi-heading path:nth-child(5) {
+    stroke-dasharray: 500px;
+    stroke-dashoffset: 500px;
+    animation: line-anim 6s ease forwards 2.9s;
+  }
 
-    #vi-heading path:nth-child(5) {
-      stroke-dasharray: 500px;
-      stroke-dashoffset: 500px;
-      animation: line-anim 6s ease forwards 2.9s;
-    }
+  #vi-heading path:nth-child(6) {
+    stroke-dasharray: 750px;
+    stroke-dashoffset: 750px;
+    animation: line-anim 6s ease forwards 3.2s;
+  }
 
-    #vi-heading path:nth-child(6) {
-      stroke-dasharray: 750px;
-      stroke-dashoffset: 750px;
-      animation: line-anim 6s ease forwards 3.2s;
-    }
+  #vi-heading path:nth-child(7) {
+    stroke-dasharray: 650px;
+    stroke-dashoffset: 650px;
+    animation: line-anim 6s ease forwards 3.5s;
+  }
 
-    #vi-heading path:nth-child(7) {
-      stroke-dasharray: 650px;
-      stroke-dashoffset: 650px;
-      animation: line-anim 6s ease forwards 3.5s;
-    }
+  #vi-heading path:nth-child(8) {
+    stroke-dasharray: 500px;
+    stroke-dashoffset: 500px;
+    animation: line-anim 6s ease forwards 2s;
+  }
 
-    #vi-heading path:nth-child(8) {
-      stroke-dasharray: 500px;
-      stroke-dashoffset: 500px;
-      animation: line-anim 6s ease forwards 2s;
-    }
+  #vi-heading path:nth-child(9) {
+    stroke-dasharray: 500px;
+    stroke-dashoffset: 500px;
+    animation: line-anim 6s ease forwards 2s;
+  }
 
-    #vi-heading path:nth-child(9) {
-      stroke-dasharray: 500px;
-      stroke-dashoffset: 500px;
-      animation: line-anim 6s ease forwards 2s;
-    }
+  #vi-heading path:nth-child(10) {
+    stroke-dasharray: 500px;
+    stroke-dashoffset: 500px;
+    animation: line-anim 6s ease forwards 2.3s;
+  }
 
-    #vi-heading path:nth-child(10) {
-      stroke-dasharray: 500px;
-      stroke-dashoffset: 500px;
-      animation: line-anim 6s ease forwards 2.3s;
-    }
+  #vi-heading path:nth-child(11) {
+    stroke-dasharray: 550px;
+    stroke-dashoffset: 550px;
+    animation: line-anim 6s ease forwards 2.6s;
+  }
 
-    #vi-heading path:nth-child(11) {
-      stroke-dasharray: 550px;
-      stroke-dashoffset: 550px;
-      animation: line-anim 6s ease forwards 2.6s;
-    }
+  #vi-heading path:nth-child(12) {
+    stroke-dasharray: 500px;
+    stroke-dashoffset: 500px;
+    animation: line-anim 6s ease forwards 3.2s;
+  }
 
-    #vi-heading path:nth-child(12) {
-      stroke-dasharray: 500px;
-      stroke-dashoffset: 500px;
-      animation: line-anim 6s ease forwards 3.2s;
-    }
+  #vi-heading path:nth-child(13) {
+    stroke-dasharray: 500px;
+    stroke-dashoffset: 500px;
+    animation: line-anim 6s ease forwards 3s;
+  }
 
-    #vi-heading path:nth-child(13) {
-      stroke-dasharray: 500px;
-      stroke-dashoffset: 500px;
-      animation: line-anim 6s ease forwards 3s;
-    }
+  #vi-heading path:nth-child(14) {
+    stroke-dasharray: 615px;
+    stroke-dashoffset: 615px;
+    animation: line-anim 6s ease forwards 3.8s;
+  }
 
-    #vi-heading path:nth-child(14) {
-      stroke-dasharray: 615px;
-      stroke-dashoffset: 615px;
-      animation: line-anim 6s ease forwards 3.8s;
-    }
-
-    @keyframes line-anim {
-      to {
-        stroke-dashoffset: 0;
-      }
+  @keyframes line-anim {
+    to {
+      stroke-dashoffset: 0;
     }
   }
 `;

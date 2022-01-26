@@ -163,51 +163,43 @@ const Light = () => {
 
 const LightProject = styled(Project)`
   .light-head {
+    display: flex;
+    justify-content: center;
     #light-logo {
       width: 180px;
       height: 60px;
-      animation: flicker 0.8s infinite;
+      animation: light-flicker 0.8s infinite;
     }
 
     #light-logo path {
       stroke: #dd0303;
       stroke-dasharray: 600;
       stroke-dashoffset: 600;
-      animation: line-animation 9s ease infinite;
+      animation: line-animation 9s infinite;
     }
 
     @keyframes line-animation {
       0% {
         stroke-dashoffset: 600;
-        stroke: #dd0303;
       }
-      5% {
+      8% {
         stroke-dashoffset: 600;
-        stroke: #dd0303;
       }
-      40% {
+      22% {
         stroke-dashoffset: 0;
-        stroke: #dd0303;
-      }
-      50% {
-        stroke: #f7e600;
       }
       60% {
-        stroke: #00bfff;
+        stroke-dashoffset: 0;
       }
       70% {
-        stroke: #007c25;
-      }
-      80% {
-        stroke: #710783;
+        stroke-dashoffset: 0;
       }
       100% {
         stroke-dashoffset: 0;
-        stroke: #710783;
       }
     }
 
-    @keyframes flicker {
+    @keyframes light-flicker {
       10%,
       30%,
       60%,

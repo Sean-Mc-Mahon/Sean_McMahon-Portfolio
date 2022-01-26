@@ -75,7 +75,7 @@ export const lineAnim = {
 export const scrollReveal = {
   hidden: {
     opacity: 0,
-    scale: 1.2,
+    scale: 0.8,
     transition: { duration: 0.5, ease: "easeOut" },
   },
   show: {

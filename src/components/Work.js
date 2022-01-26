@@ -40,6 +40,7 @@ import "swiper/css/scrollbar";
 
 const Work = () => {
   const [element, controls] = useScrollForward();
+  const [element2, controls2] = useScrollForward();
   return (
     <MyWork
       variants={pageAnimation}
@@ -50,7 +51,7 @@ const Work = () => {
       style={{ background: "white" }}
     >
       <ScrollTop />
-      <Hide
+      <HeaderBlock
         variants={headerAnim}
         ref={element}
         animate={controls}
@@ -59,7 +60,10 @@ const Work = () => {
         <motion.h2>
           Clean & <span>beautiful</span> UI/UX
         </motion.h2>
-      </Hide>
+        <motion.h3>
+          both <span>Individually</span>...
+        </motion.h3>
+      </HeaderBlock>
       <Swiper
         // install Swiper modules
         modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -83,8 +87,17 @@ const Work = () => {
           <Purr />
         </SwiperSlide>
       </Swiper>
+      <HeaderBlock
+        variants={headerAnim}
+        ref={element2}
+        animate={controls2}
+        initial="hidden"
+      >
+        <motion.h3>
+          ...and part of a <span>Team</span>
+        </motion.h3>
+      </HeaderBlock>
       <Swiper
-        // install Swiper modules
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={20}
         slidesPerView={1}
@@ -156,8 +169,13 @@ const MyWork = styled(motion.div)`
   }
 `;
 
-const Hide = styled(motion.div)`
+const HeaderBlock = styled(motion.div)`
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 1rem;
+  min-height: 20vh;
 `;
 
 export default Work;

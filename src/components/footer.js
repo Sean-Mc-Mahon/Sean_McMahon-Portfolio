@@ -21,13 +21,13 @@ const Footer = () => {
               animate={controls}
               initial="hidden"
             >
-              <h2>Get in Touch!</h2>
+              <h3>Get in Touch!</h3>
             </Hide>
           </Col>
         </Row>
         <Row>
           <Col md={6} className="contact-details">
-            <h3>Contact</h3>
+            <h4>Contact</h4>
             <div className="email">
               <i class="fas fa-envelope"></i> sean.mcmahon87@gmail.com
             </div>
@@ -36,7 +36,7 @@ const Footer = () => {
             </div>
           </Col>
           <Col md={6} className="connect">
-            <h3>Connect</h3>
+            <h4>Connect</h4>
             <ul>
               <li>
                 <a
@@ -133,11 +133,12 @@ const StyledFooter = styled(motion.div)`
   a {
     font-size: 2.2rem;
   }
+  h3,
   a,
   .phone,
   .email,
-  .connect h3,
-  .contact-details h3 {
+  .connect h4,
+  .contact-details h4 {
     :hover {
       color: var(--yellow);
       -webkit-filter: drop-shadow(0px 0px 5px var(--yellow));

@@ -31,11 +31,13 @@ const aboutSection = () => {
             <HomeDescription>
               <motion.div>
                 <Hide>
-                  <motion.h2 variants={titleAnim}>let me make</motion.h2>
+                  <motion.h2 variants={titleAnim}>
+                    got a <span>Bright</span> idea?
+                  </motion.h2>
                 </Hide>
                 <Hide>
                   <motion.h2 variants={titleAnim}>
-                    your <span>dream</span> website
+                    let's make it happen
                   </motion.h2>
                 </Hide>
               </motion.div>

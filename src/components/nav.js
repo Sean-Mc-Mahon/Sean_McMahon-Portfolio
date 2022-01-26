@@ -12,7 +12,7 @@ const Nav = () => {
       <a href="#top">
         <LogoAnimation>
           <svg
-            width="149"
+            width="190"
             height="30"
             viewBox="0 0 373 74"
             fill="none"
@@ -66,7 +66,7 @@ const Nav = () => {
           <a href="#about">About</a>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <a href="#foot">Contact</a>
         </li>
       </ul>
     </StyledNav>
@@ -155,7 +155,17 @@ const Line = styled(motion.div)`
 `;
 
 const LogoAnimation = styled.div`
-  margin: 0.5rem 0;
+  margin: 0.5rem;
+  @media (min-width: 992px) {
+    margin: 1rem;
+    #seanmc {
+      width: 250px;
+      height: 55px;
+    }
+  }
+  @media (min-width: 1200px) {
+    margin: 1rem 2rem;
+  }
   #seanmc {
     -webkit-filter: drop-shadow(0px 0px 5px var(--yellow));
     filter: drop-shadow(0px 0px 5px var(--yellow));
@@ -209,9 +219,6 @@ const LogoAnimation = styled.div`
     70% {
       opacity: 0.45;
     }
-  }
-  @media (min-width: 768px) {
-    margin: 0 1rem;
   }
 `;
 

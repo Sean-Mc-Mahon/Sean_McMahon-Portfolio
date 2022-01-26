@@ -41,7 +41,7 @@ h2{
     font-size: calc(1.5rem + 2vw)
     }
 h3{
-    color: white;
+    font-size: calc(1.1rem + 2vw)
     }
 h4{
     font-weight: bold;

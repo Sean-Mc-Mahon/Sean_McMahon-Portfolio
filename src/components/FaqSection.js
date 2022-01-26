@@ -18,6 +18,7 @@ const FaqSection = () => {
       animate={controls}
       initial="hidden"
     >
+      <a id="about"></a>
       <h2>
         Any Questions? <span>About Me</span>
       </h2>
@@ -72,13 +73,20 @@ const FaqSection = () => {
 };
 
 const Faq = styled(About)`
+  position: relative;
+  a {
+    position: absolute;
+    top: 0;
+  }
   display: block;
-  margin-top: 5rem;
+  padding-top: 2rem;
+  margin-top: 8rem;
   span {
     display: block;
   }
   h2 {
     padding-bottom: 2rem;
+    padding-top: 4rem;
     font-weight: lighter;
   }
   .faq-line {

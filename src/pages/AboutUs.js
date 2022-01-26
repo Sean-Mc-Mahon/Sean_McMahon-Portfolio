@@ -21,16 +21,13 @@ const AboutUs = () => {
     >
       <ScrollTop />
       <AboutSection>
-        <a id="top"></a>
+        <span className="anchor" id="top"></span>
       </AboutSection>
       <WorkContainer>
-        <a id="work"></a>
+        <span className="anchor" id="work"></span>
         <Work />
       </WorkContainer>
-
-      <FaqSection>
-        <a id="about"></a>
-      </FaqSection>
+      <FaqSection />
       <NewFill>
         <ThreeMe />
       </NewFill>
@@ -56,7 +53,7 @@ const NewFill = styled.div`
 const WorkContainer = styled.div`
   background: #fff;
   position: relative;
-  a {
+  .anchor {
     position: absolute;
     top: -96.89px;
   }
