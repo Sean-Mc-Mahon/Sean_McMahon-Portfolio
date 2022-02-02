@@ -36,6 +36,9 @@ button{
     filter: drop-shadow(0px 0px 5px var(--yellow));
     }
 }
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Comfortaa', cursive;
+}
 h2{
     font-weight: lighter;
     font-size: calc(1.5rem + 2vw)

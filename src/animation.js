@@ -42,6 +42,14 @@ export const fade = {
   },
 };
 
+export const fadeSlow = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: { type: "tween", ease: "easeOut", duration: 5, delay: 0.5 },
+  },
+};
+
 export const svgAnim = {
   hidden: { opacity: 0 },
   show: {
@@ -60,6 +68,33 @@ export const photoAnim = {
       ease: "easeOut",
       duration: 1,
       delay: 0.5,
+    },
+  },
+};
+
+export const photoAnimOpaque = {
+  hidden: { scale: 1.5 },
+  show: {
+    scale: 1,
+    transition: {
+      type: "tween",
+      ease: "easeOut",
+      duration: 1,
+      delay: 0.5,
+    },
+  },
+};
+
+export const modelAnim = {
+  hidden: { scale: 1.5, opacity: 0 },
+  show: {
+    scale: 1,
+    opacity: 1,
+    transition: {
+      type: "tween",
+      ease: "easeOut",
+      duration: 5,
+      delay: 5,
     },
   },
 };
@@ -102,8 +137,39 @@ export const scrollRevealRight = {
     },
   },
 };
+export const scrollRevealRightFast = {
+  hidden: {
+    opacity: 0,
+    x: 100,
+  },
+  show: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      staggerChildren: 0.15,
+      ease: "easeOut",
+      duration: 0.4,
+      when: "beforeChildren",
+    },
+  },
+};
 
 export const projectContainer = {
+  hidden: {
+    opacity: 0,
+  },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.05,
+      ease: "easeOut",
+      duration: 0.1,
+      when: "beforeChildren",
+    },
+  },
+};
+
+export const modelContainer = {
   hidden: {
     opacity: 0,
   },

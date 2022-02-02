@@ -3,16 +3,22 @@ import React from "react";
 import styled from "styled-components/macro";
 //Animations
 import { motion } from "framer-motion";
-import { headerAnim, pageAnimation } from "../animation";
-import { useScrollForward } from "./useScroll";
+import { headerAnim, pageAnimation, fade } from "../animation";
+import { useScroll, useScrollForward } from "./useScroll";
 import ScrollTop from "./ScrollTop";
 //Projects
 import Virtual from "../components/virtual";
 import SeanMc from "../components/seanmc";
 import McTastic from "../components/mctastic";
 import Purr from "../components/purr";
+//Hackathons
 import Light from "./light";
 import Paddy from "./paddy";
+//Design
+import Model3d from "./3d";
+import PolyPortrait from "./portrait";
+import LibraryRender from "./renders";
+import Furniture from "./furniture";
 // Swiper React components
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -24,6 +30,8 @@ import "swiper/css/scrollbar";
 const Work = () => {
   const [element, controls] = useScrollForward();
   const [element2, controls2] = useScrollForward();
+  const [element3, controls3] = useScrollForward();
+  const [element4, controls4] = useScroll();
   return (
     <MyWork
       variants={pageAnimation}
@@ -77,7 +85,8 @@ const Work = () => {
         initial="hidden"
       >
         <motion.h3>
-          ...and part of a <span>Team</span>
+          ...and part of a <span>Team</span>.<br /> I like to participate in
+          hackathons
         </motion.h3>
       </HeaderBlock>
       <Swiper
@@ -96,6 +105,44 @@ const Work = () => {
           <Paddy />
         </SwiperSlide>
       </Swiper>
+      <HeaderBlock
+        variants={headerAnim}
+        ref={element3}
+        animate={controls3}
+        initial="hidden"
+      >
+        <motion.h3>...as well as other forms of digital design</motion.h3>
+      </HeaderBlock>
+      <motion.div
+        variants={fade}
+        ref={element4}
+        animate={controls4}
+        initial="hidden"
+      >
+        <Swiper
+          className="design-slides"
+          modules={[Navigation, Pagination, Scrollbar, A11y]}
+          spaceBetween={20}
+          slidesPerView={1}
+          navigation
+          pagination={{ clickable: true }}
+          onSwiper={(swiper) => console.log(swiper)}
+          onSlideChange={() => console.log("slide change")}
+        >
+          <SwiperSlide className="render-slide">
+            <LibraryRender />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Model3d className="3d-model-slide" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <PolyPortrait className="poly-portrait-slide" />
+          </SwiperSlide>
+          <SwiperSlide className="furniture-slide">
+            <Furniture />
+          </SwiperSlide>
+        </Swiper>
+      </motion.div>
     </MyWork>
   );
 };
@@ -103,6 +150,14 @@ const MyWork = styled(motion.div)`
   min-height: 100vh;
   overflow: hidden;
   padding-top: 1rem;
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: grey;
+    height: 100px;
+    text-align: center;
+  }
   @media (min-width: 992px) {
     padding: 3rem;
   }
@@ -132,6 +187,10 @@ const MyWork = styled(motion.div)`
       padding: 2rem;
     }
   }
+  .design-slides .swiper-button-next,
+  .design-slides .swiper-button-prev {
+    top: 45%;
+  }
   .swiper-button-next::after,
   .swiper-button-prev::after {
     filter: drop-shadow(0px 0px 5px var(--yellow));
@@ -140,6 +199,9 @@ const MyWork = styled(motion.div)`
     @media (min-width: 1200px) {
       transform: scale(1);
     }
+  }
+  .design-slides {
+    padding-bottom: 2.5rem;
   }
   .swiper-pagination-bullet {
     transition: all 1s;
