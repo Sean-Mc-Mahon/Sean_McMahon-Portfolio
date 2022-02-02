@@ -53,10 +53,8 @@ const McTastic = () => {
               <ProjectRight variants={fade}>
                 <div className="top">
                   <p>
-                    McTastic Recipes is a recipe website for people with
-                    different levels of abilities in the kitchen, from complete
-                    novice to experienced cook. Users may add not just recipes
-                    but also ingredients.
+                    McTastic Recipes is a recipe website where users may add not
+                    just recipes but also ingredients.
                   </p>
                 </div>
                 <div className="bottom">
@@ -82,6 +80,9 @@ const McTastic = () => {
                       </li>
                       <li>
                         <i class="devicon-vscode-plain"></i>
+                      </li>
+                      <li>
+                        <i class="devicon-flask-original"></i>
                       </li>
                       <li>
                         <i class="devicon-mongodb-plain"></i>
@@ -116,13 +117,13 @@ const McTastic = () => {
 
 const McTasticProject = styled(Project)`
   .mctastic-head {
-    font-family: "Pattaya", sans-serif;
     color: #37474f;
     display: flex;
     justify-content: center;
     align-items: center;
     h2 {
       margin: 0;
+      font-family: "Pattaya", sans-serif;
     }
     img {
       min-height: 40px;

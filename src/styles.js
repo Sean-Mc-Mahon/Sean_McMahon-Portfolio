@@ -89,12 +89,12 @@ export const Project = styled(motion.div)`
   }
   @media (min-width: 768px) {
     .container {
-      padding: 0 2rem 2rem;
+      padding: 0 2rem;
     }
   }
   @media (min-width: 992px) {
     .container {
-      padding: 0 5rem 5rem;
+      padding: 0 5rem;
     }
     h2 {
       padding: 0;

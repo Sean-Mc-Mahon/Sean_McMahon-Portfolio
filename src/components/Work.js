@@ -193,12 +193,15 @@ const MyWork = styled(motion.div)`
   }
   .swiper-button-next::after,
   .swiper-button-prev::after {
-    filter: drop-shadow(0px 0px 5px var(--yellow));
-    -webkit-filter: drop-shadow(0px 0px 5px var(--yellow));
     transform: scale(0.5);
     @media (min-width: 1200px) {
       transform: scale(1);
     }
+  }
+  .swiper-button-next:hover::after,
+  .swiper-button-prev:hover::after {
+    filter: drop-shadow(0px 0px 5px var(--yellow));
+    -webkit-filter: drop-shadow(0px 0px 5px var(--yellow));
   }
   .design-slides {
     padding-bottom: 2.5rem;

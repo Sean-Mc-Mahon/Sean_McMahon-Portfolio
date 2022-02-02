@@ -210,7 +210,9 @@ const Purr = () => {
             </g>
           </svg>
         </div>
-        <h2 className="logo-head">The Inner Purr</h2>
+        <h2 className="logo-head" id="purr-head">
+          The Inner Purr
+        </h2>
       </ProjectHead>
       <motion.div variants={lineAnim} className="line"></motion.div>
       <Hide>
@@ -227,10 +229,8 @@ const Purr = () => {
               <ProjectRight variants={fade}>
                 <div className="top">
                   <p>
-                    The Inner Purr is an e-commerce site for the center of the
-                    same name. The Inner Purr is the public face of
-                    PCR(Phibsboro Cat Rescue), a charity that rescues stray cats
-                    around Dublin.The Inner Purr also houses a shop and cafe.
+                    The Inner Purr is an e-commerce site for a charity that
+                    rescues stray cats around Dublin.
                   </p>
                 </div>
                 <div className="bottom">
@@ -290,13 +290,14 @@ const Purr = () => {
 
 const PurrProject = styled(Project)`
   .purr-head {
-    font-family: "Architects Daughter", cursive;
+    font-size: calc(1.3rem + 2vw);
     color: #447924;
     display: flex;
     justify-content: center;
     align-items: center;
     h2 {
       margin: 0;
+      font-family: "Architects Daughter", cursive;
     }
     .logo {
       display: flex;

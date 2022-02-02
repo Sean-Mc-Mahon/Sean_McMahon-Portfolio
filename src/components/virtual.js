@@ -138,10 +138,8 @@ const Virtual = () => {
               <ProjectRight variants={fade}>
                 <div className="top">
                   <p>
-                    VI is a virtual tour of Ireland aimed at people planning on
-                    visiting Ireland, people who cannot visit or people who want
-                    to look back on trips to some of Ireland’s most beautiful
-                    sites.
+                    VI is a virtual tour of Ireland showcasing some of Ireland’s
+                    most beautiful sites.
                   </p>
                 </div>
                 <div className="bottom">

@@ -129,9 +129,7 @@ const SeanMc = () => {
                 <div className="top">
                   <p>
                     SM Digital Design is a website for a digital designer
-                    offering services such as artistic rendering and 3D models
-                    (primarily for the construction industry) as well as digital
-                    portraits and furniture design.
+                    offering services such as artistic rendering and 3D models.
                   </p>
                 </div>
                 <div className="bottom">
@@ -194,9 +192,9 @@ const SeanMcProject = styled(Project)`
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "Lily Script One", cursive;
     h2 {
       margin: 0;
+      font-family: "Lily Script One", cursive;
     }
     .logo-text {
       display: flex;

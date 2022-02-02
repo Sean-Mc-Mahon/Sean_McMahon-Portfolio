@@ -76,7 +76,7 @@ const Faq = styled(About)`
   position: relative;
   .anchor {
     position: absolute;
-    top: 0;
+    top: -120px;
   }
   display: block;
   padding-top: 2rem;
