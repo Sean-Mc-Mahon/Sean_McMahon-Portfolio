@@ -39,8 +39,12 @@ const NewFill = styled.div`
   .fill {
     :hover {
       .mee {
-        opacity: 0.08;
+        opacity: 0.5;
+        @media (min-width: 768px) {
+          opacity: 0.08;
+        }
       }
+
       svg path {
         fill: var(--yellow);
         -webkit-filter: drop-shadow(0px 0px 5px var(--yellow));

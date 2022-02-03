@@ -180,3 +180,21 @@ function App() {
 # OBS
 
 [OBS](https://obsproject.com/) is used to make screen recordings.
+
+# Deployment
+
+Add URL to package.json:
+`'homepage': 'https://[USERNAME].github.io/[PROJECTNAME],`
+
+Install github pages npm package via CLI:
+`npm install gh-pages --save-dev`
+
+Add sripts to package.json under 'scripts':
+
+```
+"predeploy": "npm run build",
+"deploy": "gh-pages -d build",
+```
+
+In the CLI run:
+`npm run deploy`

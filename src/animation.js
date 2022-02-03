@@ -34,6 +34,14 @@ export const headerAnim = {
   },
 };
 
+export const headerAnimFast = {
+  hidden: { y: 50 },
+  show: {
+    y: 0,
+    transition: { duration: 0.4, ease: "easeOut" },
+  },
+};
+
 export const fade = {
   hidden: { opacity: 0 },
   show: {
@@ -140,7 +148,7 @@ export const scrollRevealRight = {
 export const scrollRevealRightFast = {
   hidden: {
     opacity: 0,
-    x: 100,
+    x: 200,
   },
   show: {
     opacity: 1,
@@ -178,7 +186,7 @@ export const modelContainer = {
     transition: {
       staggerChildren: 0.05,
       ease: "easeOut",
-      duration: 0.1,
+      duration: 1,
       when: "beforeChildren",
     },
   },

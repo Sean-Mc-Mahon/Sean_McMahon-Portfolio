@@ -306,3 +306,92 @@ export const Links = styled(motion.div)`
     justify-content: start;
   }
 `;
+export const Design = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 330px;
+  height: 330px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 4px solid var(--yellow);
+  border-radius: 50%;
+  background: #1b1b1b;
+  @media (min-width: 768px) {
+    width: 400px;
+    height: 400px;
+  }
+  @media (min-width: 992px) {
+    width: 450px;
+    height: 450px;
+  }
+  .design-title-container {
+  }
+  .design-title {
+    font-weight: bold;
+    text-decoration: none !important;
+    font-size: calc(0.8rem + 1vw);
+    z-index: 20;
+  }
+  img {
+    width: 330px;
+    height: 330px;
+    margin: 0 auto;
+
+    @media (min-width: 768px) {
+      width: 400px;
+      height: 400px;
+    }
+    @media (min-width: 992px) {
+      width: 450px;
+      height: 450px;
+    }
+  }
+  model-viewer {
+    width: 330px;
+    height: 330px;
+    margin: 0 auto;
+    @media (min-width: 768px) {
+      width: 400px;
+      height: 400px;
+    }
+    @media (min-width: 992px) {
+      width: 450px;
+      height: 450px;
+    }
+  }
+`;
+
+export const DesignLinks = styled(motion.div)`
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem 0;
+
+  a {
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border: 3px solid var(--yellow);
+    border-radius: 100px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-shadow: 1px 1px 5px #1b1b1b;
+    transition: all 0.5s ease;
+    text-decoration: none;
+    h3 {
+      margin: 0;
+    }
+    &:hover {
+      background-color: var(--yellow);
+      color: #282828;
+      -webkit-filter: drop-shadow(0px 0px 5px var(--yellow));
+      filter: drop-shadow(0px 0px 5px var(--yellow));
+      text-shadow: 0px 0px 3px var(--yellow);
+    }
+  }
+`;
