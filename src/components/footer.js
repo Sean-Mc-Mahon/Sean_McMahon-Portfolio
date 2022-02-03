@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components/macro";
+import ContactUs from "./contactForm";
 import { Container, Row, Col } from "react-bootstrap";
 import { motion } from "framer-motion";
 import { useScrollForward } from "./useScroll";
@@ -24,13 +25,7 @@ const Footer = () => {
         </Row>
         <Row>
           <Col md={6} className="contact-details">
-            <h4>Contact</h4>
-            <div className="email">
-              <i class="fas fa-envelope"></i> sean.mcmahon87@gmail.com
-            </div>
-            <div className="phone">
-              <i class="fas fa-phone-alt"></i> 00353-87-4166-750
-            </div>
+            <ContactUs />
           </Col>
           <Col md={6} className="connect">
             <h4>Connect</h4>
