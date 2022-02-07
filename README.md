@@ -181,6 +181,14 @@ function App() {
 
 [OBS](https://obsproject.com/) is used to make screen recordings.
 
+# EmailJS
+
+[Email](https://www.emailjs.com/) is used to allow users to email the author.
+
+Install EmailJS:
+
+`npm install emailjs-com --save`
+
 # Deployment
 
 Add URL to package.json:

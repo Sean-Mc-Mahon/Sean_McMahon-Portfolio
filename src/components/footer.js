@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <StyledFooter id="foot">
       <Container>
-        <Row>
+        {/* <Row>
           <Col>
             <Hide
               variants={scrollRevealRight}
@@ -22,7 +22,7 @@ const Footer = () => {
               <h3>Get in Touch!</h3>
             </Hide>
           </Col>
-        </Row>
+        </Row> */}
         <Row>
           <Col md={6} className="contact-details">
             <ContactUs />
@@ -68,7 +68,9 @@ const Footer = () => {
 const Hide = styled(motion.div)`
   overflow: hidden;
 `;
+
 const StyledFooter = styled(motion.div)`
+  position: relative;
   display: flex;
   flex-direction: row;
   min-height: 10vh;
