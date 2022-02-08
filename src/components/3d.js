@@ -16,7 +16,6 @@ const Model3d = () => {
         </a>
       </DesignLinks>
       <model-viewer
-        class="color"
         id="library-model"
         src={Library}
         alt="library"

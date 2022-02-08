@@ -55,55 +55,55 @@ const FaqSection = () => {
             <AboutIcons>
               <ul>
                 <li>
-                  <i class="devicon-html5-plain"></i>
+                  <i className="devicon-html5-plain"></i>
                 </li>
                 <li>
-                  <i class="devicon-css3-plain"></i>
+                  <i className="devicon-css3-plain"></i>
                 </li>
                 <li>
-                  <i class="devicon-javascript-plain"></i>
+                  <i className="devicon-javascript-plain"></i>
                 </li>
                 <li>
-                  <i class="devicon-git-plain"></i>
+                  <i className="devicon-git-plain"></i>
                 </li>
                 <li>
-                  <i class="devicon-github-original"></i>
+                  <i className="devicon-github-original"></i>
                 </li>
                 <li>
-                  <i class="devicon-bootstrap-plain"></i>
+                  <i className="devicon-bootstrap-plain"></i>
                 </li>
                 <li>
-                  <i class="devicon-vscode-plain"></i>
+                  <i className="devicon-vscode-plain"></i>
                 </li>
                 <li>
-                  <i class="devicon-amazonwebservices-original"></i>
+                  <i className="devicon-amazonwebservices-original"></i>
                 </li>
                 <li>
-                  <i class="devicon-django-plain"></i>
+                  <i className="devicon-django-plain"></i>
                 </li>
                 <li>
-                  <i class="devicon-flask-original"></i>
+                  <i className="devicon-flask-original"></i>
                 </li>
                 <li>
-                  <i class="devicon-react-original"></i>
+                  <i className="devicon-react-original"></i>
                 </li>
                 <li>
-                  <i class="devicon-heroku-original"></i>
+                  <i className="devicon-heroku-original"></i>
                 </li>
                 <li>
-                  <i class="devicon-python-plain"></i>
+                  <i className="devicon-python-plain"></i>
                 </li>
                 <li>
-                  <i class="devicon-jquery-plain"></i>
+                  <i className="devicon-jquery-plain"></i>
                 </li>
                 <li>
-                  <i class="devicon-slack-plain"></i>
+                  <i className="devicon-slack-plain"></i>
                 </li>
                 <li>
-                  <i class="devicon-codepen-plain"></i>
+                  <i className="devicon-codepen-plain"></i>
                 </li>
                 <li>
-                  <i class="devicon-sass-original"></i>
+                  <i className="devicon-sass-original"></i>
                 </li>
               </ul>
             </AboutIcons>
@@ -111,10 +111,10 @@ const FaqSection = () => {
             <AboutIcons>
               <ul>
                 <li>
-                  <i class="devicon-figma-plain"></i>
+                  <i className="devicon-figma-plain"></i>
                 </li>
                 <li>
-                  <i class="devicon-photoshop-plain"></i>
+                  <i className="devicon-photoshop-plain"></i>
                 </li>
                 <li>
                   <img

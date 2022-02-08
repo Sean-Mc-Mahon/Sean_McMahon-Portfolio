@@ -38,7 +38,7 @@ const Footer = () => {
                     target={"blank"}
                     href="https://github.com/Sean-Mc-Mahon"
                   >
-                    <i class="devicon-github-original"></i>
+                    <i className="devicon-github-original"></i>
                   </a>
                 </li>
                 <li>
@@ -47,7 +47,7 @@ const Footer = () => {
                     target={"blank"}
                     href="https://www.linkedin.com/in/sean-mcmahon-profile/"
                   >
-                    <i class="devicon-linkedin-plain"></i>
+                    <i className="devicon-linkedin-plain"></i>
                   </a>
                 </li>
                 <li>
@@ -56,7 +56,7 @@ const Footer = () => {
                     target={"blank"}
                     href="https://codepen.io/McTastic"
                   >
-                    <i class="devicon-codepen-plain"></i>
+                    <i className="devicon-codepen-plain"></i>
                   </a>
                 </li>
               </ul>

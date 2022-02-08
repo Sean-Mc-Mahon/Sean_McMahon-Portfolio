@@ -135,28 +135,28 @@ const SeanMc = () => {
                   <Icons>
                     <ul>
                       <li>
-                        <i class="devicon-html5-plain"></i>
+                        <i className="devicon-html5-plain"></i>
                       </li>
                       <li>
-                        <i class="devicon-css3-plain"></i>
+                        <i className="devicon-css3-plain"></i>
                       </li>
                       <li>
-                        <i class="devicon-javascript-plain"></i>
+                        <i className="devicon-javascript-plain"></i>
                       </li>
                       <li>
-                        <i class="devicon-git-plain"></i>
+                        <i className="devicon-git-plain"></i>
                       </li>
                       <li>
-                        <i class="devicon-github-original"></i>
+                        <i className="devicon-github-original"></i>
                       </li>
                       <li>
-                        <i class="devicon-bootstrap-plain"></i>
+                        <i className="devicon-bootstrap-plain"></i>
                       </li>
                       <li>
-                        <i class="devicon-vscode-plain"></i>
+                        <i className="devicon-vscode-plain"></i>
                       </li>
                       <li>
-                        <i class="devicon-sass-original"></i>
+                        <i className="devicon-sass-original"></i>
                       </li>
                     </ul>
                   </Icons>

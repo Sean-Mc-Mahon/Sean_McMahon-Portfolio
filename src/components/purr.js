@@ -32,14 +32,14 @@ const Purr = () => {
       <ProjectHead variants={fade} className="purr-head">
         <div className="logo">
           <svg
-            width="80"
-            height="64"
+            width={80}
+            height={64}
             viewBox="0 0 100 75"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            class="mr-buttons"
+            className="mr-buttons"
           >
-            <g class="head" id="head">
+            <g className="head" id="head">
               <g id="ear-left">
                 <path
                   id="Vector"
@@ -57,13 +57,13 @@ const Purr = () => {
               <g id="Head">
                 <path
                   id="Vector_3"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
                   d="M13.0657 28.5348L86.1287 37.4858C86.167 38.6357 86.1508 39.7968 86.0781 40.9671C84.8212 61.1815 67.1408 76.5573 46.6201 75.2813C26.0994 74.0054 10.4598 56.5579 11.7167 36.3435C11.8845 33.6448 12.345 31.0324 13.0657 28.5348Z"
                   fill="#8AB95E"
                 />
               </g>
-              <g class="eye" id="eye-left">
+              <g className="eye" id="eye-left">
                 <g id="eye-left1">
                   <path
                     id="Vector_4"
@@ -72,13 +72,13 @@ const Purr = () => {
                   />
                   <path
                     id="Vector_5"
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     d="M31.7123 35.0517C35.9281 35.0517 39.3509 38.6626 39.3509 43.1101C39.3509 47.5576 35.9281 51.1686 31.7123 51.1686C27.4966 51.1686 24.0738 47.5576 24.0738 43.1101C24.0738 38.6626 27.4966 35.0517 31.7123 35.0517ZM31.7123 35.4219C35.7295 35.4219 38.9804 38.8722 38.9804 43.1101C38.9804 47.3481 35.7295 50.7984 31.7123 50.7984C27.6952 50.7984 24.4442 47.3481 24.4442 43.1101C24.4442 38.8722 27.6952 35.4219 31.7123 35.4219Z"
                     fill="black"
                   />
                 </g>
-                <g class="stitches" id="stitches">
+                <g className="stitches" id="stitches">
                   <g id="holes">
                     <g id="Group">
                       <path
@@ -115,10 +115,10 @@ const Purr = () => {
                       d="M31.3351 42.3417C29.7207 43.2339 28.5813 44.3009 28.7901 44.725C28.999 45.1492 30.4769 44.7698 32.0913 43.8776C33.7057 42.9855 34.8451 41.9184 34.6362 41.4943C34.4274 41.0702 32.9494 41.4496 31.3351 42.3417Z"
                       fill="#6E1A1A"
                       stroke="black"
-                      stroke-width="0.00357523"
-                      stroke-miterlimit="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="0.00357523"
+                      strokeMiterlimit="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </g>
                   <g id="Group_6">
@@ -127,15 +127,15 @@ const Purr = () => {
                       d="M30.9855 43.5183C31.8303 45.2096 32.8413 46.3978 33.2436 46.1723C33.646 45.9468 33.2873 44.3929 32.4424 42.7016C31.5976 41.0104 30.5866 39.8221 30.1843 40.0476C29.782 40.2731 30.1407 41.827 30.9855 43.5183Z"
                       fill="#6E1A1A"
                       stroke="black"
-                      stroke-width="0.00318871"
-                      stroke-miterlimit="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="0.00318871"
+                      strokeMiterlimit="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </g>
                 </g>
               </g>
-              <g class="eye" id="eye-right">
+              <g className="eye" id="eye-right">
                 <g id="eye-right1">
                   <path
                     id="Vector_12"
@@ -144,13 +144,13 @@ const Purr = () => {
                   />
                   <path
                     id="Vector_13"
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     d="M61.8912 38.3682C66.1069 38.3682 69.5297 41.9791 69.5297 46.4266C69.5297 50.8741 66.1069 54.4851 61.8912 54.4851C57.6754 54.4851 54.2526 50.8741 54.2526 46.4266C54.2526 41.9791 57.6754 38.3682 61.8912 38.3682ZM61.8912 39.096C65.7163 39.096 68.802 42.3912 68.802 46.4266C68.802 50.462 65.7163 53.7573 61.8912 53.7573C58.066 53.7573 54.9803 50.462 54.9803 46.4266C54.9803 42.3912 58.066 39.096 61.8912 39.096Z"
                     fill="black"
                   />
                 </g>
-                <g class="stitches" id="stitches1">
+                <g className="stitches" id="stitches1">
                   <g id="holes1">
                     <g id="Group_7">
                       <path
@@ -187,10 +187,10 @@ const Purr = () => {
                       d="M61.4368 47.1274C62.9711 48.2318 64.4187 48.8136 64.67 48.4269C64.9213 48.0401 63.8813 46.8313 62.3469 45.7269C60.8126 44.6224 59.365 44.0406 59.1137 44.4274C58.8624 44.8141 59.9024 46.023 61.4368 47.1274Z"
                       fill="#8D4B34"
                       stroke="black"
-                      stroke-width="0.00318871"
-                      stroke-miterlimit="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="0.00318871"
+                      strokeMiterlimit="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </g>
                   <g id="Group_12">
@@ -199,10 +199,10 @@ const Purr = () => {
                       d="M61.2007 45.9226C60.1864 47.4631 59.6739 48.9376 60.056 49.216C60.4381 49.4944 61.5701 48.4712 62.5845 46.9307C63.5988 45.3902 64.1113 43.9157 63.7292 43.6373C63.3471 43.359 62.2151 44.3821 61.2007 45.9226Z"
                       fill="#8D4B34"
                       stroke="black"
-                      stroke-width="0.00357523"
-                      stroke-miterlimit="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="0.00357523"
+                      strokeMiterlimit="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </g>
                 </g>
@@ -237,31 +237,31 @@ const Purr = () => {
                   <Icons>
                     <ul>
                       <li>
-                        <i class="devicon-html5-plain"></i>
+                        <i className="devicon-html5-plain"></i>
                       </li>
                       <li>
-                        <i class="devicon-css3-plain"></i>
+                        <i className="devicon-css3-plain"></i>
                       </li>
                       <li>
-                        <i class="devicon-javascript-plain"></i>
+                        <i className="devicon-javascript-plain"></i>
                       </li>
                       <li>
-                        <i class="devicon-git-plain"></i>
+                        <i className="devicon-git-plain"></i>
                       </li>
                       <li>
-                        <i class="devicon-github-original"></i>
+                        <i className="devicon-github-original"></i>
                       </li>
                       <li>
-                        <i class="devicon-bootstrap-plain"></i>
+                        <i className="devicon-bootstrap-plain"></i>
                       </li>
                       <li>
-                        <i class="devicon-vscode-plain"></i>
+                        <i className="devicon-vscode-plain"></i>
                       </li>
                       <li>
-                        <i class="devicon-django-plain"></i>
+                        <i className="devicon-django-plain"></i>
                       </li>
                       <li>
-                        <i class="devicon-amazonwebservices-original"></i>
+                        <i className="devicon-amazonwebservices-original"></i>
                       </li>
                     </ul>
                   </Icons>

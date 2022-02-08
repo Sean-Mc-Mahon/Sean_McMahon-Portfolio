@@ -63,8 +63,6 @@ const Work = () => {
           slidesPerView={1}
           navigation
           pagination={{ clickable: true }}
-          onSwiper={(swiper) => console.log(swiper)}
-          onSlideChange={() => console.log("slide change")}
         >
           <SwiperSlide>
             <Virtual />
@@ -98,8 +96,6 @@ const Work = () => {
           slidesPerView={1}
           navigation
           pagination={{ clickable: true }}
-          onSwiper={(swiper) => console.log(swiper)}
-          onSlideChange={() => console.log("slide change")}
         >
           <SwiperSlide>
             <Light />
@@ -130,8 +126,6 @@ const Work = () => {
           slidesPerView={1}
           navigation
           pagination={{ clickable: true }}
-          onSwiper={(swiper) => console.log(swiper)}
-          onSlideChange={() => console.log("slide change")}
         >
           <SwiperSlide className="render-slide">
             <LibraryRender />
