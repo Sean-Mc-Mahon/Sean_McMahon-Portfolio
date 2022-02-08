@@ -7,10 +7,10 @@ import Toggle from "./toggle";
 import { AnimateSharedLayout } from "framer-motion";
 import { scrollReveal } from "../animation";
 //Scroll
-import { useScroll } from "./useScroll";
+import { useScrollForward } from "./useScroll";
 
 const FaqSection = () => {
-  const [element, controls] = useScroll();
+  const [element, controls] = useScrollForward();
   return (
     <Faq
       variants={scrollReveal}
