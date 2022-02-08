@@ -52,6 +52,17 @@ _ [_Wireframes_](#wireframes)
 - [**_Acknowledgements_**](#acknowledgements)
 </details>
 
+**<details><summary>Deployment</summary>**
+
+- [**Deployment**](#deployment)
+</details>
+
+**<details><summary>Credits</summary>**
+
+- [**_Content_**](#content)
+- [**_Acknowledgements_**](#acknowledgements)
+</details>
+
 ---
 
 # Project Overview
@@ -126,7 +137,7 @@ A standard layout is fully responsive on mobile devices and larger screens.
 
 #### Color Scheme
 
-Colors are kept to a minimum and inspired by neon street signs. Color scheme can be found on my Coolors profile: [Coolors](https://coolors.co/user/palettes/6202a945024dbe000ae00ca2)
+Colors are kept to a minimum and inspired by neon street signs. Color scheme can be found on [my Coolors profile](https://coolors.co/user/palettes/6202a945024dbe000ae00ca2)
 
 ![Color Palette](https://github.com/Sean-Mc-Mahon/Sean_McMahon-Portfolio/blob/master/src/img/colours.JPG)
 
@@ -149,21 +160,17 @@ All images are the authors own. Logo, hero image and favicon are also produced b
 
 ## Existing Features
 
-### Elements on every page
-
 #### Navbar
-
-![Navbar](https://github.com/Sean-Mc-Mahon/inner-purr/blob/main/wireframes/nav.JPG)
 
 ![logo](https://github.com/Sean-Mc-Mahon/Sean_McMahon-Portfolio/blob/master/src/img/logo.gif)
 
-![logo](https://github.com/Sean-Mc-Mahon/Sean_McMahon-Portfolio/blob/master/src/img/logo.jpg)
+![logo](https://github.com/Sean-Mc-Mahon/Sean_McMahon-Portfolio/blob/master/src/img/logo.JPG)
 
 - The navigation an animated logo in the top left corner linked to the top of the page. Navigation links are in the top right. On loading the homepage the logo will animate, weaving itself to completion while flickering until the end of the animation.
 
 - On small devices the logo is displayed above the links.
 
-![small logo](https://github.com/Sean-Mc-Mahon/Sean_McMahon-Portfolio/blob/master/src/img/logo-sm.jpg)
+![small logo](https://github.com/Sean-Mc-Mahon/Sean_McMahon-Portfolio/blob/master/src/img/logo-sm.JPG)
 
 - List item links are available.
   1. Work
@@ -171,21 +178,6 @@ All images are the authors own. Logo, hero image and favicon are also produced b
   3. Contact
 
 When a link is hovered over it will turn to yellow and and a drop shadow will emerge.
-
-#### Footer
-
-![Footer](https://github.com/Sean-Mc-Mahon/Sean_McMahon-Portfolio/blob/master/src/img/footer.jpg)
-
-The footer features:
-
-- form for users to submit queries
-- social links
-
-![Small Footer](https://github.com/Sean-Mc-Mahon/Sean_McMahon-Portfolio/blob/master/src/img/footer-sm.jpg)
-
-Above the footer is an SVG which when hovered over changes colours and illuminates the image from which it was created. The base image was created using Affinity Photo and the SVG was created using Affinity Designer.
-
-### Individual Sections
 
 ### Work
 
@@ -197,6 +189,19 @@ Above the footer is an SVG which when hovered over changes colours and illuminat
 ### About
 
 - Toggles are used to expand and contract various answers to FAQ's. The various elements are animated using [useState](https://reactjs.org/docs/hooks-state.html) and [Framer Motion](https://www.framer.com/motion/).
+
+#### Contact/Footer
+
+![Footer](https://github.com/Sean-Mc-Mahon/Sean_McMahon-Portfolio/blob/master/src/img/footer.JPG)
+
+The footer features:
+
+- form for users to submit queries using [EmailJS](https://www.emailjs.com/).
+- social links.
+
+![Small Footer](https://github.com/Sean-Mc-Mahon/Sean_McMahon-Portfolio/blob/master/src/img/footer-sm.JPG)
+
+Above the footer is an SVG which when hovered over changes colours and illuminates the image from which it was created. The base image was created using Affinity Photo and the SVG was created using Affinity Designer.
 
 ## Features Left to Implement
 
@@ -212,10 +217,12 @@ Above the footer is an SVG which when hovered over changes colours and illuminat
 - [CSS (Cascading Style Sheets)](https://www.w3.org/Style/CSS/Overview.en.html) - CSS describes how HTML elements are to be displayed on screen.
 - [React](https://reactjs.org/) - Used throughout the site
 - [JavaScript](https://www.javascript.com/) - Used for various animations and functions.
-- [Github Pages](https://pages.github.com/) - Used to host the site.
 - [Google Fonts](https://fonts.google.com/) - Google Fonts is a library of free licensed font families.
+- [Github Pages](https://pages.github.com/) - Used to host the site.
 - [Gitpod](https://code.visualstudio.com/) - Code Editor used to create the site.
 - [GitHub](https://github.com/) - Used to host repos for the site.
+
+- [EmailJS](https://www.emailjs.com/) is used to allow users to email the author.
 - [Screen Recorder](https://chrome.google.com/webstore/detail/screen-recorder/hniebljpgcogalllopnjokppmgbhaden?hl=en) - Used to make GIFs for README.
 - [Chrome/Firefox/Bing DevTools](https://developers.google.com/web/tools/chrome-devtools) - Regularly used to test the site (Primarily Chrome).
 - [W3C Markup Validation Service](https://validator.w3.org/https://jigsaw.w3.org/) - Used to test code for errors.
@@ -223,6 +230,7 @@ Above the footer is an SVG which when hovered over changes colours and illuminat
 - [Figma](https://figma.com) - Collaborative interface design tool used for creating wireframes as well logos and SVGs.
 - [Tinypng](https://tinypng.com/) - Used to compress images.
 - [Croppola](https://croppola.com/) - Used to crop images.
+- [Convertio](https://convertio.co/download/3fd4fa0cb9cf032773c5709f30b2d00eea9897/) is used to convert images to webp format.
 
 ### Libraries
 
@@ -235,119 +243,6 @@ Above the footer is an SVG which when hovered over changes colours and illuminat
 - Branches were used to experiment with the single page layout.
 
 ---
-
-### React Router
-
-React Router is a package which renders components based on the url. The project is wrapper in the React Router DOM in 'index.js'. Switch and Route are imported from react-router-dom. Pages are wrapped in Route components with a path these components are wrapped in a Switch component. The exact property us used to ensure the router does not end at '/'. Link & to is used in place of a tags with hrefs.
-
-### React Bootstrap
-
-React Bootstrap is installed using via the treminal with the command
-`npm install react-bootstrap bootstrap@5.1.3`
-
-## Framer Motion
-
-[Framer Motion](https://www.framer.com/motion/) is a motion library for React used to add animation to the project. To add motion to an elemeny "motion" is added before the tag.
-
-```
-<motion.h2
-    animate={{ opacity: 1, transition: { duration: 2 } }}
-    initial={{ opacity: 0 }}
-    >Header Text
-</motion.h2>
-```
-
-Properties can be grouped as a variable. Variants can be chained together by adding staggerChildren to the parent variable and a when property may determine the order.
-
-```
-const aboutSection = () => {
-  const titleAnim = {
-    hidden: { opacity: 0 },
-    show: { opacity: 1, transition: { duration: 2 } },
-  };
-  const container = {
-    hidden: { x: 100 },
-    show: {
-      x: 0,
-      transition: {
-        duration: 1,
-        ease: "easeOut",
-        staggerChildren: 0.25,
-        when: "afterChildren",
-      },
-    },
-  };
-```
-
-```
-<HomeDescription>
-        <motion.div
-          variants={container}
-          initial="hidden"
-          animate="show"
-          className="title"
-        >
-          <Hide>
-            <motion.h2 variants={titleAnim}>let me make</motion.h2>
-          </Hide>
-          <Hide>
-            <motion.h2 variants={titleAnim}>
-              your <span>dream</span> website
-            </motion.h2>
-          </Hide>
-        </motion.div>
-      </HomeDescription>
-```
-
-In order for framer motion to know when our components start mounting and when it changes in order to let it start animating. Wherever routing is occurring (in this case App.js) the "AnimatePresence" package needs to be imported from framer motion. This allows components to animate out when they are removed from the React tree.
-useLocation from the react-router-dom is required. exitBeforeEnter is used to stagger the exit and pageAnim animations.
-
-```
-//Router
-import { Switch, Route, useLocation } from "react-router-dom";
-//Animation
-import { AnimatePresence } from "framer-motion";
-
-function App() {
-  const location = useLocation();
-  return (
-    <div className="App">
-      <GlobalStyle />
-      <Nav />
-      <AnimatePresence exitBeforeEnter>
-        <Switch location={location} key={location.pathname}>
-          <Route path="/" exact>
-            <AboutUs />
-          </Route>
-          <Route path="/work" exact>
-            <Work />
-          </Route>
-        </Switch>
-      </AnimatePresence>
-    </div>
-  );
-}
-```
-
-# Tiny PNG
-
-[Tiny PNG](https://tinypng.com/) is used to compress images.
-
-# Convertio
-
-[Convertio](https://convertio.co/download/3fd4fa0cb9cf032773c5709f30b2d00eea9897/) is used to convert images to webp format.
-
-# OBS
-
-[OBS](https://obsproject.com/) is used to make screen recordings.
-
-# EmailJS
-
-[Email](https://www.emailjs.com/) is used to allow users to email the author.
-
-Install EmailJS:
-
-`npm install emailjs-com --save`
 
 # Deployment
 
@@ -367,6 +262,18 @@ Add sripts to package.json under 'scripts':
 In the CLI run:
 `npm run deploy`
 
-# Modal
+# Credits
 
-React modal functionality sourced from Youtube tutorial by [PedroTech](https://youtu.be/ZCvemsUfwPQ)
+### Content
+
+1. Google Fonts for font styles; https://fonts.google.com/
+
+2. Youtube; Code to provide functionality to from [PedroTech](https://youtu.be/ZCvemsUfwPQ)
+
+3. Various icons sourced from [Devicon](https://devicon.dev/)
+
+4. Various aspects modified from portfolio project by [DevEd](https://developedbyed.com/)
+
+---
+
+##### back to [top](#table-of-contents)
