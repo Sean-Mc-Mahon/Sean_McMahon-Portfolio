@@ -129,6 +129,26 @@ export const Icons = styled(motion.div)`
   }
 `;
 
+export const AboutIcons = styled(motion.div)`
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-right: 0.75rem;
+    padding-top: 0.75rem;
+    font-size: 3rem;
+    color: white;
+  }
+`;
+
 export const ProjectRight = styled(motion.div)`
   display: flex;
   height: 100%;
@@ -370,6 +390,7 @@ export const DesignLinks = styled(motion.div)`
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 50;
   margin: 0.5rem 0;
 
   a {

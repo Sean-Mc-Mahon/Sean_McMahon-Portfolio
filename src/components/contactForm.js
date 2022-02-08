@@ -82,12 +82,19 @@ const Form = styled.div`
   color: white;
   .input-container {
     max-width: 400px;
-    min-width: 240px;
+    min-width: 340px;
     position: relative;
     height: 63px;
     overflow: hidden;
     margin: auto;
     margin-bottom: 0.5rem;
+    @media (min-width: 576px) {
+      min-width: 400px;
+    }
+    @media (min-width: 992px) {
+      min-width: 500px;
+      max-width: 600px;
+    }
   }
 
   .input-container .input {
@@ -98,6 +105,10 @@ const Form = styled.div`
     border: none;
     outline: none;
     color: white;
+  }
+
+  #message {
+    padding: 0;
   }
 
   input:-webkit-autofill,
@@ -144,7 +155,7 @@ const Form = styled.div`
     transform: translate(15%, -150%);
     font-size: 14px;
     color: var(--yellow);
-    text-shadow: 0px 0px 3px var(--yellow);
+    text-shadow: 0px 0px 1px var(--yellow);
   }
 
   .input-container #message:focus + .label-name .content-name,
@@ -158,8 +169,8 @@ const Form = styled.div`
   .input-container .input:focus + label,
   .input-container .input:not(:placeholder-shown) + label {
     border-bottom: 2px solid var(--yellow);
-    -webkit-filter: drop-shadow(0px 0px 5px var(--yellow));
-    filter: drop-shadow(0px 0px 5px var(--yellow));
+    -webkit-filter: drop-shadow(0px 0px 2px var(--yellow));
+    filter: drop-shadow(0px 0px 2px var(--yellow));
   }
 
   #send {
@@ -177,9 +188,9 @@ const Form = styled.div`
     &:hover {
       background-color: var(--yellow);
       color: #282828;
-      -webkit-filter: drop-shadow(0px 0px 5px var(--yellow));
-      filter: drop-shadow(0px 0px 5px var(--yellow));
-      text-shadow: 0px 0px 3px #282828;
+      -webkit-filter: drop-shadow(0px 0px 2px var(--yellow));
+      filter: drop-shadow(0px 0px 2px var(--yellow));
+      text-shadow: 0px 0px 2px #282828;
     }
   }
   @media (min-width: 768px) {

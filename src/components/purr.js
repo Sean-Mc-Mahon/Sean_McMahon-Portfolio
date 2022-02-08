@@ -258,6 +258,9 @@ const Purr = () => {
                         <i class="devicon-vscode-plain"></i>
                       </li>
                       <li>
+                        <i class="devicon-django-plain"></i>
+                      </li>
+                      <li>
                         <i class="devicon-amazonwebservices-original"></i>
                       </li>
                     </ul>

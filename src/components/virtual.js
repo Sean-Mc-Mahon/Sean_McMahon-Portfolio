@@ -13,14 +13,14 @@ import {
 import { motion } from "framer-motion";
 import { fade, photoAnim, lineAnim, projectContainer } from "../animation";
 
-import { useScrollForward } from "./useScroll";
+import { useScroll } from "./useScroll";
 //Bootstrap
 import { Container, Row, Col } from "react-bootstrap";
 //Images
 import virtual_res from "../img/virtual/virtual_res.webp";
 
 const Virtual = () => {
-  const [element, controls] = useScrollForward();
+  const [element, controls] = useScroll();
   return (
     <VirtualProject
       className="virtual-ireland"

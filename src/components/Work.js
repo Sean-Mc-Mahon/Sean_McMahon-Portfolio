@@ -42,69 +42,73 @@ const Work = () => {
       style={{ background: "white" }}
     >
       <ScrollTop />
-      <HeaderBlock
-        variants={headerAnim}
-        ref={element}
-        animate={controls}
-        initial="hidden"
-      >
-        <motion.h2>
-          Clean & <span>beautiful</span> UI/UX
-        </motion.h2>
-        <motion.h3>
-          both <span>Individually</span>...
-        </motion.h3>
-      </HeaderBlock>
-      <Swiper
-        // install Swiper modules
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
-        spaceBetween={20}
-        slidesPerView={1}
-        navigation
-        pagination={{ clickable: true }}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log("slide change")}
-      >
-        <SwiperSlide>
-          <Virtual />
-        </SwiperSlide>
-        <SwiperSlide>
-          <SeanMc />
-        </SwiperSlide>
-        <SwiperSlide>
-          <McTastic />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Purr />
-        </SwiperSlide>
-      </Swiper>
-      <HeaderBlock
-        variants={headerAnim}
-        ref={element2}
-        animate={controls2}
-        initial="hidden"
-      >
-        <motion.h3>
-          ...and part of a <span>Team</span>.<br /> I like to participate in
-          hackathons
-        </motion.h3>
-      </HeaderBlock>
-      <Swiper
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
-        spaceBetween={20}
-        slidesPerView={1}
-        navigation
-        pagination={{ clickable: true }}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log("slide change")}
-      >
-        <SwiperSlide>
-          <Light />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Paddy />
-        </SwiperSlide>
-      </Swiper>
+      <WorkSection>
+        <HeaderBlock
+          variants={headerAnim}
+          ref={element}
+          animate={controls}
+          initial="hidden"
+        >
+          <motion.h2>
+            Clean & <span>beautiful</span> UI/UX
+          </motion.h2>
+          <motion.h3>
+            both <span>Individually</span>...
+          </motion.h3>
+        </HeaderBlock>
+        <Swiper
+          // install Swiper modules
+          modules={[Navigation, Pagination, Scrollbar, A11y]}
+          spaceBetween={20}
+          slidesPerView={1}
+          navigation
+          pagination={{ clickable: true }}
+          onSwiper={(swiper) => console.log(swiper)}
+          onSlideChange={() => console.log("slide change")}
+        >
+          <SwiperSlide>
+            <Virtual />
+          </SwiperSlide>
+          <SwiperSlide>
+            <SeanMc />
+          </SwiperSlide>
+          <SwiperSlide>
+            <McTastic />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Purr />
+          </SwiperSlide>
+        </Swiper>
+      </WorkSection>
+      <WorkSection>
+        <HeaderBlock
+          variants={headerAnim}
+          ref={element2}
+          animate={controls2}
+          initial="hidden"
+        >
+          <motion.h3>
+            ...and part of a <span>Team</span>.<br /> I like to participate in
+            hackathons
+          </motion.h3>
+        </HeaderBlock>
+        <Swiper
+          modules={[Navigation, Pagination, Scrollbar, A11y]}
+          spaceBetween={20}
+          slidesPerView={1}
+          navigation
+          pagination={{ clickable: true }}
+          onSwiper={(swiper) => console.log(swiper)}
+          onSlideChange={() => console.log("slide change")}
+        >
+          <SwiperSlide>
+            <Light />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Paddy />
+          </SwiperSlide>
+        </Swiper>
+      </WorkSection>
       <HeaderBlock
         variants={headerAnim}
         ref={element3}
@@ -215,6 +219,10 @@ const MyWork = styled(motion.div)`
     font-size: 2rem;
     transform: scale(2);
   }
+`;
+
+const WorkSection = styled.div`
+  min-height: 90vh;
 `;
 
 const HeaderBlock = styled(motion.div)`

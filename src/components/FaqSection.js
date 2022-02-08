@@ -1,7 +1,7 @@
 import React from "react";
 //Styled
 import styled from "styled-components/macro";
-import { About } from "../styles";
+import { About, AboutIcons } from "../styles";
 //animation
 import Toggle from "./toggle";
 import { AnimateSharedLayout } from "framer-motion";
@@ -20,50 +20,119 @@ const FaqSection = () => {
     >
       <span className="anchor" id="about"></span>
       <h2>
-        Any Questions? <span>About Me</span>
+        <span>About Me</span>
       </h2>
       <AnimateSharedLayout>
-        <Toggle title="How do I start?">
+        <Toggle title="Who am I?">
           <div className="answer">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
-              hic.
+              I’m a front end developer with a background in design and project
+              management in many forms as well as an interest in Digital
+              Marketing. Prior to attaining my diploma in Software Development I
+              trained as an architect developing creative skills as well as
+              discipline, attention to detail and a strong focus on the needs of
+              an end user.
+            </p>
+            <p>
+              Outside of web development I take part in volunteering including
+              clean up projects and I regulary foster cats. In my spare time I
+              attend acting classes and like to surf, play tennis, football and
+              cook and bake at any opportunity.
             </p>
           </div>
         </Toggle>
-        <Toggle title="What is the schedule?">
+        <Toggle title="What do I offer?">
           <div className="answer">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
-              hic.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
-              optio.
+              I offer custom, beautiful crips UI/UX design with a focus on
+              accessibility. I also offer custom imagery/animation.
             </p>
           </div>
         </Toggle>
-        <Toggle title="payment methods">
+        <Toggle title="How do I do it?">
           <div className="answer">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
-              hic.
-            </p>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit
-              suscipit qui totam corporis. Non, rerum.
-            </p>
+            <p>I work with the following languages/frameworks/resources...</p>
+            <AboutIcons>
+              <ul>
+                <li>
+                  <i class="devicon-html5-plain"></i>
+                </li>
+                <li>
+                  <i class="devicon-css3-plain"></i>
+                </li>
+                <li>
+                  <i class="devicon-javascript-plain"></i>
+                </li>
+                <li>
+                  <i class="devicon-git-plain"></i>
+                </li>
+                <li>
+                  <i class="devicon-github-original"></i>
+                </li>
+                <li>
+                  <i class="devicon-bootstrap-plain"></i>
+                </li>
+                <li>
+                  <i class="devicon-vscode-plain"></i>
+                </li>
+                <li>
+                  <i class="devicon-amazonwebservices-original"></i>
+                </li>
+                <li>
+                  <i class="devicon-django-plain"></i>
+                </li>
+                <li>
+                  <i class="devicon-flask-original"></i>
+                </li>
+                <li>
+                  <i class="devicon-react-original"></i>
+                </li>
+                <li>
+                  <i class="devicon-heroku-original"></i>
+                </li>
+                <li>
+                  <i class="devicon-python-plain"></i>
+                </li>
+                <li>
+                  <i class="devicon-jquery-plain"></i>
+                </li>
+                <li>
+                  <i class="devicon-slack-plain"></i>
+                </li>
+                <li>
+                  <i class="devicon-codepen-plain"></i>
+                </li>
+                <li>
+                  <i class="devicon-sass-original"></i>
+                </li>
+              </ul>
+            </AboutIcons>
+            <p>as well as the following dsign resources...</p>
+            <AboutIcons>
+              <ul>
+                <li>
+                  <i class="devicon-figma-plain"></i>
+                </li>
+                <li>
+                  <i class="devicon-photoshop-plain"></i>
+                </li>
+                <li>
+                  <img
+                    src="https://cdn.serif.com/affinity/img/global/logos/affinity-logo-190920160826.svg"
+                    alt="affinity"
+                    height={48}
+                  />
+                </li>
+              </ul>
+            </AboutIcons>
           </div>
         </Toggle>
-        <Toggle title="what do we offer?">
+        <Toggle title="when can I do it?">
           <div className="answer">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
-              hic.
-            </p>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero
-              rerum iure aliquid atque veritatis modi?
+              Just get in
+              <AboutLink href="#foot"> Contact </AboutLink>
+              and we can figure it out.
             </p>
           </div>
         </Toggle>
@@ -104,6 +173,15 @@ const Faq = styled(About)`
     p {
       padding: 0.25rem 0rem;
     }
+  }
+`;
+
+const AboutLink = styled.a`
+  font-size: 1.4rem;
+  color: var(--yellow);
+  :hover {
+    color: var(--yellow);
+    text-shadow: 0px 0px 3px var(--yellow);
   }
 `;
 

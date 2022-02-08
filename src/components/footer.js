@@ -24,40 +24,43 @@ const Footer = () => {
           </Col>
         </Row> */}
         <Row>
-          <Col md={6} className="contact-details">
+          <Col md={7} className="contact-details">
+            <h4>Contact</h4>
             <ContactUs />
           </Col>
-          <Col md={6} className="connect">
+          <Col md={5} className="connect">
             <h4>Connect</h4>
-            <ul>
-              <li>
-                <a
-                  rel="noopener"
-                  target={"blank"}
-                  href="https://github.com/Sean-Mc-Mahon"
-                >
-                  <i class="devicon-github-original"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  rel="noopener"
-                  target={"blank"}
-                  href="https://www.linkedin.com/in/sean-mcmahon-profile/"
-                >
-                  <i class="devicon-linkedin-plain"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  rel="noopener"
-                  target={"blank"}
-                  href="https://codepen.io/McTastic"
-                >
-                  <i class="devicon-codepen-plain"></i>
-                </a>
-              </li>
-            </ul>
+            <div className="social">
+              <ul>
+                <li>
+                  <a
+                    rel="noopener"
+                    target={"blank"}
+                    href="https://github.com/Sean-Mc-Mahon"
+                  >
+                    <i class="devicon-github-original"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    rel="noopener"
+                    target={"blank"}
+                    href="https://www.linkedin.com/in/sean-mcmahon-profile/"
+                  >
+                    <i class="devicon-linkedin-plain"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    rel="noopener"
+                    target={"blank"}
+                    href="https://codepen.io/McTastic"
+                  >
+                    <i class="devicon-codepen-plain"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </Col>
         </Row>
       </Container>
@@ -87,30 +90,34 @@ const StyledFooter = styled(motion.div)`
       flex-direction: column;
       align-items: center;
     }
-    .contact-details {
+    .contact-details,
+    .connect {
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      padding: 0.5rem;
+      justify-content: space-between;
+      padding: 1rem 0;
+      @media (min-width: 768px) {
+        padding: 0;
+      }
+    }
+    .contact-details {
       @media (min-width: 768px) {
         justify-content: start;
         align-items: flex-start;
       }
     }
-    .connect {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    @media (min-width: 992px) {
-      flex-direction: row;
-    }
   }
   a {
     color: white;
     text-decoration: none;
+  }
+  .social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
   }
   ul {
     width: 100%;

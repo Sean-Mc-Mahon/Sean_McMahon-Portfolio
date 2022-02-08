@@ -206,3 +206,7 @@ Add sripts to package.json under 'scripts':
 
 In the CLI run:
 `npm run deploy`
+
+# Modal
+
+React modal functionality sourced from Youtube tutorial by [PedroTech](https://youtu.be/ZCvemsUfwPQ)

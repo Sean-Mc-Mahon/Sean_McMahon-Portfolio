@@ -12,7 +12,6 @@ import {
 //Animation
 import { motion } from "framer-motion";
 import { fade, photoAnim, lineAnim, projectContainer } from "../animation";
-
 import { useScroll } from "./useScroll";
 //Bootstrap
 import { Container, Row, Col } from "react-bootstrap";

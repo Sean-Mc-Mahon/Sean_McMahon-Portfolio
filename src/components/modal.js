@@ -2,6 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import styled from "styled-components/macro";
 
+//React modal functionality sourced from Youtube tutorial by PedroTech (https://youtu.be/ZCvemsUfwPQ)
+
 function Modal({ closeModal }) {
   return (
     <ModalBg className="modal-card">
