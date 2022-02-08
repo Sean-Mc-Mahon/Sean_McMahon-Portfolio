@@ -78,7 +78,6 @@ const StyledFooter = styled(motion.div)`
   flex-direction: row;
   min-height: 10vh;
   margin: auto;
-  padding: 1rem 0;
   justify-content: space-between;
   align-items: center;
   background: #282828;
@@ -96,7 +95,7 @@ const StyledFooter = styled(motion.div)`
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
-      padding: 1rem 0;
+      padding: 0.5rem 0;
       @media (min-width: 768px) {
         padding: 0;
       }
