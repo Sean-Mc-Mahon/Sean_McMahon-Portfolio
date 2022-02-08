@@ -23,10 +23,10 @@ Sean Mc is a portfolio site built using React.
 - [**_Structure Plane_**](#structure-plane)
 - [**_Skeleton Plane_**](#skeleton-plane)
 - [**_Surface Plane_**](#surface-plane)
-_ [*Color Scheme*](#color-scheme)
-_ [_Typography_](#typography)
-_ [*Media*](#Media)
-_ [_Wireframes_](#wireframes)
+[- Color Scheme](#color-scheme)
+[- Typography](#typography)
+[- Media](#Media)
+[- Wireframes](#wireframes)
 </details>
 
 **<details><summary>Features</summary>**
@@ -121,7 +121,7 @@ Sean Mc is a portfolio site built to demonstrate the skills that I have attained
 
 #### Wireframes
 
-The jumping off point for the site is a project on the React course offered by [Dev Ed](https://developedbyed.com/)
+The jumping off point for the site is a project on the React course offered by [Dev Ed](https://developedbyed.com/).
 
 I used Figma to create some of the elements such as the logo design.
 
