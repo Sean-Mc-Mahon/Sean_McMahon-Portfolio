@@ -1,81 +1,240 @@
-# Live Site
+# Sean Mc (Portfolio)
 
-[Sean Mc](https://sean-mc-mahon.github.io/Sean_McMahon-Portfolio/)
+[Live](https://sean-mc-mahon.github.io/Sean_McMahon-Portfolio/)
 
-# Getting Started with Create React App
+**Please note**: To open any links in this document in a new browser tab, please press `CTRL + Click`.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Various Devices](https://github.com/Sean-Mc-Mahon/Sean_McMahon-Portfolio/blob/master/src/img/responsive.JPG)
 
-## Available Scripts
+Sean Mc is a portfolio site built using React.
 
-In the project directory, you can run:
+# Table of Contents
 
-### `npm start`
+**<details><summary>Project overview</summary>**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [**_Project overview_**](#project-overview)
+- [**_User Stories_**](#user-stories)
+</details>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+**<details><summary>UX</summary>**
 
-### `npm test`
+- [**_Strategy Plane_**](#strategy-plane)
+- [**_Scope Plane_**](#scope-plane)
+- [**_Structure Plane_**](#structure-plane)
+- [**_Skeleton Plane_**](#skeleton-plane)
+- [**_Surface Plane_**](#surface-plane)
+_ [*Color Scheme*](#color-scheme)
+_ [_Typography_](#typography)
+_ [*Media*](#Media)
+_ [_Wireframes_](#wireframes)
+</details>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**<details><summary>Features</summary>**
 
-### `npm run build`
+- [**_Existing Features_**](#existing-features)
+- [**_Features Left to Implement_**](#features-left-to-implement)
+</details>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**<details><summary>Technologies Used</summary>**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [**_Libraries_**](#libraries)
+- [**_Version Control_**](#version-control)
+</details>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**<details><summary>Deployment</summary>**
 
-### `npm run eject`
+- [**Deployment**](#deployment)
+</details>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**<details><summary>Credits</summary>**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [**_Content_**](#content)
+- [**_Acknowledgements_**](#acknowledgements)
+</details>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+---
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# Project Overview
 
-## Learn More
+Sean Mc is a portfolio site built to demonstrate the skills that I have attained as a developer and digital designer.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### User Stories
 
-### Code Splitting
+| As a/an...  |                    I want the ability to...                    |
+| :---------: | :------------------------------------------------------------: |
+|             |                                                                |
+|     ---     |                              ---                               |
+| Casual User | easily navigate the site to find what I am looking for quickly |
+| Casual User |               view the site on all screen sizes                |
+| Casual User |      view contact information such as social media links       |
+| Casual User |                contact the author using a form                 |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## Opportunities arising from user stories
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<div align="center">
+ 
+|Opportunities | Importance | Viability / Feasibility
+|-----|:------:|:-----:|
+|**Simple Clean UI** | 5 | 5 |
+|**Clearly indicate purpose** | 5 | 5 |
 
-### Making a Progressive Web App
+</div>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## UX Planes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Strategy Plane
 
-### Deployment
+- Business Goals: Provide a platform to demonstrate capability to produce high quality front end web development projects.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- Audience: The audience are anyone with an interest in web development and digital design, specifically those seeking to hire developers.
 
-### `npm run build` fails to minify
+### Scope Plane
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- The site is fully responsive and intuitive with prompts to explore projects and contact the author.
 
-### Extensions
+### Structure Plane
 
-vscode-styled-components: Syntax highlighting for styled-components
+- The site uses a simple structure, a navbar is at the top of the page which allow a user to navigate the site. As there are only three links a burger menu has not been utilized.
+- The work section uses sliders to showcase indivual projects/collaborative projects and other aspects of digital design.
+- A footer at the bottom provides links to social media pages and a form to enable the user to contact the author.
+- The site is kept as simple as possible using links to navigate to different sections on a single page.
+- Buttons/modals/links are consistant in design.
+
+### Skeleton Plane
+
+#### Wireframes
+
+The jumping off point for the site is a project on the React course offered by [Dev Ed](https://developedbyed.com/)
+
+I used Figma to create some of the elements such as the logo design.
+
+The site was originall a multi page design but to provide a cleaner sleeker design a single page format was utilized using sliders to demonstrate a large amount of work.
+
+### Surface Plane
+
+- The number is fonts is kept at a minimum as well as using a limited and consistant color scheme.
+
+#### Design
+
+A standard layout is fully responsive on mobile devices and larger screens.
+
+#### Color Scheme
+
+Colors are kept to a minimum and inspired by neon street signs. Color scheme can be found on my Coolors profile: [Coolors](https://coolors.co/user/palettes/6202a945024dbe000ae00ca2)
+
+![Color Palette](https://github.com/Sean-Mc-Mahon/Sean_McMahon-Portfolio/blob/master/src/img/colours.JPG)
+
+#### Typography
+
+2 [Google Fonts](https://fonts.google.com/) were used across the site:
+
+- [Comfortaa](https://fonts.google.com/specimen/Comfortaa?query=comfortaa) : Logo & Headings, used for it's rounded relaxed style.
+- [Inter](https://fonts.google.com/specimen/Inter?query=inter) : Body, used for it's excellent readability.
+
+#### Media
+
+All images are the authors own. Logo, hero image and favicon are also produced by the author using Affinity Design. Image above photo produced using Affinity Photo.
+
+##### back to [top](#table-of-contents)
+
+---
+
+# Features
+
+## Existing Features
+
+### Elements on every page
+
+#### Navbar
+
+![Navbar](https://github.com/Sean-Mc-Mahon/inner-purr/blob/main/wireframes/nav.JPG)
+
+![logo](https://github.com/Sean-Mc-Mahon/Sean_McMahon-Portfolio/blob/master/src/img/logo.gif)
+
+![logo](https://github.com/Sean-Mc-Mahon/Sean_McMahon-Portfolio/blob/master/src/img/logo.jpg)
+
+- The navigation an animated logo in the top left corner linked to the top of the page. Navigation links are in the top right. On loading the homepage the logo will animate, weaving itself to completion while flickering until the end of the animation.
+
+- On small devices the logo is displayed above the links.
+
+![small logo](https://github.com/Sean-Mc-Mahon/Sean_McMahon-Portfolio/blob/master/src/img/logo-sm.jpg)
+
+- List item links are available.
+  1. Work
+  2. About
+  3. Contact
+
+When a link is hovered over it will turn to yellow and and a drop shadow will emerge.
+
+#### Footer
+
+![Footer](https://github.com/Sean-Mc-Mahon/Sean_McMahon-Portfolio/blob/master/src/img/footer.jpg)
+
+The footer features:
+
+- form for users to submit queries
+- social links
+
+![Small Footer](https://github.com/Sean-Mc-Mahon/Sean_McMahon-Portfolio/blob/master/src/img/footer-sm.jpg)
+
+Above the footer is an SVG which when hovered over changes colours and illuminates the image from which it was created. The base image was created using Affinity Photo and the SVG was created using Affinity Designer.
+
+### Individual Sections
+
+### Work
+
+- Three sliders showcase individual, collaborative and miscellaneus designs.
+- The sliders are created using [SwiperJS](https://swiperjs.com/react), the navigation elements are customised using CSS.
+- Each project in the first two sliders features an image illustrating responsiveness, some text desciption, links to the project and repo and a line under the heading, all animated using [Framer Motion](https://www.framer.com/motion/).
+- The third slider features images with a button link inside a circular div.
+
+### About
+
+- Toggles are used to expand and contract various answers to FAQ's. The various elements are animated using [useState](https://reactjs.org/docs/hooks-state.html) and [Framer Motion](https://www.framer.com/motion/).
+
+## Features Left to Implement
+
+### Dark Mode
+
+- In the future I would like to allow users to select a color theme preference.
+
+##### back to [top](#table-of-contents)
+
+# Technologies Used
+
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) - HTML5 is the latest version of Hypertext Markup Language, the code that describes web pages.
+- [CSS (Cascading Style Sheets)](https://www.w3.org/Style/CSS/Overview.en.html) - CSS describes how HTML elements are to be displayed on screen.
+- [React](https://reactjs.org/) - Used throughout the site
+- [JavaScript](https://www.javascript.com/) - Used for various animations and functions.
+- [Github Pages](https://pages.github.com/) - Used to host the site.
+- [Google Fonts](https://fonts.google.com/) - Google Fonts is a library of free licensed font families.
+- [Gitpod](https://code.visualstudio.com/) - Code Editor used to create the site.
+- [GitHub](https://github.com/) - Used to host repos for the site.
+- [Screen Recorder](https://chrome.google.com/webstore/detail/screen-recorder/hniebljpgcogalllopnjokppmgbhaden?hl=en) - Used to make GIFs for README.
+- [Chrome/Firefox/Bing DevTools](https://developers.google.com/web/tools/chrome-devtools) - Regularly used to test the site (Primarily Chrome).
+- [W3C Markup Validation Service](https://validator.w3.org/https://jigsaw.w3.org/) - Used to test code for errors.
+- [Affinity Designer](https://affinity.serif.com/en-gb/) - Illustration software used to create logos and icons.
+- [Figma](https://figma.com) - Collaborative interface design tool used for creating wireframes as well logos and SVGs.
+- [Tinypng](https://tinypng.com/) - Used to compress images.
+- [Croppola](https://croppola.com/) - Used to crop images.
+
+### Libraries
+
+- [React Bootstrap](https://react-bootstrap.github.io/) - Used to aid responsive design and for componants such as sliders and carousels.
+
+### Version Control
+
+- [Git](https://git-scm.com/) - used for version control
+
+- Branches were used to experiment with the single page layout.
+
+---
 
 ### React Router
 
@@ -83,7 +242,8 @@ React Router is a package which renders components based on the url. The project
 
 ### React Bootstrap
 
-React Bootstrap is installed using via the treminal with the command "npm install react-bootstrap bootstrap@5.1.3".
+React Bootstrap is installed using via the treminal with the command
+`npm install react-bootstrap bootstrap@5.1.3`
 
 ## Framer Motion
 
